@@ -28,10 +28,8 @@
     "urlIndex": "reference/url-to-original.json",
     "sitemap": "reference/original/raw/index/sitemap.xml",
     "llms": "reference/original/raw/index/llms.txt",
-    "currentSheet": "evidence/current-sheet.json",
     "topics": "content/manifest.json",
     "crosscheck": "mapping/inputs/source-crosscheck.json",
-    "review": "mapping/inputs/review-and-mapping.json",
     "applicationInput": "mapping/inputs/application-legacy-urls.txt",
     "additions": "content/additions-manifest.json",
     "releasePolicy": "content/release-policy.json"
@@ -48,7 +46,6 @@
       "alias_groups_with_multiple_source_urls": 6,
       "candidate_page_addresses_without_alias_collapse": 362
     },
-    "currentSheetUrlCount": 186,
     "reviewedLegacyUrlCount": 80,
     "applicationLegacyUrlCount": 31,
     "topicCountByLocale": {

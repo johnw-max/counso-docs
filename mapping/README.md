@@ -2,9 +2,8 @@
 
 `routes.json` is the machine readable URL ledger for this delivery. It is
 generated from the packaged acquisition manifest, the current read-only
-crosscheck and content manifest, the current sheet snapshot, and the 31 URL
-application input. The generator performs no network access and does not
-modify cloud documents or the acquired source.
+crosscheck, content manifest, and the 31 URL application input. The generator performs no network access and does not
+modify the acquired source.
 
 Each `routes[]` row is one URL alias or source entry. `originalUrl` is
 the old Dust URL, including its path and any incoming fragment. The 31

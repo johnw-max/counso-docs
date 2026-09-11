@@ -2,7 +2,7 @@
 
 This is the deployable Astro + Starlight documentation site for Counso AI. The default entry is English at `/en/`; Simplified Chinese is available at `/zh-cn/`. Historical unprefixed paths such as `/docs/intro` are materialised as compatibility pages and point to the corresponding authored Counso article.
 
-The build reads the sibling `content/` and `mapping/` directories in this release package. It uses only the authored Markdown under `content/topics/` and `content/additions/`, their manifests, and `mapping/routes.json`; it does not read source archives, raw cloud snapshots, or online documents. `COUNSO_DOCS_INPUT_ROOT` can point at another release root when developing, but is not needed for the packaged source tree.
+The build reads the sibling `content/` and `mapping/` directories in this release package. It uses only the authored Markdown under `content/topics/` and `content/additions/`, their manifests, and `mapping/routes.json`; it does not read source archives, online documents. `COUNSO_DOCS_INPUT_ROOT` can point at another release root when developing, but is not needed for the packaged source tree.
 
 `content/release-policy.json` is applied during generation. Topics marked
 `hold_api` and excluded `developers/` topics are omitted from pages, indexes,
@@ -16,7 +16,7 @@ Node.js 24; `package.json` records the supported Node and npm ranges.
 The packaged rebuild uses the existing Node.js and Python 3 runtimes only. The
 offline prebuild sequence refreshes Markdown titles and hashes, rebuilds
 `mapping/routes.json` from the package inputs, and then generates the Astro
-pages. It does not need Feishu, the original local archive, or network access.
+pages. It reads local inputs without accessing the network.
 
 ```sh
 npm ci

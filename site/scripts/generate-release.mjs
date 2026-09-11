@@ -57,7 +57,7 @@ function scalar(value) {
 }
 
 function sourceUrlsOf(value) {
-	const raw = value?.sourceUrls ?? value?.FeishuURL ?? value?.feishuURL ?? value?.sourceUrl ?? value?.sourceURL ?? value?.url;
+	const raw = value?.sourceUrls ?? value?.sourceUrl ?? value?.sourceURL ?? value?.url;
 	const values = Array.isArray(raw) ? raw : [raw];
 	return values.map(scalar).filter(Boolean);
 }
@@ -329,24 +329,6 @@ function localLink(locale, route, anchor = '') {
 	return `/${locale}/${route === 'index' ? '' : `${route}/`}${anchor ? `#${anchor.replace(/^#/, '')}` : ''}`;
 }
 
-function normaliseUrl(value) {
-	try {
-		const url = new URL(value);
-		return `${url.origin}${url.pathname}${url.search}${url.hash}`;
-	} catch {
-		return value;
-	}
-}
-
-function isFeishu(value) {
-	try {
-		const host = new URL(value).hostname.toLowerCase();
-		return host.includes('feishu') || host.includes('larksuite') || host.includes('larkoffice');
-	} catch {
-		return false;
-	}
-}
-
 function docTokenFromUrl(value) {
 	try {
 		const parts = new URL(value).pathname.split('/').filter(Boolean);
@@ -462,47 +444,9 @@ for (const indexFile of (await walk(resolve(contentRoot, 'indexes'))).filter((pa
 	const locale = normaliseLocale(indexFile.split(/[\\/]/).at(-1).split('.')[0]);
 	if (locales.includes(locale)) fileRoutes.set(resolve(indexFile), { locale, route: 'index' });
 }
-const exactLinks = new Map();
-const tokenLinks = new Map();
-const sourceForRecord = (record) => [...record.sourceUrls, ...(record.routeMap?.sourceUrls ?? [])].filter(Boolean);
-for (const record of routeEntries) {
-	const target = { locale: record.locale, route: record.route, map: record.routeMap };
-	for (const url of sourceForRecord(record)) exactLinks.set(normaliseUrl(url), target);
-	if (record.docToken && !tokenLinks.has(`${record.locale}|${record.docToken}`)) tokenLinks.set(`${record.locale}|${record.docToken}`, target);
-}
-for (const mapEntry of mapping) {
-	const target = routeEntries.find((record) => record.topicId === mapEntry.topicId && record.locale === mapEntry.locale);
-	if (!target) continue;
-	for (const url of mapEntry.sourceUrls) exactLinks.set(normaliseUrl(url), { locale: target.locale, route: target.route, map: mapEntry });
-	if (mapEntry.docToken) tokenLinks.set(`${mapEntry.locale}|${mapEntry.docToken}`, { locale: target.locale, route: target.route, map: mapEntry });
-}
-// The two published indexes are not topic pages, but their document links are
-// common navigation targets in the source copy. Resolve those links to the
-// local bilingual home page instead of exposing the cloud source URL.
-for (const indexFile of (await walk(resolve(contentRoot, 'indexes'))).filter((path) => /\.(md|mdx)$/.test(path))) {
-	const locale = normaliseLocale(indexFile.split(/[\\/]/).at(-1).split('.')[0]);
-	if (!locales.includes(locale)) continue;
-	const indexSource = await readFile(indexFile, 'utf8');
-	for (const sourceUrl of indexSource.match(/https?:\/\/[^)\s<>]+/g) ?? []) {
-		if (!isFeishu(sourceUrl)) continue;
-		const target = { locale, route: 'index', map: {} };
-		exactLinks.set(normaliseUrl(sourceUrl), target);
-		const token = docTokenFromUrl(sourceUrl);
-		if (token) tokenLinks.set(`${locale}|${token}`, target);
-	}
-}
-
 function resolveLink(rawUrl, locale) {
 	let url;
 	try { url = new URL(rawUrl, 'https://docs.counso.ai'); } catch { return rawUrl; }
-	if (isFeishu(rawUrl)) {
-		const exact = exactLinks.get(normaliseUrl(rawUrl));
-		const tokenTarget = tokenLinks.get(`${locale}|${docTokenFromUrl(rawUrl)}`) ?? tokenLinks.get(`en|${docTokenFromUrl(rawUrl)}`);
-		const target = exact ?? tokenTarget;
-		if (!target) fail(`unmapped Feishu link in ${locale}: ${rawUrl}`);
-		const anchor = target.map?.anchorMap?.[url.hash.replace(/^#/, '')] ?? target.map?.anchor ?? '';
-		return localLink(target.locale, target.route, anchor);
-	}
 	if (url.hostname === 'docs.counso.ai' || url.hostname === 'docs.dust.tt') {
 		const path = url.pathname.replace(/^\/+|\/+$/g, '');
 		const parts = path.split('/');
@@ -542,8 +486,6 @@ function rewriteLinks(body, locale, sourcePath, sourceLabel) {
 		}
 		return `${open}${wrapped ? `<${converted}>` : converted}${close}`;
 	});
-	const dangling = rewritten.match(/https?:\/\/[^\s)<>]*(?:feishu|larksuite|larkoffice)[^\s)<>]*/i);
-	if (dangling) fail(`unmapped Feishu URL remains in ${sourceLabel}: ${dangling[0]}`);
 	return rewritten;
 }
 

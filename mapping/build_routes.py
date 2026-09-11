@@ -24,9 +24,7 @@ DEFAULT_MANIFEST = PACKAGE_ROOT / "reference/original/manifest-final.json"
 DEFAULT_URL_INDEX = PACKAGE_ROOT / "reference/url-to-original.json"
 DEFAULT_CONTENT_MANIFEST = PACKAGE_ROOT / "content/manifest.json"
 DEFAULT_TOPICS = DEFAULT_CONTENT_MANIFEST
-DEFAULT_SHEET = PACKAGE_ROOT / "evidence/current-sheet.json"
 DEFAULT_CROSSCHECK = PACKAGE_ROOT / "mapping/inputs/source-crosscheck.json"
-DEFAULT_REVIEW = PACKAGE_ROOT / "mapping/inputs/review-and-mapping.json"
 DEFAULT_ATTACHMENT = PACKAGE_ROOT / "mapping/inputs/application-legacy-urls.txt"
 DEFAULT_ADDITIONS = PACKAGE_ROOT / "content/additions-manifest.json"
 DEFAULT_RELEASE_POLICY = PACKAGE_ROOT / "content/release-policy.json"
@@ -241,25 +239,6 @@ def read_attachment_urls(path: Path) -> list[str]:
     return list(dict.fromkeys(u.rstrip(".,") for u in urls if urlsplit(u).netloc == "docs.counso.ai"))
 
 
-def sheet_source_urls(path: Path) -> set[str]:
-    """Collect old URLs from the current read-only sheet snapshot.
-
-    This is an input integrity check and a fallback source index; target
-    decisions remain the explicit table above.
-    """
-    result: set[str] = set()
-    if not path.exists():
-        return result
-    data = load(path)
-    for row in data.get("data", {}).get("ranges", [{}])[0].get("cells", []):
-        for cell in row:
-            value = cell.get("value") if isinstance(cell, dict) else cell
-            if not isinstance(value, str):
-                continue
-            result.update(re.findall(r"https?://[^\s`|)]+", value))
-    return result
-
-
 def source_file_map(url_index_path: Path) -> dict[str, dict]:
     result = {}
     if not url_index_path.exists():
@@ -348,9 +327,7 @@ def main() -> int:
     parser.add_argument("--manifest", type=Path, default=DEFAULT_MANIFEST)
     parser.add_argument("--url-index", type=Path, default=DEFAULT_URL_INDEX)
     parser.add_argument("--topics", type=Path, default=DEFAULT_CONTENT_MANIFEST if DEFAULT_CONTENT_MANIFEST.exists() else DEFAULT_TOPICS)
-    parser.add_argument("--sheet", type=Path, default=DEFAULT_SHEET)
     parser.add_argument("--crosscheck", type=Path, default=DEFAULT_CROSSCHECK)
-    parser.add_argument("--review", type=Path, default=DEFAULT_REVIEW)
     parser.add_argument("--attachment", type=Path, default=DEFAULT_ATTACHMENT)
     parser.add_argument("--additions", type=Path, default=DEFAULT_ADDITIONS)
     parser.add_argument("--release-policy", type=Path, default=DEFAULT_RELEASE_POLICY)
@@ -367,8 +344,6 @@ def main() -> int:
     crosscheck_rows = load(args.crosscheck) if args.crosscheck.exists() else []
     cross_by_id = {r["archived_record"]: r for r in crosscheck_rows if r.get("archived_record")}
     cross_by_path = {path_key(r["original_url"]): r for r in crosscheck_rows}
-    sheet_urls = sheet_source_urls(args.sheet)
-    review = load(args.review) if args.review.exists() else {}
     app_urls = read_attachment_urls(args.attachment)
     app_urls = [u for u in app_urls if urlsplit(u).path in ("", "/") or urlsplit(u).path.startswith(("/docs/", "/reference", "/runs", "/developers"))]
 
@@ -626,10 +601,8 @@ def main() -> int:
             "urlIndex": "reference/url-to-original.json",
             "sitemap": "reference/original/raw/index/sitemap.xml",
             "llms": "reference/original/raw/index/llms.txt",
-            "currentSheet": "evidence/current-sheet.json",
             "topics": "content/manifest.json",
             "crosscheck": "mapping/inputs/source-crosscheck.json",
-            "review": "mapping/inputs/review-and-mapping.json",
             "applicationInput": "mapping/inputs/application-legacy-urls.txt",
             "additions": "content/additions-manifest.json",
             "releasePolicy": "content/release-policy.json",
@@ -637,7 +610,6 @@ def main() -> int:
         "inputs": {
             "manifestVersion": manifest.get("manifest_version"),
             "manifestCounts": manifest.get("counts"),
-            "currentSheetUrlCount": len(sheet_urls),
             "reviewedLegacyUrlCount": len(crosscheck_rows),
             "applicationLegacyUrlCount": len(app_urls),
             "topicCountByLocale": {loc: sum(1 for t, l in topics if l == loc) for loc in ("en", "zh-cn")},

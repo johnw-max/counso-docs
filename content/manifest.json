@@ -981,6 +981,6 @@
   ],
   "source": {
     "provider": "local-markdown",
-    "maintenance": "GitHub Markdown is the maintained source; Feishu is a review copy."
+    "maintenance": "Markdown files in this repository are the maintained source."
   }
 }

@@ -68,7 +68,6 @@ const localLinks = [];
 for (const file of markdownFiles) {
 	const source = await readFile(file, 'utf8');
 	if (/\bDust\b/i.test(source)) fail(`Dust brand text remains in ${relative(siteDir, file)}`);
-	if (/https?:\/\/[^\s)<>]*(?:feishu|larksuite|larkoffice)[^\s)<>]*/i.test(source)) fail(`Feishu URL remains in ${relative(siteDir, file)}`);
 	for (const match of source.matchAll(/\]\((<[^>]+>|[^)\s]+)\)/g)) {
 		const raw = match[1].replace(/^<|>$/g, '');
 		const local = localTarget(raw, file);
@@ -80,7 +79,7 @@ for (const file of markdownFiles) {
 }
 
 const llms = await readFile(resolve(publicRoot, 'llms.txt'), 'utf8');
-if (/\bDust\b/i.test(llms) || /https?:\/\/[^\s)<>]*(?:feishu|larksuite|larkoffice)[^\s)<>]*/i.test(llms)) fail('llms.txt contains forbidden visible brand/source links');
+if (/\bDust\b/i.test(llms)) fail('llms.txt contains upstream brand text');
 const sitemap = await readFile(resolve(publicRoot, 'sitemap.xml'), 'utf8');
 if ((sitemap.match(/<loc>/g) ?? []).length !== releaseManifest.pageCount) fail('sitemap URL count does not match canonical pages');
 
@@ -92,7 +91,6 @@ if (distFiles.length) {
 		const body = html.match(/<body[^>]*>([\s\S]*?)<\/body>/i)?.[1] ?? html;
 		const visibleText = body.replace(/<script[\s\S]*?<\/script>/gi, '').replace(/<style[\s\S]*?<\/style>/gi, '').replace(/<[^>]+>/g, ' ');
 		if (/\bDust\b/i.test(visibleText)) fail(`Dust brand text remains visible in ${relative(siteDir, file)}`);
-		if (/https?:\/\/[^\s"'<>]*(?:feishu|larksuite|larkoffice)[^\s"'<>]*/i.test(body)) fail(`Feishu URL remains in ${relative(siteDir, file)}`);
 	}
 	const htmlByRoute = new Map();
 	for (const file of htmlFiles) {

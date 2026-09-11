@@ -21,6 +21,6 @@ for name, collection in [('manifest.json', 'topics'), ('additions-manifest.json'
         field = 'sha256' if collection else 'hash'
         row[field] = hashlib.sha256(body).hexdigest()
     if collection:
-        document['source'] = {'provider': 'local-markdown', 'maintenance': 'GitHub Markdown is the maintained source; Feishu is a review copy.'}
+        document['source'] = {'provider': 'local-markdown', 'maintenance': 'Markdown files in this repository are the maintained source.'}
     file.write_text(json.dumps(document, ensure_ascii=False, indent=2) + '\n')
 print('Updated local Markdown titles and checksums.')
