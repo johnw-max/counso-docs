@@ -300,6 +300,9 @@ const sectionTranslations = {
 	skills: ['Skills', '技能'],
 	'administration': ['Administration', '管理'],
 	connections: ['Connections and tools', '连接与工具'],
+	integrations: ['Connections and tools', '连接与工具'],
+	automations: ['Automations', '自动化'],
+	guides: ['Guides', '使用指南'],
 	pods: ['Pods', 'Pods'],
 	'automated-runs': ['Automated runs', '自动运行'],
 	developers: ['Developer guide', '开发者指南'],
@@ -611,7 +614,7 @@ await writeFile(resolve(generatedRoot, 'sidebar.mjs'), `// Generated from the re
 function homeSource(locale) {
 	const isZh = locale === 'zh-cn';
 	const title = isZh ? 'Counso AI 文档' : 'Counso AI documentation';
-	const description = isZh ? '面向日常工作的清晰、可核对产品指南。' : 'Clear, source-backed guidance for everyday work.';
+	const description = isZh ? '了解如何创建智能体、连接资料，并与团队协作。' : 'Learn how to create agents, connect your data, and work with your team.';
 	const cta = isZh ? '进入 Counso AI' : 'Open Counso AI';
 	const heading = isZh ? '从这里开始' : 'Start here';
 	const groupsForHome = new Map();

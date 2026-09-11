@@ -32,7 +32,7 @@ export const sidebar = [
     "label": "Automations",
     "translations": {
       "en": "Automations",
-      "zh-CN": "Automations"
+      "zh-CN": "自动化"
     },
     "items": [
       {
@@ -60,7 +60,7 @@ export const sidebar = [
     "label": "Guides",
     "translations": {
       "en": "Guides",
-      "zh-CN": "Guides"
+      "zh-CN": "使用指南"
     },
     "items": [
       {
@@ -71,10 +71,10 @@ export const sidebar = [
     ]
   },
   {
-    "label": "Integrations",
+    "label": "Connections and tools",
     "translations": {
-      "en": "Integrations",
-      "zh-CN": "Integrations"
+      "en": "Connections and tools",
+      "zh-CN": "连接与工具"
     },
     "items": [
       {
