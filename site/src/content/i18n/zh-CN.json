@@ -1,0 +1,19 @@
+{
+  "search.label": "搜索",
+  "languageSelect.accessibleLabel": "选择语言",
+  "menuButton.accessibleLabel": "打开导航",
+  "sidebarNav.accessibleLabel": "文档导航",
+  "page.previousLink": "上一页",
+  "page.nextLink": "下一页",
+  "404.text": "找不到此页面。",
+  "pagefind.search_label": "搜索文档",
+  "pagefind.zero_results": "没有找到“[SEARCH_TERM]”的结果",
+  "pagefind.clear_search": "清空",
+  "pagefind.load_more": "加载更多结果",
+  "pagefind.filters_label": "筛选",
+  "pagefind.many_results": "找到 [COUNT] 条关于“[SEARCH_TERM]”的结果",
+  "pagefind.one_result": "找到 [COUNT] 条关于“[SEARCH_TERM]”的结果",
+  "pagefind.alt_search": "没有找到“[SEARCH_TERM]”。以下是“[DIFFERENT_TERM]”的结果",
+  "pagefind.search_suggestion": "没有找到“[SEARCH_TERM]”。可以尝试以下关键词：",
+  "pagefind.searching": "正在搜索“[SEARCH_TERM]”…"
+}

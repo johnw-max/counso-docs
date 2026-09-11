@@ -1,0 +1,157 @@
+[
+  {
+    "url": "https://docs.counso.ai",
+    "path": "/",
+    "originalUrl": "https://docs.dust.tt"
+  },
+  {
+    "url": "https://docs.counso.ai/developers",
+    "path": "/developers",
+    "originalUrl": "https://docs.dust.tt/developers"
+  },
+  {
+    "url": "https://docs.counso.ai/docs/context-compaction",
+    "path": "/docs/context-compaction",
+    "originalUrl": "https://docs.dust.tt/docs/context-compaction"
+  },
+  {
+    "url": "https://docs.counso.ai/docs/credit-management",
+    "path": "/docs/credit-management",
+    "originalUrl": "https://docs.dust.tt/docs/credit-management"
+  },
+  {
+    "url": "https://docs.counso.ai/docs/credits",
+    "path": "/docs/credits",
+    "originalUrl": "https://docs.dust.tt/docs/credits"
+  },
+  {
+    "url": "https://docs.counso.ai/docs/data",
+    "path": "/docs/data",
+    "originalUrl": "https://docs.dust.tt/docs/data"
+  },
+  {
+    "url": "https://docs.counso.ai/docs/dust-in-teams",
+    "path": "/docs/dust-in-teams",
+    "originalUrl": "https://docs.dust.tt/docs/dust-in-teams"
+  },
+  {
+    "url": "https://docs.counso.ai/docs/email-agents",
+    "path": "/docs/email-agents",
+    "originalUrl": "https://docs.dust.tt/docs/email-agents"
+  },
+  {
+    "url": "https://docs.counso.ai/docs/filter-webhooks-payload",
+    "path": "/docs/filter-webhooks-payload",
+    "originalUrl": "https://docs.dust.tt/docs/filter-webhooks-payload"
+  },
+  {
+    "url": "https://docs.counso.ai/docs/intro",
+    "path": "/docs/intro",
+    "originalUrl": "https://docs.dust.tt/docs/intro"
+  },
+  {
+    "url": "https://docs.counso.ai/docs/knowledge",
+    "path": "/docs/knowledge",
+    "originalUrl": "https://docs.dust.tt/docs/knowledge"
+  },
+  {
+    "url": "https://docs.counso.ai/docs/personal-vs-workspace-credentials-for-tools-mcp-servers",
+    "path": "/docs/personal-vs-workspace-credentials-for-tools-mcp-servers",
+    "originalUrl": "https://docs.dust.tt/docs/personal-vs-workspace-credentials-for-tools-mcp-servers"
+  },
+  {
+    "url": "https://docs.counso.ai/docs/programmatic-usage",
+    "path": "/docs/programmatic-usage",
+    "originalUrl": "https://docs.dust.tt/docs/programmatic-usage"
+  },
+  {
+    "url": "https://docs.counso.ai/docs/remote-mcp-server",
+    "path": "/docs/remote-mcp-server",
+    "originalUrl": "https://docs.dust.tt/docs/remote-mcp-server"
+  },
+  {
+    "url": "https://docs.counso.ai/docs/scheduling-your-agent-beta",
+    "path": "/docs/scheduling-your-agent-beta",
+    "originalUrl": "https://docs.dust.tt/docs/scheduling-your-agent-beta"
+  },
+  {
+    "url": "https://docs.counso.ai/docs/seat-management",
+    "path": "/docs/seat-management",
+    "originalUrl": "https://docs.dust.tt/docs/seat-management"
+  },
+  {
+    "url": "https://docs.counso.ai/docs/self-improving-skills",
+    "path": "/docs/self-improving-skills",
+    "originalUrl": "https://docs.dust.tt/docs/self-improving-skills"
+  },
+  {
+    "url": "https://docs.counso.ai/docs/skills",
+    "path": "/docs/skills",
+    "originalUrl": "https://docs.dust.tt/docs/skills"
+  },
+  {
+    "url": "https://docs.counso.ai/docs/slack",
+    "path": "/docs/slack",
+    "originalUrl": "https://docs.dust.tt/docs/slack"
+  },
+  {
+    "url": "https://docs.counso.ai/docs/slack-connection",
+    "path": "/docs/slack-connection",
+    "originalUrl": "https://docs.dust.tt/docs/slack-connection"
+  },
+  {
+    "url": "https://docs.counso.ai/docs/structured-output-format",
+    "path": "/docs/structured-output-format",
+    "originalUrl": "https://docs.dust.tt/docs/structured-output-format"
+  },
+  {
+    "url": "https://docs.counso.ai/docs/subscriptions",
+    "path": "/docs/subscriptions",
+    "originalUrl": "https://docs.dust.tt/docs/subscriptions"
+  },
+  {
+    "url": "https://docs.counso.ai/docs/triggers",
+    "path": "/docs/triggers",
+    "originalUrl": "https://docs.dust.tt/docs/triggers"
+  },
+  {
+    "url": "https://docs.counso.ai/docs/use-cases",
+    "path": "/docs/use-cases",
+    "originalUrl": "https://docs.dust.tt/docs/use-cases"
+  },
+  {
+    "url": "https://docs.counso.ai/docs/user-documentation/agents/model-selection",
+    "path": "/docs/user-documentation/agents/model-selection",
+    "originalUrl": "https://docs.dust.tt/docs/user-documentation/agents/model-selection"
+  },
+  {
+    "url": "https://docs.counso.ai/docs/user-documentation/agents/triggers/credits-usage",
+    "path": "/docs/user-documentation/agents/triggers/credits-usage",
+    "originalUrl": "https://docs.dust.tt/docs/user-documentation/agents/triggers/credits-usage"
+  },
+  {
+    "url": "https://docs.counso.ai/docs/user-documentation/pods/overview",
+    "path": "/docs/user-documentation/pods/overview",
+    "originalUrl": "https://docs.dust.tt/docs/user-documentation/pods/overview"
+  },
+  {
+    "url": "https://docs.counso.ai/reference",
+    "path": "/reference",
+    "originalUrl": "https://docs.dust.tt/reference"
+  },
+  {
+    "url": "https://docs.counso.ai/reference/developer-platform-overview",
+    "path": "/reference/developer-platform-overview",
+    "originalUrl": "https://docs.dust.tt/reference/developer-platform-overview"
+  },
+  {
+    "url": "https://docs.counso.ai/reference/introduction-to-dust-apps",
+    "path": "/reference/introduction-to-dust-apps",
+    "originalUrl": "https://docs.dust.tt/reference/introduction-to-dust-apps"
+  },
+  {
+    "url": "https://docs.counso.ai/reference/post_api-v1-w-wid-vaults-vid-apps-aid-runs",
+    "path": "/reference/post_api-v1-w-wid-vaults-vid-apps-aid-runs",
+    "originalUrl": "https://docs.dust.tt/reference/post_api-v1-w-wid-vaults-vid-apps-aid-runs"
+  }
+]

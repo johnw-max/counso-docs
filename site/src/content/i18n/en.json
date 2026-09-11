@@ -1,0 +1,11 @@
+{
+  "search.label": "Search",
+  "languageSelect.accessibleLabel": "Select language",
+  "menuButton.accessibleLabel": "Open navigation",
+  "sidebarNav.accessibleLabel": "Documentation navigation",
+  "page.previousLink": "Previous",
+  "page.nextLink": "Next",
+  "404.text": "This page could not be found.",
+  "pagefind.search_label": "Search this site",
+  "pagefind.zero_results": "No results for [SEARCH_TERM]"
+}

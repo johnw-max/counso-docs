@@ -1,0 +1,17 @@
+---
+const appUrl = import.meta.env.COUNSO_APP_URL ?? 'https://app.counso.ai';
+const label = Astro.slots.has('default') ? undefined : 'Open Counso AI';
+---
+
+<a class="app-entry" href={appUrl} rel="noreferrer">
+	{label ? label : <slot />}
+</a>
+
+<style>
+	.app-entry {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.35rem;
+		font-weight: 650;
+	}
+</style>

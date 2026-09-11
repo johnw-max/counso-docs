@@ -1,0 +1,23 @@
+{
+  "excludedTopicPrefixes": [
+    "developers/"
+  ],
+  "excludedOriginalPaths": [
+    "/developers",
+    "/reference",
+    "/reference/developer-platform-overview",
+    "/reference/introduction-to-dust-apps",
+    "/reference/post_api-v1-w-wid-vaults-vid-apps-aid-runs"
+  ],
+  "reason": "API 文档暂不发布。",
+  "reasonEn": "API documentation is not included in this release.",
+  "excludedDocumentation": [
+    "Counso API overview and keys",
+    "Client-side MCP integration API",
+    "Legacy Apps and Runs API",
+    "Google Sheets add-on using a Counso API key",
+    "Make, n8n, Power Automate and Zapier invoking Counso",
+    "Counso Raycast extension",
+    "Counso app inside Zendesk"
+  ]
+}

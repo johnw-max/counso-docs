@@ -1,0 +1,2097 @@
+{
+  "schemaVersion": 2,
+  "product": "Counso AI",
+  "generatedAt": "2026-09-11T08:21:57.592Z",
+  "locales": [
+    "en",
+    "zh-cn"
+  ],
+  "topicCount": 61,
+  "pageCount": 122,
+  "pages": [
+    {
+      "topicId": "getting-started/introduction",
+      "title": "Counso AI 简介",
+      "locale": "zh-cn",
+      "route": "getting-started/introduction",
+      "file": "src/content/docs/zh-cn/getting-started/introduction.md",
+      "hash": "e8662cb88860aeb573302d27b857f00bcc762f6951af32b9dcb078ca64e5efa5",
+      "aliases": [
+        "docs/intro",
+        "docs/user-documentation/getting-started/intro-to-dust",
+        "docs/user-documentation/getting-started/intro-to-dust/index"
+      ],
+      "rootAliases": [
+        "docs/intro",
+        "docs/user-documentation/getting-started/intro-to-dust",
+        "docs/user-documentation/getting-started/intro-to-dust/index"
+      ]
+    },
+    {
+      "topicId": "getting-started/workspace-navigation",
+      "title": "工作区导航",
+      "locale": "zh-cn",
+      "route": "getting-started/workspace-navigation",
+      "file": "src/content/docs/zh-cn/getting-started/workspace-navigation.md",
+      "hash": "af95bb4d8bef3e75665b51a8f981d855901e5a6b91dcb74b5c623704300c17e3",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "getting-started/first-conversation",
+      "title": "开始第一次对话",
+      "locale": "zh-cn",
+      "route": "getting-started/first-conversation",
+      "file": "src/content/docs/zh-cn/getting-started/first-conversation.md",
+      "hash": "f2be6b3457f2a26d9a33ecd76603dee507915813f0fb532bfe80e918b65c8fe9",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "getting-started/write-a-clear-request",
+      "title": "写清楚请求",
+      "locale": "zh-cn",
+      "route": "getting-started/write-a-clear-request",
+      "file": "src/content/docs/zh-cn/getting-started/write-a-clear-request.md",
+      "hash": "71cb199ea5a341aca54b74b3ace0bc01c962c6271632fd3eb37f6550ff0006ce",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "getting-started/review-results",
+      "title": "在依赖结果前先检查",
+      "locale": "zh-cn",
+      "route": "getting-started/review-results",
+      "file": "src/content/docs/zh-cn/getting-started/review-results.md",
+      "hash": "8ab842ad5cebb0560b904715c0dc45217a5a6e1a7f3ca6a36286e809ea684750",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "getting-started/conversation-settings",
+      "title": "管理对话并查找 Agent ID",
+      "locale": "zh-cn",
+      "route": "getting-started/conversation-settings",
+      "file": "src/content/docs/zh-cn/getting-started/conversation-settings.md",
+      "hash": "806582e73b1907c829204c706378bf968a15a2d28cbf74d8c05746bce1e7de24",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "guides/team-adoption",
+      "title": "Move a team from one use case to regular adoption",
+      "locale": "en",
+      "route": "guides/team-adoption",
+      "file": "src/content/docs/en/guides/team-adoption.md",
+      "hash": "252bca2585fb2b39a6aec8dcfd635bb9d6018fc8cb42e3f30ecaf6319cd6f31a",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "guides/customer-collaboration",
+      "title": "Collaborate with a customer safely",
+      "locale": "en",
+      "route": "guides/customer-collaboration",
+      "file": "src/content/docs/en/guides/customer-collaboration.md",
+      "hash": "91884fe1635bf2bc470087e7e44df1c389cb86951dc6f3a46abfd5b86b326340",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "guides/data-review",
+      "title": "Review a data set with an Agent",
+      "locale": "en",
+      "route": "guides/data-review",
+      "file": "src/content/docs/en/guides/data-review.md",
+      "hash": "08db581eb716ae04b3d1ae61ff556df059a00581756eef89aed712fe08497295",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "guides/knowledge-work",
+      "title": "Use an Agent for knowledge work",
+      "locale": "en",
+      "route": "guides/knowledge-work",
+      "file": "src/content/docs/en/guides/knowledge-work.md",
+      "hash": "3826d649967d9a98f8de7c26f5ec77d0b9653431591ff4304987b95aa810f86d",
+      "aliases": [
+        "docs/use-cases",
+        "docs/user-documentation/getting-started/use-cases-and-guides",
+        "docs/user-documentation/getting-started/use-cases-and-guides/index"
+      ],
+      "rootAliases": [
+        "docs/use-cases",
+        "docs/user-documentation/getting-started/use-cases-and-guides",
+        "docs/user-documentation/getting-started/use-cases-and-guides/index"
+      ]
+    },
+    {
+      "topicId": "knowledge/overview",
+      "title": "Understand Knowledge",
+      "locale": "en",
+      "route": "knowledge/overview",
+      "file": "src/content/docs/en/knowledge/overview.md",
+      "hash": "fd1383abd60d7b9055eed04e9d4f84063a802f901162fcac7a3834ae6bb83beb",
+      "aliases": [
+        "docs/knowledge",
+        "docs/user-documentation/getting-started/use-cases-and-guides/knowledge",
+        "docs/user-documentation/getting-started/use-cases-and-guides/knowledge/index"
+      ],
+      "rootAliases": [
+        "docs/knowledge",
+        "docs/user-documentation/getting-started/use-cases-and-guides/knowledge",
+        "docs/user-documentation/getting-started/use-cases-and-guides/knowledge/index"
+      ]
+    },
+    {
+      "topicId": "knowledge/choose-sources",
+      "title": "Choose Knowledge sources",
+      "locale": "en",
+      "route": "knowledge/choose-sources",
+      "file": "src/content/docs/en/knowledge/choose-sources.md",
+      "hash": "2fb8e0c8b8bd9c9fc4856c39bb5f1d43475f789cbf5a7c45c9a4479228fcbfa7",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "knowledge/check-citations",
+      "title": "Check sources behind an answer",
+      "locale": "en",
+      "route": "knowledge/check-citations",
+      "file": "src/content/docs/en/knowledge/check-citations.md",
+      "hash": "db117ee27462aa3bd261c8323c2261e3f69d8aeba7df57cda971117401c3e85c",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "knowledge/troubleshoot-missing-information",
+      "title": "Troubleshoot missing information",
+      "locale": "en",
+      "route": "knowledge/troubleshoot-missing-information",
+      "file": "src/content/docs/en/knowledge/troubleshoot-missing-information.md",
+      "hash": "18f1fc1159f21546d4ce4cb275a2d931046b5ffccf1bea6f79f2176816bb7017",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "knowledge/understand-limits",
+      "title": "Understand Knowledge limits",
+      "locale": "en",
+      "route": "knowledge/understand-limits",
+      "file": "src/content/docs/en/knowledge/understand-limits.md",
+      "hash": "3bad1cb8c6cbc88168b077646fc6342a47f08445a66e3e1f4ee9e2527182986a",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "knowledge/search-extract-and-query",
+      "title": "Choose search, extraction, or table queries",
+      "locale": "en",
+      "route": "knowledge/search-extract-and-query",
+      "file": "src/content/docs/en/knowledge/search-extract-and-query.md",
+      "hash": "b6b6521faacb6cc8f6d0ecf4c3600cfddb9324ca5e25c0ea461741a0b3167ced",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "knowledge/working-with-documents",
+      "title": "Work with documents, images, and tables",
+      "locale": "en",
+      "route": "knowledge/working-with-documents",
+      "file": "src/content/docs/en/knowledge/working-with-documents.md",
+      "hash": "cbd53d9592f3014df3a6d12123a12a6ca286f1348364e1c2032c885cd5513cdc",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "administration/access-checklist",
+      "title": "Workspace access checklist",
+      "locale": "en",
+      "route": "administration/access-checklist",
+      "file": "src/content/docs/en/administration/access-checklist.md",
+      "hash": "bbc18e291e73084a7b23cec669bf5c09e6035af95f3854922a0999ebd1082d2b",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "administration/audit-logs",
+      "title": "Filter, inspect, and export audit logs",
+      "locale": "en",
+      "route": "administration/audit-logs",
+      "file": "src/content/docs/en/administration/audit-logs.md",
+      "hash": "831d244cc312f4a0511913e37877835c12927439ddf03ebb0f1cc6c4f4cc8446",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "administration/identity-and-provisioning",
+      "title": "Configure SSO, directory sync, and group roles",
+      "locale": "en",
+      "route": "administration/identity-and-provisioning",
+      "file": "src/content/docs/en/administration/identity-and-provisioning.md",
+      "hash": "6fa1ccad05c52cf475d0d5b49bf1684bc306fa0cbbd9f0f8d2590a69bffbc5d4",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "administration/members-and-spaces",
+      "title": "Manage members and Spaces",
+      "locale": "en",
+      "route": "administration/members-and-spaces",
+      "file": "src/content/docs/en/administration/members-and-spaces.md",
+      "hash": "f0f2a24d118a85ae1ce9fb222e3cbc04ffdecd4976824b22b56f3c9be2eb5a0a",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "administration/support",
+      "title": "Get help from Counso",
+      "locale": "en",
+      "route": "administration/support",
+      "file": "src/content/docs/en/administration/support.md",
+      "hash": "916b12eb695d597703cab095a2dbebad37b70786a3e506e0ada3e3a65716bb59",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "administration/usage-and-seats",
+      "title": "Review usage and seat access",
+      "locale": "en",
+      "route": "administration/usage-and-seats",
+      "file": "src/content/docs/en/administration/usage-and-seats.md",
+      "hash": "1c809421077999a2c0b77e61fe457190296cc332e80a22c3cdf15fc936b87ed6",
+      "aliases": [
+        "docs/subscriptions",
+        "docs/user-documentation/admins/billing/subscriptions-and-payments",
+        "docs/user-documentation/admins/billing/subscriptions-and-payments/index",
+        "docs/credits",
+        "docs/user-documentation/admins/usage-seats-and-credits/credits",
+        "docs/user-documentation/admins/usage-seats-and-credits/credits/index",
+        "docs/seat-management",
+        "docs/user-documentation/admins/usage-seats-and-credits/seat-management",
+        "docs/user-documentation/admins/usage-seats-and-credits/seat-management/index",
+        "docs/credit-management",
+        "docs/programmatic-usage",
+        "docs/user-documentation/admins/usage-seats-and-credits/credit-management",
+        "docs/user-documentation/admins/usage-seats-and-credits/credit-management/index"
+      ],
+      "rootAliases": [
+        "docs/subscriptions",
+        "docs/user-documentation/admins/billing/subscriptions-and-payments",
+        "docs/user-documentation/admins/billing/subscriptions-and-payments/index",
+        "docs/credits",
+        "docs/user-documentation/admins/usage-seats-and-credits/credits",
+        "docs/user-documentation/admins/usage-seats-and-credits/credits/index",
+        "docs/seat-management",
+        "docs/user-documentation/admins/usage-seats-and-credits/seat-management",
+        "docs/user-documentation/admins/usage-seats-and-credits/seat-management/index",
+        "docs/credit-management",
+        "docs/programmatic-usage",
+        "docs/user-documentation/admins/usage-seats-and-credits/credit-management",
+        "docs/user-documentation/admins/usage-seats-and-credits/credit-management/index"
+      ]
+    },
+    {
+      "topicId": "integrations/channels",
+      "title": "Channels and message integrations",
+      "locale": "en",
+      "route": "integrations/channels",
+      "file": "src/content/docs/en/integrations/channels.md",
+      "hash": "d6252eb6370c8594ccd01ef4c9e5607210921f4d7bf2fb924ef7ad8cbe7f7500",
+      "aliases": [
+        "docs/dust-in-teams",
+        "docs/user-documentation/agents/integrations/dust-in-teams",
+        "docs/user-documentation/agents/integrations/dust-in-teams/index",
+        "docs/email-agents",
+        "docs/user-documentation/agents/integrations/send-and-forward-email-to-agents",
+        "docs/user-documentation/agents/integrations/send-and-forward-email-to-agents/index"
+      ],
+      "rootAliases": [
+        "docs/dust-in-teams",
+        "docs/user-documentation/agents/integrations/dust-in-teams",
+        "docs/user-documentation/agents/integrations/dust-in-teams/index",
+        "docs/email-agents",
+        "docs/user-documentation/agents/integrations/send-and-forward-email-to-agents",
+        "docs/user-documentation/agents/integrations/send-and-forward-email-to-agents/index"
+      ]
+    },
+    {
+      "topicId": "integrations/confluence",
+      "title": "Confluence connection and tools",
+      "locale": "en",
+      "route": "integrations/confluence",
+      "file": "src/content/docs/en/integrations/confluence.md",
+      "hash": "dfe3999fba70c5613b295574e4af305b9c5d027c41f6fcc0882010c04d1aaa67",
+      "aliases": [
+        "docs/confluence-connection",
+        "docs/user-documentation/admins/connections-management/confluence",
+        "docs/user-documentation/admins/connections-management/confluence/index",
+        "docs/confluence-tool",
+        "docs/user-documentation/agents/tools/confluence",
+        "docs/user-documentation/agents/tools/confluence/index"
+      ],
+      "rootAliases": [
+        "docs/confluence-connection",
+        "docs/user-documentation/admins/connections-management/confluence",
+        "docs/user-documentation/admins/connections-management/confluence/index",
+        "docs/confluence-tool",
+        "docs/user-documentation/agents/tools/confluence",
+        "docs/user-documentation/agents/tools/confluence/index"
+      ]
+    },
+    {
+      "topicId": "integrations/connections-and-tools",
+      "title": "Connections and tools",
+      "locale": "en",
+      "route": "integrations/connections-and-tools",
+      "file": "src/content/docs/en/integrations/connections-and-tools.md",
+      "hash": "71a557f563c8ac8366eb2043163f145d5a52463bc182759fdc368ac8b25ea847",
+      "aliases": [
+        "docs/user-documentation/data-sources/websites",
+        "docs/user-documentation/data-sources/websites/index",
+        "docs/website-connection"
+      ],
+      "rootAliases": [
+        "docs/user-documentation/data-sources/websites",
+        "docs/user-documentation/data-sources/websites/index",
+        "docs/website-connection"
+      ]
+    },
+    {
+      "topicId": "integrations/data-platforms",
+      "title": "Data platform connections and tools",
+      "locale": "en",
+      "route": "integrations/data-platforms",
+      "file": "src/content/docs/en/integrations/data-platforms.md",
+      "hash": "07ad20948649eb3caf44289f05e56df34b62b90d8fcff55743401b9d4ca0168b",
+      "aliases": [
+        "docs/snowflake-tool",
+        "docs/user-documentation/agents/tools/snowflake",
+        "docs/user-documentation/agents/tools/snowflake/index",
+        "docs/databricks",
+        "docs/user-documentation/agents/tools/databricks",
+        "docs/user-documentation/agents/tools/databricks/index",
+        "docs/bigquery",
+        "docs/user-documentation/admins/connections-management/bigquery",
+        "docs/user-documentation/admins/connections-management/bigquery/index",
+        "docs/snowflake-connection",
+        "docs/user-documentation/admins/connections-management/snowflake",
+        "docs/user-documentation/admins/connections-management/snowflake/index"
+      ],
+      "rootAliases": [
+        "docs/snowflake-tool",
+        "docs/user-documentation/agents/tools/snowflake",
+        "docs/user-documentation/agents/tools/snowflake/index",
+        "docs/databricks",
+        "docs/user-documentation/agents/tools/databricks",
+        "docs/user-documentation/agents/tools/databricks/index",
+        "docs/bigquery",
+        "docs/user-documentation/admins/connections-management/bigquery",
+        "docs/user-documentation/admins/connections-management/bigquery/index",
+        "docs/snowflake-connection",
+        "docs/user-documentation/admins/connections-management/snowflake",
+        "docs/user-documentation/admins/connections-management/snowflake/index"
+      ]
+    },
+    {
+      "topicId": "integrations/gong",
+      "title": "Gong connection and tools",
+      "locale": "en",
+      "route": "integrations/gong",
+      "file": "src/content/docs/en/integrations/gong.md",
+      "hash": "438dbf767cfc03d38559c66ae200e9e8af5c5e487319dd72ebf5ab778e6a7b52",
+      "aliases": [
+        "docs/gong-connection",
+        "docs/user-documentation/admins/connections-management/gong",
+        "docs/user-documentation/admins/connections-management/gong/index",
+        "docs/gong-mcp",
+        "docs/user-documentation/agents/tools/gong",
+        "docs/user-documentation/agents/tools/gong/index"
+      ],
+      "rootAliases": [
+        "docs/gong-connection",
+        "docs/user-documentation/admins/connections-management/gong",
+        "docs/user-documentation/admins/connections-management/gong/index",
+        "docs/gong-mcp",
+        "docs/user-documentation/agents/tools/gong",
+        "docs/user-documentation/agents/tools/gong/index"
+      ]
+    },
+    {
+      "topicId": "integrations/google",
+      "title": "Google connections and tools",
+      "locale": "en",
+      "route": "integrations/google",
+      "file": "src/content/docs/en/integrations/google.md",
+      "hash": "040a53a0044cede43763f0fff96d81ebc729d98d242906b75427dc889239b676",
+      "aliases": [
+        "docs/gmail",
+        "docs/user-documentation/agents/tools/gmail",
+        "docs/user-documentation/agents/tools/gmail/index",
+        "docs/google-sheets",
+        "docs/user-documentation/agents/tools/google-sheets-deprecated",
+        "docs/user-documentation/agents/tools/google-sheets-deprecated/index",
+        "docs/google-calendar",
+        "docs/user-documentation/agents/tools/google-calendar",
+        "docs/user-documentation/agents/tools/google-calendar/index",
+        "docs/google-drive",
+        "docs/google-drive-connection",
+        "docs/user-documentation/admins/connections-management/google-drive",
+        "docs/user-documentation/admins/connections-management/google-drive/index"
+      ],
+      "rootAliases": [
+        "docs/gmail",
+        "docs/user-documentation/agents/tools/gmail",
+        "docs/user-documentation/agents/tools/gmail/index",
+        "docs/google-sheets",
+        "docs/user-documentation/agents/tools/google-sheets-deprecated",
+        "docs/user-documentation/agents/tools/google-sheets-deprecated/index",
+        "docs/google-calendar",
+        "docs/user-documentation/agents/tools/google-calendar",
+        "docs/user-documentation/agents/tools/google-calendar/index",
+        "docs/google-drive",
+        "docs/google-drive-connection",
+        "docs/user-documentation/admins/connections-management/google-drive",
+        "docs/user-documentation/admins/connections-management/google-drive/index"
+      ]
+    },
+    {
+      "topicId": "integrations/microsoft",
+      "title": "Microsoft connections and tools",
+      "locale": "en",
+      "route": "integrations/microsoft",
+      "file": "src/content/docs/en/integrations/microsoft.md",
+      "hash": "799d39b74e99234931a11f068c01b5fa28512d93a1b67bac206c1677dea98e24",
+      "aliases": [
+        "docs/microsoft-drive-tool-setup",
+        "docs/user-documentation/agents/tools/microsoft-sharepoint-and-onedrive",
+        "docs/user-documentation/agents/tools/microsoft-sharepoint-and-onedrive/index",
+        "docs/microsoft-teams-tool-setup",
+        "docs/user-documentation/agents/tools/microsoft-teams",
+        "docs/user-documentation/agents/tools/microsoft-teams/index",
+        "docs/outlook-tool-setup",
+        "docs/user-documentation/agents/tools/microsoft-outlook",
+        "docs/user-documentation/agents/tools/microsoft-outlook/index",
+        "docs/microsoft-connection",
+        "docs/user-documentation/admins/connections-management/microsoft",
+        "docs/user-documentation/admins/connections-management/microsoft/index"
+      ],
+      "rootAliases": [
+        "docs/microsoft-drive-tool-setup",
+        "docs/user-documentation/agents/tools/microsoft-sharepoint-and-onedrive",
+        "docs/user-documentation/agents/tools/microsoft-sharepoint-and-onedrive/index",
+        "docs/microsoft-teams-tool-setup",
+        "docs/user-documentation/agents/tools/microsoft-teams",
+        "docs/user-documentation/agents/tools/microsoft-teams/index",
+        "docs/outlook-tool-setup",
+        "docs/user-documentation/agents/tools/microsoft-outlook",
+        "docs/user-documentation/agents/tools/microsoft-outlook/index",
+        "docs/microsoft-connection",
+        "docs/user-documentation/admins/connections-management/microsoft",
+        "docs/user-documentation/admins/connections-management/microsoft/index"
+      ]
+    },
+    {
+      "topicId": "integrations/netsuite",
+      "title": "NetSuite tool",
+      "locale": "en",
+      "route": "integrations/netsuite",
+      "file": "src/content/docs/en/integrations/netsuite.md",
+      "hash": "af1b1d8e8c32831aa55c5990dfc5b4853f8d19b1f469d4343d21747938cda587",
+      "aliases": [
+        "docs/netsuite",
+        "docs/user-documentation/agents/tools/netsuite",
+        "docs/user-documentation/agents/tools/netsuite/index"
+      ],
+      "rootAliases": [
+        "docs/netsuite",
+        "docs/user-documentation/agents/tools/netsuite",
+        "docs/user-documentation/agents/tools/netsuite/index"
+      ]
+    },
+    {
+      "topicId": "integrations/notion",
+      "title": "Notion connection and tools",
+      "locale": "en",
+      "route": "integrations/notion",
+      "file": "src/content/docs/en/integrations/notion.md",
+      "hash": "309e39193e527bf005613827db293753cb9e16d3ccb9617eb68d53a8dc916a1a",
+      "aliases": [
+        "docs/notion-mcp",
+        "docs/user-documentation/agents/tools/notion",
+        "docs/user-documentation/agents/tools/notion/index",
+        "docs/notion-connection",
+        "docs/user-documentation/admins/connections-management/notion",
+        "docs/user-documentation/admins/connections-management/notion/index"
+      ],
+      "rootAliases": [
+        "docs/notion-mcp",
+        "docs/user-documentation/agents/tools/notion",
+        "docs/user-documentation/agents/tools/notion/index",
+        "docs/notion-connection",
+        "docs/user-documentation/admins/connections-management/notion",
+        "docs/user-documentation/admins/connections-management/notion/index"
+      ]
+    },
+    {
+      "topicId": "integrations/personal-and-shared",
+      "title": "Personal and shared credentials",
+      "locale": "en",
+      "route": "integrations/personal-and-shared",
+      "file": "src/content/docs/en/integrations/personal-and-shared.md",
+      "hash": "523b010bc59d5dda02581550b1697a9f255a917505bee4434378d911f743617e",
+      "aliases": [
+        "docs/personal-vs-workspace-credentials-for-tools-mcp-servers",
+        "docs/user-documentation/admins/tools-management/personal-vs-shared-credentials",
+        "docs/user-documentation/admins/tools-management/personal-vs-shared-credentials/index"
+      ],
+      "rootAliases": [
+        "docs/personal-vs-workspace-credentials-for-tools-mcp-servers",
+        "docs/user-documentation/admins/tools-management/personal-vs-shared-credentials",
+        "docs/user-documentation/admins/tools-management/personal-vs-shared-credentials/index"
+      ]
+    },
+    {
+      "topicId": "integrations/power-bi",
+      "title": "Power BI tool",
+      "locale": "en",
+      "route": "integrations/power-bi",
+      "file": "src/content/docs/en/integrations/power-bi.md",
+      "hash": "39cc2fe69c1aff9dfef2208f2a7c352a361b885b684b2e5dffa7a09181fef8de",
+      "aliases": [
+        "docs/power-bi",
+        "docs/user-documentation/agents/tools/power-bi",
+        "docs/user-documentation/agents/tools/power-bi/index"
+      ],
+      "rootAliases": [
+        "docs/power-bi",
+        "docs/user-documentation/agents/tools/power-bi",
+        "docs/user-documentation/agents/tools/power-bi/index"
+      ]
+    },
+    {
+      "topicId": "integrations/remote-mcp",
+      "title": "Add a remote MCP server",
+      "locale": "en",
+      "route": "integrations/remote-mcp",
+      "file": "src/content/docs/en/integrations/remote-mcp.md",
+      "hash": "6816cf9f34bf8f0958479782eb90d865902766daad4f4d88869dba57e0ca56bc",
+      "aliases": [
+        "docs/remote-mcp-server",
+        "docs/user-documentation/admins/tools-management/adding-an-mcp-server",
+        "docs/user-documentation/admins/tools-management/adding-an-mcp-server/index"
+      ],
+      "rootAliases": [
+        "docs/remote-mcp-server",
+        "docs/user-documentation/admins/tools-management/adding-an-mcp-server",
+        "docs/user-documentation/admins/tools-management/adding-an-mcp-server/index"
+      ]
+    },
+    {
+      "topicId": "integrations/slack",
+      "title": "Slack connections and tools",
+      "locale": "en",
+      "route": "integrations/slack",
+      "file": "src/content/docs/en/integrations/slack.md",
+      "hash": "83a27fdc78858d3ec1028015e07fb95ffb4c73c5904abc3a178f86eab32a56dc",
+      "aliases": [
+        "docs/slack-mcp",
+        "docs/user-documentation/agents/tools/slack-tools",
+        "docs/user-documentation/agents/tools/slack-tools/index",
+        "docs/slack",
+        "docs/user-documentation/agents/integrations/dust-in-slack/slack-workflows",
+        "docs/user-documentation/agents/integrations/dust-in-slack/slack-workflows/index",
+        "docs/slack-connection",
+        "docs/user-documentation/admins/connections-management/slack",
+        "docs/user-documentation/admins/connections-management/slack/index"
+      ],
+      "rootAliases": [
+        "docs/slack-mcp",
+        "docs/user-documentation/agents/tools/slack-tools",
+        "docs/user-documentation/agents/tools/slack-tools/index",
+        "docs/slack",
+        "docs/user-documentation/agents/integrations/dust-in-slack/slack-workflows",
+        "docs/user-documentation/agents/integrations/dust-in-slack/slack-workflows/index",
+        "docs/slack-connection",
+        "docs/user-documentation/admins/connections-management/slack",
+        "docs/user-documentation/admins/connections-management/slack/index"
+      ]
+    },
+    {
+      "topicId": "integrations/tools-catalog",
+      "title": "Provider tools catalog",
+      "locale": "en",
+      "route": "integrations/tools-catalog",
+      "file": "src/content/docs/en/integrations/tools-catalog.md",
+      "hash": "ea77fb88bb3b44446baba7df3f8c3d5075f0bc727df37bb4933d84e68a1014a7",
+      "aliases": [
+        "docs/productboard",
+        "docs/user-documentation/agents/tools/productboard",
+        "docs/user-documentation/agents/tools/productboard/index",
+        "docs/user-documentation/admins/connections-management/zendesk",
+        "docs/user-documentation/admins/connections-management/zendesk/index",
+        "docs/zendesk-connection",
+        "docs/slab-mcp",
+        "docs/user-documentation/agents/tools/slab",
+        "docs/user-documentation/agents/tools/slab/index",
+        "docs/jira",
+        "docs/user-documentation/agents/tools/jira",
+        "docs/user-documentation/agents/tools/jira/index",
+        "docs/hubspot",
+        "docs/user-documentation/agents/tools/hubspot",
+        "docs/user-documentation/agents/tools/hubspot/index",
+        "docs/front-mcp",
+        "docs/user-documentation/agents/tools/front",
+        "docs/user-documentation/agents/tools/front/index",
+        "docs/github-connection",
+        "docs/user-documentation/admins/connections-management/github",
+        "docs/user-documentation/admins/connections-management/github/index",
+        "docs/freshservice",
+        "docs/user-documentation/agents/tools/freshservice",
+        "docs/user-documentation/agents/tools/freshservice/index",
+        "docs/ukg-ready",
+        "docs/user-documentation/agents/tools/ukg-ready",
+        "docs/user-documentation/agents/tools/ukg-ready/index",
+        "docs/user-documentation/agents/tools/vanta",
+        "docs/user-documentation/agents/tools/vanta/index",
+        "docs/vanta",
+        "docs/salesloft-mcp",
+        "docs/user-documentation/agents/tools/salesloft",
+        "docs/user-documentation/agents/tools/salesloft/index",
+        "docs/monday",
+        "docs/user-documentation/agents/tools/monday-com",
+        "docs/user-documentation/agents/tools/monday-com/index",
+        "docs/salesforce",
+        "docs/user-documentation/admins/tools-management/salesforce/salesforce",
+        "docs/user-documentation/admins/tools-management/salesforce/salesforce/index",
+        "docs/ashby-mcp",
+        "docs/user-documentation/agents/tools/ashby",
+        "docs/user-documentation/agents/tools/ashby/index",
+        "docs/intercom-connection",
+        "docs/user-documentation/admins/connections-management/intercom",
+        "docs/user-documentation/admins/connections-management/intercom/index",
+        "docs/user-documentation/agents/tools/val-town",
+        "docs/user-documentation/agents/tools/val-town/index",
+        "docs/val-town",
+        "docs/statuspage-mcp",
+        "docs/user-documentation/agents/tools/statuspage",
+        "docs/user-documentation/agents/tools/statuspage/index"
+      ],
+      "rootAliases": [
+        "docs/productboard",
+        "docs/user-documentation/agents/tools/productboard",
+        "docs/user-documentation/agents/tools/productboard/index",
+        "docs/user-documentation/admins/connections-management/zendesk",
+        "docs/user-documentation/admins/connections-management/zendesk/index",
+        "docs/zendesk-connection",
+        "docs/slab-mcp",
+        "docs/user-documentation/agents/tools/slab",
+        "docs/user-documentation/agents/tools/slab/index",
+        "docs/jira",
+        "docs/user-documentation/agents/tools/jira",
+        "docs/user-documentation/agents/tools/jira/index",
+        "docs/hubspot",
+        "docs/user-documentation/agents/tools/hubspot",
+        "docs/user-documentation/agents/tools/hubspot/index",
+        "docs/front-mcp",
+        "docs/user-documentation/agents/tools/front",
+        "docs/user-documentation/agents/tools/front/index",
+        "docs/github-connection",
+        "docs/user-documentation/admins/connections-management/github",
+        "docs/user-documentation/admins/connections-management/github/index",
+        "docs/freshservice",
+        "docs/user-documentation/agents/tools/freshservice",
+        "docs/user-documentation/agents/tools/freshservice/index",
+        "docs/ukg-ready",
+        "docs/user-documentation/agents/tools/ukg-ready",
+        "docs/user-documentation/agents/tools/ukg-ready/index",
+        "docs/user-documentation/agents/tools/vanta",
+        "docs/user-documentation/agents/tools/vanta/index",
+        "docs/vanta",
+        "docs/salesloft-mcp",
+        "docs/user-documentation/agents/tools/salesloft",
+        "docs/user-documentation/agents/tools/salesloft/index",
+        "docs/monday",
+        "docs/user-documentation/agents/tools/monday-com",
+        "docs/user-documentation/agents/tools/monday-com/index",
+        "docs/salesforce",
+        "docs/user-documentation/admins/tools-management/salesforce/salesforce",
+        "docs/user-documentation/admins/tools-management/salesforce/salesforce/index",
+        "docs/ashby-mcp",
+        "docs/user-documentation/agents/tools/ashby",
+        "docs/user-documentation/agents/tools/ashby/index",
+        "docs/intercom-connection",
+        "docs/user-documentation/admins/connections-management/intercom",
+        "docs/user-documentation/admins/connections-management/intercom/index",
+        "docs/user-documentation/agents/tools/val-town",
+        "docs/user-documentation/agents/tools/val-town/index",
+        "docs/val-town",
+        "docs/statuspage-mcp",
+        "docs/user-documentation/agents/tools/statuspage",
+        "docs/user-documentation/agents/tools/statuspage/index"
+      ]
+    },
+    {
+      "topicId": "skills/overview",
+      "title": "认识 Skills",
+      "locale": "zh-cn",
+      "route": "skills/overview",
+      "file": "src/content/docs/zh-cn/skills/overview.md",
+      "hash": "a2949bd860b9033b1ae81c86d80c61062a4a1b8078f5a4ca146cc7b8e0be2e55",
+      "aliases": [
+        "docs/skills",
+        "docs/user-documentation/agents/skills/skills-overview",
+        "docs/user-documentation/agents/skills/skills-overview/index"
+      ],
+      "rootAliases": [
+        "docs/skills",
+        "docs/user-documentation/agents/skills/skills-overview",
+        "docs/user-documentation/agents/skills/skills-overview/index"
+      ]
+    },
+    {
+      "topicId": "skills/find-and-manage",
+      "title": "查找和管理 Skills",
+      "locale": "zh-cn",
+      "route": "skills/find-and-manage",
+      "file": "src/content/docs/zh-cn/skills/find-and-manage.md",
+      "hash": "8b5149ae739588f6d9b232224ec266695c16bce7bfadc1497a0264b6952f44ca",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "skills/access-and-versions",
+      "title": "管理 Skill 访问和版本",
+      "locale": "zh-cn",
+      "route": "skills/access-and-versions",
+      "file": "src/content/docs/zh-cn/skills/access-and-versions.md",
+      "hash": "beaaf4cacbb8faa20045b40735ffd1ca8d20be7b0bae51e5c029ea9cb7d485c1",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "skills/create-and-configure",
+      "title": "创建和配置 Skill",
+      "locale": "zh-cn",
+      "route": "skills/create-and-configure",
+      "file": "src/content/docs/zh-cn/skills/create-and-configure.md",
+      "hash": "ee5c8360c4e2250cd80197ea4c747da67a4d235b5a13ce53c44b203ee9fe10a2",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "skills/improve",
+      "title": "根据实际使用改进 Skill",
+      "locale": "zh-cn",
+      "route": "skills/improve",
+      "file": "src/content/docs/zh-cn/skills/improve.md",
+      "hash": "02bebf98c2e5a4de086b823687a33ce7f02055da69bafc000a2720c50681b995",
+      "aliases": [
+        "docs/self-improving-skills",
+        "docs/user-documentation/agents/self-improving-skills",
+        "docs/user-documentation/agents/self-improving-skills/index"
+      ],
+      "rootAliases": [
+        "docs/self-improving-skills",
+        "docs/user-documentation/agents/self-improving-skills",
+        "docs/user-documentation/agents/self-improving-skills/index"
+      ]
+    },
+    {
+      "topicId": "administration/access-checklist",
+      "title": "工作区访问检查清单",
+      "locale": "zh-cn",
+      "route": "administration/access-checklist",
+      "file": "src/content/docs/zh-cn/administration/access-checklist.md",
+      "hash": "850517b4013ad4644ede560fa7647c9e3857d7aa32bc53247764284ef631c0da",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "administration/audit-logs",
+      "title": "筛选、查看并导出审计日志",
+      "locale": "zh-cn",
+      "route": "administration/audit-logs",
+      "file": "src/content/docs/zh-cn/administration/audit-logs.md",
+      "hash": "295a5a460f9758c2ba1495bfa1bb0aeffc8e0135f82eac207e72631c2d465dc6",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "administration/identity-and-provisioning",
+      "title": "配置 SSO、目录同步和群组角色",
+      "locale": "zh-cn",
+      "route": "administration/identity-and-provisioning",
+      "file": "src/content/docs/zh-cn/administration/identity-and-provisioning.md",
+      "hash": "31e0742009001fbd027d848f5319f1b9f926d6215ee96cef68018cde37ae8fe4",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "administration/members-and-spaces",
+      "title": "管理成员和 Spaces",
+      "locale": "zh-cn",
+      "route": "administration/members-and-spaces",
+      "file": "src/content/docs/zh-cn/administration/members-and-spaces.md",
+      "hash": "2991387de8583585731be930fdf58c0802a49217b782f4cc7f29fe757107fb45",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "administration/support",
+      "title": "获取 Counso 支持",
+      "locale": "zh-cn",
+      "route": "administration/support",
+      "file": "src/content/docs/zh-cn/administration/support.md",
+      "hash": "23be173ae268ca05961881b250f5b547bbf8c46b09872df6c225cafe5ace46fb",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "administration/usage-and-seats",
+      "title": "检查用量和席位访问",
+      "locale": "zh-cn",
+      "route": "administration/usage-and-seats",
+      "file": "src/content/docs/zh-cn/administration/usage-and-seats.md",
+      "hash": "a430b6f62751141db974d3009e2eeb891828d8a33e0290cb8f0cfb2c1aa93f88",
+      "aliases": [
+        "docs/subscriptions",
+        "docs/user-documentation/admins/billing/subscriptions-and-payments",
+        "docs/user-documentation/admins/billing/subscriptions-and-payments/index",
+        "docs/credits",
+        "docs/user-documentation/admins/usage-seats-and-credits/credits",
+        "docs/user-documentation/admins/usage-seats-and-credits/credits/index",
+        "docs/seat-management",
+        "docs/user-documentation/admins/usage-seats-and-credits/seat-management",
+        "docs/user-documentation/admins/usage-seats-and-credits/seat-management/index",
+        "docs/credit-management",
+        "docs/programmatic-usage",
+        "docs/user-documentation/admins/usage-seats-and-credits/credit-management",
+        "docs/user-documentation/admins/usage-seats-and-credits/credit-management/index"
+      ],
+      "rootAliases": [
+        "docs/subscriptions",
+        "docs/user-documentation/admins/billing/subscriptions-and-payments",
+        "docs/user-documentation/admins/billing/subscriptions-and-payments/index",
+        "docs/credits",
+        "docs/user-documentation/admins/usage-seats-and-credits/credits",
+        "docs/user-documentation/admins/usage-seats-and-credits/credits/index",
+        "docs/seat-management",
+        "docs/user-documentation/admins/usage-seats-and-credits/seat-management",
+        "docs/user-documentation/admins/usage-seats-and-credits/seat-management/index",
+        "docs/credit-management",
+        "docs/programmatic-usage",
+        "docs/user-documentation/admins/usage-seats-and-credits/credit-management",
+        "docs/user-documentation/admins/usage-seats-and-credits/credit-management/index"
+      ]
+    },
+    {
+      "topicId": "skills/overview",
+      "title": "Understand Skills",
+      "locale": "en",
+      "route": "skills/overview",
+      "file": "src/content/docs/en/skills/overview.md",
+      "hash": "ddfdcd4d6831606a6d35c5348419b9fb76d42dbc7fd2b6aed18e5a914b3ff21e",
+      "aliases": [
+        "docs/skills",
+        "docs/user-documentation/agents/skills/skills-overview",
+        "docs/user-documentation/agents/skills/skills-overview/index"
+      ],
+      "rootAliases": [
+        "docs/skills",
+        "docs/user-documentation/agents/skills/skills-overview",
+        "docs/user-documentation/agents/skills/skills-overview/index"
+      ]
+    },
+    {
+      "topicId": "skills/find-and-manage",
+      "title": "Find and manage Skills",
+      "locale": "en",
+      "route": "skills/find-and-manage",
+      "file": "src/content/docs/en/skills/find-and-manage.md",
+      "hash": "a9118c924f9f798a3f7e299a87e4c3611689847b725e6e4dc25ea6b02c8bf28b",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "skills/access-and-versions",
+      "title": "Control Skill access and versions",
+      "locale": "en",
+      "route": "skills/access-and-versions",
+      "file": "src/content/docs/en/skills/access-and-versions.md",
+      "hash": "4c975c3ba9c031dd29ba9942f049dd4f2d5858e5e628dc47c2f59769914a93da",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "skills/create-and-configure",
+      "title": "Create and configure a Skill",
+      "locale": "en",
+      "route": "skills/create-and-configure",
+      "file": "src/content/docs/en/skills/create-and-configure.md",
+      "hash": "84f73b9ec39deb6ed03dfc0269f1983855769086cd87920fb2d652787905b259",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "skills/improve",
+      "title": "Improve a Skill from real use",
+      "locale": "en",
+      "route": "skills/improve",
+      "file": "src/content/docs/en/skills/improve.md",
+      "hash": "bd85b6b657196ca48ce7d7c618cad64446807d1b19aae6246d03bede5181d9a1",
+      "aliases": [
+        "docs/self-improving-skills",
+        "docs/user-documentation/agents/self-improving-skills",
+        "docs/user-documentation/agents/self-improving-skills/index"
+      ],
+      "rootAliases": [
+        "docs/self-improving-skills",
+        "docs/user-documentation/agents/self-improving-skills",
+        "docs/user-documentation/agents/self-improving-skills/index"
+      ]
+    },
+    {
+      "topicId": "pods/files",
+      "title": "Work with Pod files",
+      "locale": "en",
+      "route": "pods/files",
+      "file": "src/content/docs/en/pods/files.md",
+      "hash": "beca9bc618033b70d9db849e0dcf1ba86366b8e532ed01212b7a0436226093b4",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "pods/frames",
+      "title": "Create and use Frames",
+      "locale": "en",
+      "route": "pods/frames",
+      "file": "src/content/docs/en/pods/frames.md",
+      "hash": "032421e6481cdf9bb678d86519d8958da39970a69f32afc6bbb0e11f6aca620b",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "pods/members-and-conversations",
+      "title": "Manage Pod members and conversations",
+      "locale": "en",
+      "route": "pods/members-and-conversations",
+      "file": "src/content/docs/en/pods/members-and-conversations.md",
+      "hash": "8784777d7861d5ca618c1ef878b1d595d6d01b0b2d652b0203ae0ea4df6bc505",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "pods/overview",
+      "title": "Understand Pods",
+      "locale": "en",
+      "route": "pods/overview",
+      "file": "src/content/docs/en/pods/overview.md",
+      "hash": "99be349afc7482c56312c12438a5babfe77862eb72f0dfbf0f2158ec70c7e35b",
+      "aliases": [
+        "docs/user-documentation/pods/overview",
+        "docs/user-documentation/pods/overview/index"
+      ],
+      "rootAliases": [
+        "docs/user-documentation/pods/overview",
+        "docs/user-documentation/pods/overview/index"
+      ]
+    },
+    {
+      "topicId": "pods/tasks",
+      "title": "Manage Pod tasks",
+      "locale": "en",
+      "route": "pods/tasks",
+      "file": "src/content/docs/en/pods/tasks.md",
+      "hash": "c9092c180e8e849240b185dc0b8282310d2a92e39befdbbbf0ca197baf0bf658",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "integrations/channels",
+      "title": "渠道与消息集成",
+      "locale": "zh-cn",
+      "route": "integrations/channels",
+      "file": "src/content/docs/zh-cn/integrations/channels.md",
+      "hash": "2a02b9ebb8313cd4731725f89f93e8794199b0425316eec679e11cd002e242c2",
+      "aliases": [
+        "docs/dust-in-teams",
+        "docs/user-documentation/agents/integrations/dust-in-teams",
+        "docs/user-documentation/agents/integrations/dust-in-teams/index",
+        "docs/email-agents",
+        "docs/user-documentation/agents/integrations/send-and-forward-email-to-agents",
+        "docs/user-documentation/agents/integrations/send-and-forward-email-to-agents/index"
+      ],
+      "rootAliases": [
+        "docs/dust-in-teams",
+        "docs/user-documentation/agents/integrations/dust-in-teams",
+        "docs/user-documentation/agents/integrations/dust-in-teams/index",
+        "docs/email-agents",
+        "docs/user-documentation/agents/integrations/send-and-forward-email-to-agents",
+        "docs/user-documentation/agents/integrations/send-and-forward-email-to-agents/index"
+      ]
+    },
+    {
+      "topicId": "integrations/confluence",
+      "title": "Confluence 连接与工具",
+      "locale": "zh-cn",
+      "route": "integrations/confluence",
+      "file": "src/content/docs/zh-cn/integrations/confluence.md",
+      "hash": "aaac399c4e05e5ddd4af794fb8d2f46afcd1f7a851084e85856484863b6feee1",
+      "aliases": [
+        "docs/confluence-connection",
+        "docs/user-documentation/admins/connections-management/confluence",
+        "docs/user-documentation/admins/connections-management/confluence/index",
+        "docs/confluence-tool",
+        "docs/user-documentation/agents/tools/confluence",
+        "docs/user-documentation/agents/tools/confluence/index"
+      ],
+      "rootAliases": [
+        "docs/confluence-connection",
+        "docs/user-documentation/admins/connections-management/confluence",
+        "docs/user-documentation/admins/connections-management/confluence/index",
+        "docs/confluence-tool",
+        "docs/user-documentation/agents/tools/confluence",
+        "docs/user-documentation/agents/tools/confluence/index"
+      ]
+    },
+    {
+      "topicId": "integrations/connections-and-tools",
+      "title": "连接与工具",
+      "locale": "zh-cn",
+      "route": "integrations/connections-and-tools",
+      "file": "src/content/docs/zh-cn/integrations/connections-and-tools.md",
+      "hash": "16a8f677f126eaf6e04349eb15877fbd0c4c2f6e77ae044b9b17e497df8859fe",
+      "aliases": [
+        "docs/user-documentation/data-sources/websites",
+        "docs/user-documentation/data-sources/websites/index",
+        "docs/website-connection"
+      ],
+      "rootAliases": [
+        "docs/user-documentation/data-sources/websites",
+        "docs/user-documentation/data-sources/websites/index",
+        "docs/website-connection"
+      ]
+    },
+    {
+      "topicId": "integrations/data-platforms",
+      "title": "数据平台连接与工具",
+      "locale": "zh-cn",
+      "route": "integrations/data-platforms",
+      "file": "src/content/docs/zh-cn/integrations/data-platforms.md",
+      "hash": "fbe9e166885c0614330cf197b01424417009d4424f9686a902ebbb7f4abc50a2",
+      "aliases": [
+        "docs/snowflake-tool",
+        "docs/user-documentation/agents/tools/snowflake",
+        "docs/user-documentation/agents/tools/snowflake/index",
+        "docs/databricks",
+        "docs/user-documentation/agents/tools/databricks",
+        "docs/user-documentation/agents/tools/databricks/index",
+        "docs/bigquery",
+        "docs/user-documentation/admins/connections-management/bigquery",
+        "docs/user-documentation/admins/connections-management/bigquery/index",
+        "docs/snowflake-connection",
+        "docs/user-documentation/admins/connections-management/snowflake",
+        "docs/user-documentation/admins/connections-management/snowflake/index"
+      ],
+      "rootAliases": [
+        "docs/snowflake-tool",
+        "docs/user-documentation/agents/tools/snowflake",
+        "docs/user-documentation/agents/tools/snowflake/index",
+        "docs/databricks",
+        "docs/user-documentation/agents/tools/databricks",
+        "docs/user-documentation/agents/tools/databricks/index",
+        "docs/bigquery",
+        "docs/user-documentation/admins/connections-management/bigquery",
+        "docs/user-documentation/admins/connections-management/bigquery/index",
+        "docs/snowflake-connection",
+        "docs/user-documentation/admins/connections-management/snowflake",
+        "docs/user-documentation/admins/connections-management/snowflake/index"
+      ]
+    },
+    {
+      "topicId": "integrations/gong",
+      "title": "Gong 连接与工具",
+      "locale": "zh-cn",
+      "route": "integrations/gong",
+      "file": "src/content/docs/zh-cn/integrations/gong.md",
+      "hash": "41a18237d1abc3488927975ee315f771eb75cafccb9f12374cafbdaece858ab0",
+      "aliases": [
+        "docs/gong-connection",
+        "docs/user-documentation/admins/connections-management/gong",
+        "docs/user-documentation/admins/connections-management/gong/index",
+        "docs/gong-mcp",
+        "docs/user-documentation/agents/tools/gong",
+        "docs/user-documentation/agents/tools/gong/index"
+      ],
+      "rootAliases": [
+        "docs/gong-connection",
+        "docs/user-documentation/admins/connections-management/gong",
+        "docs/user-documentation/admins/connections-management/gong/index",
+        "docs/gong-mcp",
+        "docs/user-documentation/agents/tools/gong",
+        "docs/user-documentation/agents/tools/gong/index"
+      ]
+    },
+    {
+      "topicId": "integrations/google",
+      "title": "Google 连接与工具",
+      "locale": "zh-cn",
+      "route": "integrations/google",
+      "file": "src/content/docs/zh-cn/integrations/google.md",
+      "hash": "9fb9632c725bc72a92b93e6da5244ea076ef3a49d696da8129fe6c80a4dcce43",
+      "aliases": [
+        "docs/gmail",
+        "docs/user-documentation/agents/tools/gmail",
+        "docs/user-documentation/agents/tools/gmail/index",
+        "docs/google-sheets",
+        "docs/user-documentation/agents/tools/google-sheets-deprecated",
+        "docs/user-documentation/agents/tools/google-sheets-deprecated/index",
+        "docs/google-calendar",
+        "docs/user-documentation/agents/tools/google-calendar",
+        "docs/user-documentation/agents/tools/google-calendar/index",
+        "docs/google-drive",
+        "docs/google-drive-connection",
+        "docs/user-documentation/admins/connections-management/google-drive",
+        "docs/user-documentation/admins/connections-management/google-drive/index"
+      ],
+      "rootAliases": [
+        "docs/gmail",
+        "docs/user-documentation/agents/tools/gmail",
+        "docs/user-documentation/agents/tools/gmail/index",
+        "docs/google-sheets",
+        "docs/user-documentation/agents/tools/google-sheets-deprecated",
+        "docs/user-documentation/agents/tools/google-sheets-deprecated/index",
+        "docs/google-calendar",
+        "docs/user-documentation/agents/tools/google-calendar",
+        "docs/user-documentation/agents/tools/google-calendar/index",
+        "docs/google-drive",
+        "docs/google-drive-connection",
+        "docs/user-documentation/admins/connections-management/google-drive",
+        "docs/user-documentation/admins/connections-management/google-drive/index"
+      ]
+    },
+    {
+      "topicId": "integrations/microsoft",
+      "title": "Microsoft 连接与工具",
+      "locale": "zh-cn",
+      "route": "integrations/microsoft",
+      "file": "src/content/docs/zh-cn/integrations/microsoft.md",
+      "hash": "2f187abd41f9b6abd1502e87e991ff141ea5b5276e35b659405071359babed1f",
+      "aliases": [
+        "docs/microsoft-drive-tool-setup",
+        "docs/user-documentation/agents/tools/microsoft-sharepoint-and-onedrive",
+        "docs/user-documentation/agents/tools/microsoft-sharepoint-and-onedrive/index",
+        "docs/microsoft-teams-tool-setup",
+        "docs/user-documentation/agents/tools/microsoft-teams",
+        "docs/user-documentation/agents/tools/microsoft-teams/index",
+        "docs/outlook-tool-setup",
+        "docs/user-documentation/agents/tools/microsoft-outlook",
+        "docs/user-documentation/agents/tools/microsoft-outlook/index",
+        "docs/microsoft-connection",
+        "docs/user-documentation/admins/connections-management/microsoft",
+        "docs/user-documentation/admins/connections-management/microsoft/index"
+      ],
+      "rootAliases": [
+        "docs/microsoft-drive-tool-setup",
+        "docs/user-documentation/agents/tools/microsoft-sharepoint-and-onedrive",
+        "docs/user-documentation/agents/tools/microsoft-sharepoint-and-onedrive/index",
+        "docs/microsoft-teams-tool-setup",
+        "docs/user-documentation/agents/tools/microsoft-teams",
+        "docs/user-documentation/agents/tools/microsoft-teams/index",
+        "docs/outlook-tool-setup",
+        "docs/user-documentation/agents/tools/microsoft-outlook",
+        "docs/user-documentation/agents/tools/microsoft-outlook/index",
+        "docs/microsoft-connection",
+        "docs/user-documentation/admins/connections-management/microsoft",
+        "docs/user-documentation/admins/connections-management/microsoft/index"
+      ]
+    },
+    {
+      "topicId": "integrations/netsuite",
+      "title": "NetSuite 工具",
+      "locale": "zh-cn",
+      "route": "integrations/netsuite",
+      "file": "src/content/docs/zh-cn/integrations/netsuite.md",
+      "hash": "69979b726f88952213d6af4cf5cf4b2e04ad1d266370f699f951c6a77e53acae",
+      "aliases": [
+        "docs/netsuite",
+        "docs/user-documentation/agents/tools/netsuite",
+        "docs/user-documentation/agents/tools/netsuite/index"
+      ],
+      "rootAliases": [
+        "docs/netsuite",
+        "docs/user-documentation/agents/tools/netsuite",
+        "docs/user-documentation/agents/tools/netsuite/index"
+      ]
+    },
+    {
+      "topicId": "integrations/notion",
+      "title": "Notion 连接与工具",
+      "locale": "zh-cn",
+      "route": "integrations/notion",
+      "file": "src/content/docs/zh-cn/integrations/notion.md",
+      "hash": "331a3ea1667cbedd98128b1f9b6ebcbda3f4580bef986622b764ddb817939bb8",
+      "aliases": [
+        "docs/notion-mcp",
+        "docs/user-documentation/agents/tools/notion",
+        "docs/user-documentation/agents/tools/notion/index",
+        "docs/notion-connection",
+        "docs/user-documentation/admins/connections-management/notion",
+        "docs/user-documentation/admins/connections-management/notion/index"
+      ],
+      "rootAliases": [
+        "docs/notion-mcp",
+        "docs/user-documentation/agents/tools/notion",
+        "docs/user-documentation/agents/tools/notion/index",
+        "docs/notion-connection",
+        "docs/user-documentation/admins/connections-management/notion",
+        "docs/user-documentation/admins/connections-management/notion/index"
+      ]
+    },
+    {
+      "topicId": "integrations/personal-and-shared",
+      "title": "个人与共享授权",
+      "locale": "zh-cn",
+      "route": "integrations/personal-and-shared",
+      "file": "src/content/docs/zh-cn/integrations/personal-and-shared.md",
+      "hash": "64b7c8e845f51f4bea1e3fc4a8377c19cf7c50caf409f1b162d95127509d83ed",
+      "aliases": [
+        "docs/personal-vs-workspace-credentials-for-tools-mcp-servers",
+        "docs/user-documentation/admins/tools-management/personal-vs-shared-credentials",
+        "docs/user-documentation/admins/tools-management/personal-vs-shared-credentials/index"
+      ],
+      "rootAliases": [
+        "docs/personal-vs-workspace-credentials-for-tools-mcp-servers",
+        "docs/user-documentation/admins/tools-management/personal-vs-shared-credentials",
+        "docs/user-documentation/admins/tools-management/personal-vs-shared-credentials/index"
+      ]
+    },
+    {
+      "topicId": "integrations/power-bi",
+      "title": "Power BI 工具",
+      "locale": "zh-cn",
+      "route": "integrations/power-bi",
+      "file": "src/content/docs/zh-cn/integrations/power-bi.md",
+      "hash": "b523e71df6fc1712af24391f83e10c71c3581b85ae785dc8185caeb9dde40433",
+      "aliases": [
+        "docs/power-bi",
+        "docs/user-documentation/agents/tools/power-bi",
+        "docs/user-documentation/agents/tools/power-bi/index"
+      ],
+      "rootAliases": [
+        "docs/power-bi",
+        "docs/user-documentation/agents/tools/power-bi",
+        "docs/user-documentation/agents/tools/power-bi/index"
+      ]
+    },
+    {
+      "topicId": "integrations/remote-mcp",
+      "title": "添加远程 MCP 服务器",
+      "locale": "zh-cn",
+      "route": "integrations/remote-mcp",
+      "file": "src/content/docs/zh-cn/integrations/remote-mcp.md",
+      "hash": "706ac5ea374c67895c1a15cd12c11c724104294e31954ef986027b1e8236c4d8",
+      "aliases": [
+        "docs/remote-mcp-server",
+        "docs/user-documentation/admins/tools-management/adding-an-mcp-server",
+        "docs/user-documentation/admins/tools-management/adding-an-mcp-server/index"
+      ],
+      "rootAliases": [
+        "docs/remote-mcp-server",
+        "docs/user-documentation/admins/tools-management/adding-an-mcp-server",
+        "docs/user-documentation/admins/tools-management/adding-an-mcp-server/index"
+      ]
+    },
+    {
+      "topicId": "integrations/slack",
+      "title": "Slack 连接与工具",
+      "locale": "zh-cn",
+      "route": "integrations/slack",
+      "file": "src/content/docs/zh-cn/integrations/slack.md",
+      "hash": "8da8749bc212e88fa8d7c21e06f72544e8a857786b25a08648a6ef1d2b05f0ff",
+      "aliases": [
+        "docs/slack-mcp",
+        "docs/user-documentation/agents/tools/slack-tools",
+        "docs/user-documentation/agents/tools/slack-tools/index",
+        "docs/slack",
+        "docs/user-documentation/agents/integrations/dust-in-slack/slack-workflows",
+        "docs/user-documentation/agents/integrations/dust-in-slack/slack-workflows/index",
+        "docs/slack-connection",
+        "docs/user-documentation/admins/connections-management/slack",
+        "docs/user-documentation/admins/connections-management/slack/index"
+      ],
+      "rootAliases": [
+        "docs/slack-mcp",
+        "docs/user-documentation/agents/tools/slack-tools",
+        "docs/user-documentation/agents/tools/slack-tools/index",
+        "docs/slack",
+        "docs/user-documentation/agents/integrations/dust-in-slack/slack-workflows",
+        "docs/user-documentation/agents/integrations/dust-in-slack/slack-workflows/index",
+        "docs/slack-connection",
+        "docs/user-documentation/admins/connections-management/slack",
+        "docs/user-documentation/admins/connections-management/slack/index"
+      ]
+    },
+    {
+      "topicId": "integrations/tools-catalog",
+      "title": "服务商工具目录",
+      "locale": "zh-cn",
+      "route": "integrations/tools-catalog",
+      "file": "src/content/docs/zh-cn/integrations/tools-catalog.md",
+      "hash": "3d0705222bea128043cc616d2a6fd888b8885bafaa8cce75792b3e1655f3a2a2",
+      "aliases": [
+        "docs/productboard",
+        "docs/user-documentation/agents/tools/productboard",
+        "docs/user-documentation/agents/tools/productboard/index",
+        "docs/user-documentation/admins/connections-management/zendesk",
+        "docs/user-documentation/admins/connections-management/zendesk/index",
+        "docs/zendesk-connection",
+        "docs/slab-mcp",
+        "docs/user-documentation/agents/tools/slab",
+        "docs/user-documentation/agents/tools/slab/index",
+        "docs/jira",
+        "docs/user-documentation/agents/tools/jira",
+        "docs/user-documentation/agents/tools/jira/index",
+        "docs/hubspot",
+        "docs/user-documentation/agents/tools/hubspot",
+        "docs/user-documentation/agents/tools/hubspot/index",
+        "docs/front-mcp",
+        "docs/user-documentation/agents/tools/front",
+        "docs/user-documentation/agents/tools/front/index",
+        "docs/github-connection",
+        "docs/user-documentation/admins/connections-management/github",
+        "docs/user-documentation/admins/connections-management/github/index",
+        "docs/freshservice",
+        "docs/user-documentation/agents/tools/freshservice",
+        "docs/user-documentation/agents/tools/freshservice/index",
+        "docs/ukg-ready",
+        "docs/user-documentation/agents/tools/ukg-ready",
+        "docs/user-documentation/agents/tools/ukg-ready/index",
+        "docs/user-documentation/agents/tools/vanta",
+        "docs/user-documentation/agents/tools/vanta/index",
+        "docs/vanta",
+        "docs/salesloft-mcp",
+        "docs/user-documentation/agents/tools/salesloft",
+        "docs/user-documentation/agents/tools/salesloft/index",
+        "docs/monday",
+        "docs/user-documentation/agents/tools/monday-com",
+        "docs/user-documentation/agents/tools/monday-com/index",
+        "docs/salesforce",
+        "docs/user-documentation/admins/tools-management/salesforce/salesforce",
+        "docs/user-documentation/admins/tools-management/salesforce/salesforce/index",
+        "docs/ashby-mcp",
+        "docs/user-documentation/agents/tools/ashby",
+        "docs/user-documentation/agents/tools/ashby/index",
+        "docs/intercom-connection",
+        "docs/user-documentation/admins/connections-management/intercom",
+        "docs/user-documentation/admins/connections-management/intercom/index",
+        "docs/user-documentation/agents/tools/val-town",
+        "docs/user-documentation/agents/tools/val-town/index",
+        "docs/val-town",
+        "docs/statuspage-mcp",
+        "docs/user-documentation/agents/tools/statuspage",
+        "docs/user-documentation/agents/tools/statuspage/index"
+      ],
+      "rootAliases": [
+        "docs/productboard",
+        "docs/user-documentation/agents/tools/productboard",
+        "docs/user-documentation/agents/tools/productboard/index",
+        "docs/user-documentation/admins/connections-management/zendesk",
+        "docs/user-documentation/admins/connections-management/zendesk/index",
+        "docs/zendesk-connection",
+        "docs/slab-mcp",
+        "docs/user-documentation/agents/tools/slab",
+        "docs/user-documentation/agents/tools/slab/index",
+        "docs/jira",
+        "docs/user-documentation/agents/tools/jira",
+        "docs/user-documentation/agents/tools/jira/index",
+        "docs/hubspot",
+        "docs/user-documentation/agents/tools/hubspot",
+        "docs/user-documentation/agents/tools/hubspot/index",
+        "docs/front-mcp",
+        "docs/user-documentation/agents/tools/front",
+        "docs/user-documentation/agents/tools/front/index",
+        "docs/github-connection",
+        "docs/user-documentation/admins/connections-management/github",
+        "docs/user-documentation/admins/connections-management/github/index",
+        "docs/freshservice",
+        "docs/user-documentation/agents/tools/freshservice",
+        "docs/user-documentation/agents/tools/freshservice/index",
+        "docs/ukg-ready",
+        "docs/user-documentation/agents/tools/ukg-ready",
+        "docs/user-documentation/agents/tools/ukg-ready/index",
+        "docs/user-documentation/agents/tools/vanta",
+        "docs/user-documentation/agents/tools/vanta/index",
+        "docs/vanta",
+        "docs/salesloft-mcp",
+        "docs/user-documentation/agents/tools/salesloft",
+        "docs/user-documentation/agents/tools/salesloft/index",
+        "docs/monday",
+        "docs/user-documentation/agents/tools/monday-com",
+        "docs/user-documentation/agents/tools/monday-com/index",
+        "docs/salesforce",
+        "docs/user-documentation/admins/tools-management/salesforce/salesforce",
+        "docs/user-documentation/admins/tools-management/salesforce/salesforce/index",
+        "docs/ashby-mcp",
+        "docs/user-documentation/agents/tools/ashby",
+        "docs/user-documentation/agents/tools/ashby/index",
+        "docs/intercom-connection",
+        "docs/user-documentation/admins/connections-management/intercom",
+        "docs/user-documentation/admins/connections-management/intercom/index",
+        "docs/user-documentation/agents/tools/val-town",
+        "docs/user-documentation/agents/tools/val-town/index",
+        "docs/val-town",
+        "docs/statuspage-mcp",
+        "docs/user-documentation/agents/tools/statuspage",
+        "docs/user-documentation/agents/tools/statuspage/index"
+      ]
+    },
+    {
+      "topicId": "guides/team-adoption",
+      "title": "让团队从一个用例走向持续使用",
+      "locale": "zh-cn",
+      "route": "guides/team-adoption",
+      "file": "src/content/docs/zh-cn/guides/team-adoption.md",
+      "hash": "cfaabe096abf39b996a806879e061d43118e8e62fe512a6f1e01f19d476caf97",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "guides/customer-collaboration",
+      "title": "安全地与客户协作",
+      "locale": "zh-cn",
+      "route": "guides/customer-collaboration",
+      "file": "src/content/docs/zh-cn/guides/customer-collaboration.md",
+      "hash": "6e84518d6bc9fd1f97e20639f933827638385236bdf6b5c6de899e909071a7c3",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "guides/data-review",
+      "title": "使用智能体复核数据",
+      "locale": "zh-cn",
+      "route": "guides/data-review",
+      "file": "src/content/docs/zh-cn/guides/data-review.md",
+      "hash": "b0fe5e34b4af9903ec4f267e4520e55d23f13871abee27c4db5507f08842e628",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "guides/knowledge-work",
+      "title": "使用智能体完成知识工作",
+      "locale": "zh-cn",
+      "route": "guides/knowledge-work",
+      "file": "src/content/docs/zh-cn/guides/knowledge-work.md",
+      "hash": "f1610a60e6999031ab94d1067d02f18402189ecc0567c184292776ff030ce904",
+      "aliases": [
+        "docs/use-cases",
+        "docs/user-documentation/getting-started/use-cases-and-guides",
+        "docs/user-documentation/getting-started/use-cases-and-guides/index"
+      ],
+      "rootAliases": [
+        "docs/use-cases",
+        "docs/user-documentation/getting-started/use-cases-and-guides",
+        "docs/user-documentation/getting-started/use-cases-and-guides/index"
+      ]
+    },
+    {
+      "topicId": "automations/filters-and-limits",
+      "title": "过滤自动化事件并管理限制",
+      "locale": "zh-cn",
+      "route": "automations/filters-and-limits",
+      "file": "src/content/docs/zh-cn/automations/filters-and-limits.md",
+      "hash": "ee4f350892b557a593f240438803855457ad97f5e651caa1903c49b0320a75bf",
+      "aliases": [
+        "docs/user-documentation/agents/triggers/credits-usage",
+        "docs/user-documentation/agents/triggers/credits-usage/index",
+        "docs/filter-webhooks-payload",
+        "docs/user-documentation/agents/triggers/webhooks/filter-webhooks-payload",
+        "docs/user-documentation/agents/triggers/webhooks/filter-webhooks-payload/index"
+      ],
+      "rootAliases": [
+        "docs/user-documentation/agents/triggers/credits-usage",
+        "docs/user-documentation/agents/triggers/credits-usage/index",
+        "docs/filter-webhooks-payload",
+        "docs/user-documentation/agents/triggers/webhooks/filter-webhooks-payload",
+        "docs/user-documentation/agents/triggers/webhooks/filter-webhooks-payload/index"
+      ]
+    },
+    {
+      "topicId": "automations/schedules",
+      "title": "为助手设置计划",
+      "locale": "zh-cn",
+      "route": "automations/schedules",
+      "file": "src/content/docs/zh-cn/automations/schedules.md",
+      "hash": "5a30c33045e091670fa58214b94318ea1762ee159e66571d57766f505e633200",
+      "aliases": [
+        "docs/scheduling-your-agent-beta",
+        "docs/triggers",
+        "docs/user-documentation/agents/triggers/schedules",
+        "docs/user-documentation/agents/triggers/schedules/index"
+      ],
+      "rootAliases": [
+        "docs/scheduling-your-agent-beta",
+        "docs/triggers",
+        "docs/user-documentation/agents/triggers/schedules",
+        "docs/user-documentation/agents/triggers/schedules/index"
+      ]
+    },
+    {
+      "topicId": "automations/webhooks",
+      "title": "使用 Webhook 触发助手",
+      "locale": "zh-cn",
+      "route": "automations/webhooks",
+      "file": "src/content/docs/zh-cn/automations/webhooks.md",
+      "hash": "d5b5e87a503b00706347cd63edc6b214986279bdebd6c2ef7ae44776895bb75a",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "getting-started/introduction",
+      "title": "Introduction to Counso AI",
+      "locale": "en",
+      "route": "getting-started/introduction",
+      "file": "src/content/docs/en/getting-started/introduction.md",
+      "hash": "61851b29e53fe69d0b174c4eb5ae1e8ff6ae37a1d3a950bd9b0555e6f75ff53c",
+      "aliases": [
+        "docs/intro",
+        "docs/user-documentation/getting-started/intro-to-dust",
+        "docs/user-documentation/getting-started/intro-to-dust/index"
+      ],
+      "rootAliases": [
+        "docs/intro",
+        "docs/user-documentation/getting-started/intro-to-dust",
+        "docs/user-documentation/getting-started/intro-to-dust/index"
+      ]
+    },
+    {
+      "topicId": "getting-started/workspace-navigation",
+      "title": "Workspace navigation",
+      "locale": "en",
+      "route": "getting-started/workspace-navigation",
+      "file": "src/content/docs/en/getting-started/workspace-navigation.md",
+      "hash": "94f6f63b8eaae9216717915fc930030ef71b20ab816bf5c08f8ea4176b1603fd",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "getting-started/first-conversation",
+      "title": "Start your first conversation",
+      "locale": "en",
+      "route": "getting-started/first-conversation",
+      "file": "src/content/docs/en/getting-started/first-conversation.md",
+      "hash": "44301ab31dd025409d36c9a6e2fdf67ed182724bd4868f6d2351cefa677a506e",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "getting-started/write-a-clear-request",
+      "title": "Write a clear request",
+      "locale": "en",
+      "route": "getting-started/write-a-clear-request",
+      "file": "src/content/docs/en/getting-started/write-a-clear-request.md",
+      "hash": "42338f6f683316476bc73c68aac8044e9849e5227dddba9fdc1ca7900c88fe87",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "getting-started/review-results",
+      "title": "Review results before relying on them",
+      "locale": "en",
+      "route": "getting-started/review-results",
+      "file": "src/content/docs/en/getting-started/review-results.md",
+      "hash": "181cceb1ed75358b1f72e4f404d9950b5913e1651e1a958d4ec06e90948742db",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "getting-started/conversation-settings",
+      "title": "Manage conversations and identify an Agent",
+      "locale": "en",
+      "route": "getting-started/conversation-settings",
+      "file": "src/content/docs/en/getting-started/conversation-settings.md",
+      "hash": "a234ad789c9c515dd5b7924e1ab6bad6b6890c7c1cc5371f186b1a773e44da00",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "agents/choose-an-agent",
+      "title": "选择智能体",
+      "locale": "zh-cn",
+      "route": "agents/choose-an-agent",
+      "file": "src/content/docs/zh-cn/agents/choose-an-agent.md",
+      "hash": "29a13269fcf13ffd2ded9ece13492b44e74d9f1dc03c9f4f49bba36b5ee93b54",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "agents/create-an-agent",
+      "title": "创建智能体",
+      "locale": "zh-cn",
+      "route": "agents/create-an-agent",
+      "file": "src/content/docs/zh-cn/agents/create-an-agent.md",
+      "hash": "339e42f62bf6bf85439571ff00985eab70d07e29d4f04efc0beca0763267edba",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "agents/write-instructions",
+      "title": "编写智能体指令",
+      "locale": "zh-cn",
+      "route": "agents/write-instructions",
+      "file": "src/content/docs/zh-cn/agents/write-instructions.md",
+      "hash": "c75a478a8264fd0cefdff1bb3f7af1c17f97b3dbe6515287bdc26e029d3805ef",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "agents/data-and-access",
+      "title": "管理智能体的数据与访问",
+      "locale": "zh-cn",
+      "route": "agents/data-and-access",
+      "file": "src/content/docs/zh-cn/agents/data-and-access.md",
+      "hash": "216583be5c23b25358a41953ebb0b42f09b8b4c76d6ff0311d166adcfefb3b76",
+      "aliases": [
+        "docs/data",
+        "docs/user-documentation/admins/spaces-management",
+        "docs/user-documentation/admins/spaces-management/index"
+      ],
+      "rootAliases": [
+        "docs/data",
+        "docs/user-documentation/admins/spaces-management",
+        "docs/user-documentation/admins/spaces-management/index"
+      ]
+    },
+    {
+      "topicId": "agents/capabilities-and-knowledge",
+      "title": "添加能力和知识",
+      "locale": "zh-cn",
+      "route": "agents/capabilities-and-knowledge",
+      "file": "src/content/docs/zh-cn/agents/capabilities-and-knowledge.md",
+      "hash": "c786ed88e07177afa86922bea23554b35a9a62ed1823f46586d007f13b6f2b6b",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "agents/preview-and-improve",
+      "title": "预览并改进智能体",
+      "locale": "zh-cn",
+      "route": "agents/preview-and-improve",
+      "file": "src/content/docs/zh-cn/agents/preview-and-improve.md",
+      "hash": "ba6aa9f019c7af33cce846860e948c3f62709c0ccbbbab7155db81809f43841e",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "agents/manage-and-share",
+      "title": "管理和共享智能体",
+      "locale": "zh-cn",
+      "route": "agents/manage-and-share",
+      "file": "src/content/docs/zh-cn/agents/manage-and-share.md",
+      "hash": "0f9ebe1b78232c5eba19416c09529919c778baf9c890479205d0febcd4030164",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "agents/advanced-work-modes",
+      "title": "选择高级助手工作方式",
+      "locale": "zh-cn",
+      "route": "agents/advanced-work-modes",
+      "file": "src/content/docs/zh-cn/agents/advanced-work-modes.md",
+      "hash": "941232f0b54f6d8d1193843a0a41926f4acb0aea67fc97253328a14cf0f56226",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "agents/context-and-compaction",
+      "title": "管理长对话的上下文",
+      "locale": "zh-cn",
+      "route": "agents/context-and-compaction",
+      "file": "src/content/docs/zh-cn/agents/context-and-compaction.md",
+      "hash": "f481bd6808d872bca8ba6a05fd644bc68c9637f0d35e43fd582e8f14dab9ef29",
+      "aliases": [
+        "docs/understanding-llms-context-windows",
+        "docs/user-documentation/agents/llm-best-practices/understanding-llms-context-windows",
+        "docs/user-documentation/agents/llm-best-practices/understanding-llms-context-windows/index",
+        "docs/context-compaction",
+        "docs/user-documentation/agents/context-compaction",
+        "docs/user-documentation/agents/context-compaction/index"
+      ],
+      "rootAliases": [
+        "docs/understanding-llms-context-windows",
+        "docs/user-documentation/agents/llm-best-practices/understanding-llms-context-windows",
+        "docs/user-documentation/agents/llm-best-practices/understanding-llms-context-windows/index",
+        "docs/context-compaction",
+        "docs/user-documentation/agents/context-compaction",
+        "docs/user-documentation/agents/context-compaction/index"
+      ]
+    },
+    {
+      "topicId": "agents/model-selection",
+      "title": "选择对话或智能体使用的模型",
+      "locale": "zh-cn",
+      "route": "agents/model-selection",
+      "file": "src/content/docs/zh-cn/agents/model-selection.md",
+      "hash": "2377cf80b9409fde04c2d52a28b0d2fd1fd793f8f34e83e91d8ca4746811b397",
+      "aliases": [
+        "docs/user-documentation/agents/model-selection",
+        "docs/user-documentation/agents/model-selection/index"
+      ],
+      "rootAliases": [
+        "docs/user-documentation/agents/model-selection",
+        "docs/user-documentation/agents/model-selection/index"
+      ]
+    },
+    {
+      "topicId": "agents/structured-output",
+      "title": "请求结构化回答",
+      "locale": "zh-cn",
+      "route": "agents/structured-output",
+      "file": "src/content/docs/zh-cn/agents/structured-output.md",
+      "hash": "e104eaf603260741ddcef6125faef293a1ab3fc103dec29465efe5145234bbd6",
+      "aliases": [
+        "docs/structured-output-format",
+        "docs/user-documentation/agents/structured-output-format",
+        "docs/user-documentation/agents/structured-output-format/index"
+      ],
+      "rootAliases": [
+        "docs/structured-output-format",
+        "docs/user-documentation/agents/structured-output-format",
+        "docs/user-documentation/agents/structured-output-format/index"
+      ]
+    },
+    {
+      "topicId": "knowledge/overview",
+      "title": "认识 Knowledge",
+      "locale": "zh-cn",
+      "route": "knowledge/overview",
+      "file": "src/content/docs/zh-cn/knowledge/overview.md",
+      "hash": "46cb1524fcb0a1d7868c3075c91943c87c97678a37f4bf11d6dcdf5c94d86396",
+      "aliases": [
+        "docs/knowledge",
+        "docs/user-documentation/getting-started/use-cases-and-guides/knowledge",
+        "docs/user-documentation/getting-started/use-cases-and-guides/knowledge/index"
+      ],
+      "rootAliases": [
+        "docs/knowledge",
+        "docs/user-documentation/getting-started/use-cases-and-guides/knowledge",
+        "docs/user-documentation/getting-started/use-cases-and-guides/knowledge/index"
+      ]
+    },
+    {
+      "topicId": "knowledge/choose-sources",
+      "title": "选择 Knowledge 来源",
+      "locale": "zh-cn",
+      "route": "knowledge/choose-sources",
+      "file": "src/content/docs/zh-cn/knowledge/choose-sources.md",
+      "hash": "85ab3c177c462bf08222ac51936de7cd4c13f08c113bc667db28104c3d03133a",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "knowledge/check-citations",
+      "title": "检查回答背后的来源",
+      "locale": "zh-cn",
+      "route": "knowledge/check-citations",
+      "file": "src/content/docs/zh-cn/knowledge/check-citations.md",
+      "hash": "764417c1bb7e12c1fc630b8f8b9b6365f8483554a2eb42db3f676cdf2b050515",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "knowledge/troubleshoot-missing-information",
+      "title": "排查缺失信息",
+      "locale": "zh-cn",
+      "route": "knowledge/troubleshoot-missing-information",
+      "file": "src/content/docs/zh-cn/knowledge/troubleshoot-missing-information.md",
+      "hash": "b643b61ebe9eb7d58d4a4fb100e755654c4af787e5681d85adb338f6a938c79f",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "knowledge/understand-limits",
+      "title": "了解 Knowledge 的限制",
+      "locale": "zh-cn",
+      "route": "knowledge/understand-limits",
+      "file": "src/content/docs/zh-cn/knowledge/understand-limits.md",
+      "hash": "54563d252c20d143a59950f4fe37834a39ce7972230871d270b1e007f8cb617b",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "knowledge/search-extract-and-query",
+      "title": "选择检索、提取或表格查询",
+      "locale": "zh-cn",
+      "route": "knowledge/search-extract-and-query",
+      "file": "src/content/docs/zh-cn/knowledge/search-extract-and-query.md",
+      "hash": "9cd5c4775914bb65abb8fe612ed54d27a270d912953417aaa392b37de77014ac",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "knowledge/working-with-documents",
+      "title": "使用文档、图片和表格",
+      "locale": "zh-cn",
+      "route": "knowledge/working-with-documents",
+      "file": "src/content/docs/zh-cn/knowledge/working-with-documents.md",
+      "hash": "cb732dbfda90581d892b37bdf511dd8b6d4902a6935367d3add1960d2808e0dc",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "pods/files",
+      "title": "使用 Pod 文件",
+      "locale": "zh-cn",
+      "route": "pods/files",
+      "file": "src/content/docs/zh-cn/pods/files.md",
+      "hash": "a2f180baca71d07978c6aa3794a65e8b84384d60b79f4ef39f0eb1ccaeffac5a",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "pods/frames",
+      "title": "创建和使用 Frames",
+      "locale": "zh-cn",
+      "route": "pods/frames",
+      "file": "src/content/docs/zh-cn/pods/frames.md",
+      "hash": "f6b9ac81b0c94431d66a8df638e3928a637c59c497d81b121bc98bbee130ceed",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "pods/members-and-conversations",
+      "title": "管理 Pod 成员和对话",
+      "locale": "zh-cn",
+      "route": "pods/members-and-conversations",
+      "file": "src/content/docs/zh-cn/pods/members-and-conversations.md",
+      "hash": "7e4727ee32d362446888058bbb0fad3256f6794448aa3a8db137890bc3f373d3",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "pods/overview",
+      "title": "了解 Pods",
+      "locale": "zh-cn",
+      "route": "pods/overview",
+      "file": "src/content/docs/zh-cn/pods/overview.md",
+      "hash": "4deb2a713173b420b7cf35383873766578507cadee419aef63e472303dc94e13",
+      "aliases": [
+        "docs/user-documentation/pods/overview",
+        "docs/user-documentation/pods/overview/index"
+      ],
+      "rootAliases": [
+        "docs/user-documentation/pods/overview",
+        "docs/user-documentation/pods/overview/index"
+      ]
+    },
+    {
+      "topicId": "pods/tasks",
+      "title": "管理 Pod 任务",
+      "locale": "zh-cn",
+      "route": "pods/tasks",
+      "file": "src/content/docs/zh-cn/pods/tasks.md",
+      "hash": "fe80f5fa9014132b7d1a184899741852c76eb67d5fd1f8c9378ddf08459cdf63",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "agents/choose-an-agent",
+      "title": "Choose an Agent",
+      "locale": "en",
+      "route": "agents/choose-an-agent",
+      "file": "src/content/docs/en/agents/choose-an-agent.md",
+      "hash": "20938931674849e71085c00a39ead690283f626898c326761478c1117c64cf6e",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "agents/create-an-agent",
+      "title": "Create an Agent",
+      "locale": "en",
+      "route": "agents/create-an-agent",
+      "file": "src/content/docs/en/agents/create-an-agent.md",
+      "hash": "dfb659697a8493f201abe5f407c4b9e256928bb03725033093ab3ee5b9584ac2",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "agents/write-instructions",
+      "title": "Write Agent instructions",
+      "locale": "en",
+      "route": "agents/write-instructions",
+      "file": "src/content/docs/en/agents/write-instructions.md",
+      "hash": "f671df25a477ecde12b6e71ab32a0e19cd90caab4194cbede3515032fe705e6a",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "agents/data-and-access",
+      "title": "Manage Agent data and access",
+      "locale": "en",
+      "route": "agents/data-and-access",
+      "file": "src/content/docs/en/agents/data-and-access.md",
+      "hash": "690f8b11b17b445670d0c98f5674f58087a5906880b232b93edd612126a2f5db",
+      "aliases": [
+        "docs/data",
+        "docs/user-documentation/admins/spaces-management",
+        "docs/user-documentation/admins/spaces-management/index"
+      ],
+      "rootAliases": [
+        "docs/data",
+        "docs/user-documentation/admins/spaces-management",
+        "docs/user-documentation/admins/spaces-management/index"
+      ]
+    },
+    {
+      "topicId": "agents/capabilities-and-knowledge",
+      "title": "Add capabilities and knowledge",
+      "locale": "en",
+      "route": "agents/capabilities-and-knowledge",
+      "file": "src/content/docs/en/agents/capabilities-and-knowledge.md",
+      "hash": "baa12772e312f67a19329254ea6526223ea3306146cef2402834e538883ffb61",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "agents/preview-and-improve",
+      "title": "Preview and improve an Agent",
+      "locale": "en",
+      "route": "agents/preview-and-improve",
+      "file": "src/content/docs/en/agents/preview-and-improve.md",
+      "hash": "dd139df5cc1c27fa6197b1d1ef6511461d24a119d4c092fd0ff3d838913a0019",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "agents/manage-and-share",
+      "title": "Manage and share an Agent",
+      "locale": "en",
+      "route": "agents/manage-and-share",
+      "file": "src/content/docs/en/agents/manage-and-share.md",
+      "hash": "f41560e313bf0ee24c7399d9cb8304ac5f89f4ad742079fc3d1213f822bd1ec2",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "agents/advanced-work-modes",
+      "title": "Choose an advanced Agent work mode",
+      "locale": "en",
+      "route": "agents/advanced-work-modes",
+      "file": "src/content/docs/en/agents/advanced-work-modes.md",
+      "hash": "43f4e7f97d38545063d1b73d542453926d86bac2a5501957ba8f494bf127a08b",
+      "aliases": [],
+      "rootAliases": []
+    },
+    {
+      "topicId": "agents/context-and-compaction",
+      "title": "Manage context in long conversations",
+      "locale": "en",
+      "route": "agents/context-and-compaction",
+      "file": "src/content/docs/en/agents/context-and-compaction.md",
+      "hash": "2f00c6447270107382d2b02b91ed21be7cc6d19e2c8a6609d2b09963fcabb5ee",
+      "aliases": [
+        "docs/understanding-llms-context-windows",
+        "docs/user-documentation/agents/llm-best-practices/understanding-llms-context-windows",
+        "docs/user-documentation/agents/llm-best-practices/understanding-llms-context-windows/index",
+        "docs/context-compaction",
+        "docs/user-documentation/agents/context-compaction",
+        "docs/user-documentation/agents/context-compaction/index"
+      ],
+      "rootAliases": [
+        "docs/understanding-llms-context-windows",
+        "docs/user-documentation/agents/llm-best-practices/understanding-llms-context-windows",
+        "docs/user-documentation/agents/llm-best-practices/understanding-llms-context-windows/index",
+        "docs/context-compaction",
+        "docs/user-documentation/agents/context-compaction",
+        "docs/user-documentation/agents/context-compaction/index"
+      ]
+    },
+    {
+      "topicId": "agents/model-selection",
+      "title": "Choose a model for a conversation or Agent",
+      "locale": "en",
+      "route": "agents/model-selection",
+      "file": "src/content/docs/en/agents/model-selection.md",
+      "hash": "8c22f7298bb11fb44888959ae9b44617659e23c18b19137a2ec9488218a25591",
+      "aliases": [
+        "docs/user-documentation/agents/model-selection",
+        "docs/user-documentation/agents/model-selection/index"
+      ],
+      "rootAliases": [
+        "docs/user-documentation/agents/model-selection",
+        "docs/user-documentation/agents/model-selection/index"
+      ]
+    },
+    {
+      "topicId": "agents/structured-output",
+      "title": "Request structured output",
+      "locale": "en",
+      "route": "agents/structured-output",
+      "file": "src/content/docs/en/agents/structured-output.md",
+      "hash": "aa2bbba2f7816b2cfd7431dcd607f985585743d6da329cef45a1a949912cec5c",
+      "aliases": [
+        "docs/structured-output-format",
+        "docs/user-documentation/agents/structured-output-format",
+        "docs/user-documentation/agents/structured-output-format/index"
+      ],
+      "rootAliases": [
+        "docs/structured-output-format",
+        "docs/user-documentation/agents/structured-output-format",
+        "docs/user-documentation/agents/structured-output-format/index"
+      ]
+    },
+    {
+      "topicId": "automations/filters-and-limits",
+      "title": "Filter automation events and manage limits",
+      "locale": "en",
+      "route": "automations/filters-and-limits",
+      "file": "src/content/docs/en/automations/filters-and-limits.md",
+      "hash": "dbda5603ea5680f234043d12c4b1ec567d9249c359a11221146dae005c65197c",
+      "aliases": [
+        "docs/user-documentation/agents/triggers/credits-usage",
+        "docs/user-documentation/agents/triggers/credits-usage/index",
+        "docs/filter-webhooks-payload",
+        "docs/user-documentation/agents/triggers/webhooks/filter-webhooks-payload",
+        "docs/user-documentation/agents/triggers/webhooks/filter-webhooks-payload/index"
+      ],
+      "rootAliases": [
+        "docs/user-documentation/agents/triggers/credits-usage",
+        "docs/user-documentation/agents/triggers/credits-usage/index",
+        "docs/filter-webhooks-payload",
+        "docs/user-documentation/agents/triggers/webhooks/filter-webhooks-payload",
+        "docs/user-documentation/agents/triggers/webhooks/filter-webhooks-payload/index"
+      ]
+    },
+    {
+      "topicId": "automations/schedules",
+      "title": "Schedule an Agent",
+      "locale": "en",
+      "route": "automations/schedules",
+      "file": "src/content/docs/en/automations/schedules.md",
+      "hash": "bb2d13d4d75281ef02f5708acdb9dcde3166f8cc0f19187721fe3aeb3747ab5d",
+      "aliases": [
+        "docs/scheduling-your-agent-beta",
+        "docs/triggers",
+        "docs/user-documentation/agents/triggers/schedules",
+        "docs/user-documentation/agents/triggers/schedules/index"
+      ],
+      "rootAliases": [
+        "docs/scheduling-your-agent-beta",
+        "docs/triggers",
+        "docs/user-documentation/agents/triggers/schedules",
+        "docs/user-documentation/agents/triggers/schedules/index"
+      ]
+    },
+    {
+      "topicId": "automations/webhooks",
+      "title": "Trigger an Agent with a webhook",
+      "locale": "en",
+      "route": "automations/webhooks",
+      "file": "src/content/docs/en/automations/webhooks.md",
+      "hash": "0614ed6e2fef06a0563433a281b29239cb49946d5f727737c55a817a877a347c",
+      "aliases": [],
+      "rootAliases": []
+    }
+  ]
+}

@@ -1,0 +1,986 @@
+{
+  "schemaVersion": "2026-09-11.1",
+  "generatedAt": "2026-09-11T07:46:30.492902+00:00",
+  "topics": [
+    {
+      "topicId": "getting-started/introduction",
+      "locale": "zh-cn",
+      "title": "Counso AI 简介",
+      "file": "topics/zh-cn/getting-started/introduction.md",
+      "revision": 11,
+      "sha256": "e8662cb88860aeb573302d27b857f00bcc762f6951af32b9dcb078ca64e5efa5"
+    },
+    {
+      "topicId": "getting-started/workspace-navigation",
+      "locale": "zh-cn",
+      "title": "工作区导航",
+      "file": "topics/zh-cn/getting-started/workspace-navigation.md",
+      "revision": 11,
+      "sha256": "af95bb4d8bef3e75665b51a8f981d855901e5a6b91dcb74b5c623704300c17e3"
+    },
+    {
+      "topicId": "getting-started/first-conversation",
+      "locale": "zh-cn",
+      "title": "开始第一次对话",
+      "file": "topics/zh-cn/getting-started/first-conversation.md",
+      "revision": 11,
+      "sha256": "f2be6b3457f2a26d9a33ecd76603dee507915813f0fb532bfe80e918b65c8fe9"
+    },
+    {
+      "topicId": "getting-started/write-a-clear-request",
+      "locale": "zh-cn",
+      "title": "写清楚请求",
+      "file": "topics/zh-cn/getting-started/write-a-clear-request.md",
+      "revision": 11,
+      "sha256": "71cb199ea5a341aca54b74b3ace0bc01c962c6271632fd3eb37f6550ff0006ce"
+    },
+    {
+      "topicId": "getting-started/review-results",
+      "locale": "zh-cn",
+      "title": "在依赖结果前先检查",
+      "file": "topics/zh-cn/getting-started/review-results.md",
+      "revision": 11,
+      "sha256": "8ab842ad5cebb0560b904715c0dc45217a5a6e1a7f3ca6a36286e809ea684750"
+    },
+    {
+      "topicId": "getting-started/conversation-settings",
+      "locale": "zh-cn",
+      "title": "管理对话并查找 Agent ID",
+      "file": "topics/zh-cn/getting-started/conversation-settings.md",
+      "revision": 11,
+      "sha256": "806582e73b1907c829204c706378bf968a15a2d28cbf74d8c05746bce1e7de24"
+    },
+    {
+      "topicId": "guides/team-adoption",
+      "locale": "en",
+      "title": "Move a team from one use case to regular adoption",
+      "file": "topics/en/guides/team-adoption.md",
+      "revision": 12,
+      "sha256": "252bca2585fb2b39a6aec8dcfd635bb9d6018fc8cb42e3f30ecaf6319cd6f31a"
+    },
+    {
+      "topicId": "guides/customer-collaboration",
+      "locale": "en",
+      "title": "Collaborate with a customer safely",
+      "file": "topics/en/guides/customer-collaboration.md",
+      "revision": 12,
+      "sha256": "91884fe1635bf2bc470087e7e44df1c389cb86951dc6f3a46abfd5b86b326340"
+    },
+    {
+      "topicId": "guides/data-review",
+      "locale": "en",
+      "title": "Review a data set with an Agent",
+      "file": "topics/en/guides/data-review.md",
+      "revision": 12,
+      "sha256": "08db581eb716ae04b3d1ae61ff556df059a00581756eef89aed712fe08497295"
+    },
+    {
+      "topicId": "guides/knowledge-work",
+      "locale": "en",
+      "title": "Use an Agent for knowledge work",
+      "file": "topics/en/guides/knowledge-work.md",
+      "revision": 12,
+      "sha256": "3826d649967d9a98f8de7c26f5ec77d0b9653431591ff4304987b95aa810f86d"
+    },
+    {
+      "topicId": "knowledge/overview",
+      "locale": "en",
+      "title": "Understand Knowledge",
+      "file": "topics/en/knowledge/overview.md",
+      "revision": 13,
+      "sha256": "fd1383abd60d7b9055eed04e9d4f84063a802f901162fcac7a3834ae6bb83beb"
+    },
+    {
+      "topicId": "knowledge/choose-sources",
+      "locale": "en",
+      "title": "Choose Knowledge sources",
+      "file": "topics/en/knowledge/choose-sources.md",
+      "revision": 13,
+      "sha256": "2fb8e0c8b8bd9c9fc4856c39bb5f1d43475f789cbf5a7c45c9a4479228fcbfa7"
+    },
+    {
+      "topicId": "knowledge/check-citations",
+      "locale": "en",
+      "title": "Check sources behind an answer",
+      "file": "topics/en/knowledge/check-citations.md",
+      "revision": 13,
+      "sha256": "db117ee27462aa3bd261c8323c2261e3f69d8aeba7df57cda971117401c3e85c"
+    },
+    {
+      "topicId": "knowledge/troubleshoot-missing-information",
+      "locale": "en",
+      "title": "Troubleshoot missing information",
+      "file": "topics/en/knowledge/troubleshoot-missing-information.md",
+      "revision": 13,
+      "sha256": "18f1fc1159f21546d4ce4cb275a2d931046b5ffccf1bea6f79f2176816bb7017"
+    },
+    {
+      "topicId": "knowledge/understand-limits",
+      "locale": "en",
+      "title": "Understand Knowledge limits",
+      "file": "topics/en/knowledge/understand-limits.md",
+      "revision": 13,
+      "sha256": "3bad1cb8c6cbc88168b077646fc6342a47f08445a66e3e1f4ee9e2527182986a"
+    },
+    {
+      "topicId": "knowledge/search-extract-and-query",
+      "locale": "en",
+      "title": "Choose search, extraction, or table queries",
+      "file": "topics/en/knowledge/search-extract-and-query.md",
+      "revision": 13,
+      "sha256": "b6b6521faacb6cc8f6d0ecf4c3600cfddb9324ca5e25c0ea461741a0b3167ced"
+    },
+    {
+      "topicId": "knowledge/working-with-documents",
+      "locale": "en",
+      "title": "Work with documents, images, and tables",
+      "file": "topics/en/knowledge/working-with-documents.md",
+      "revision": 13,
+      "sha256": "cbd53d9592f3014df3a6d12123a12a6ca286f1348364e1c2032c885cd5513cdc"
+    },
+    {
+      "topicId": "administration/access-checklist",
+      "locale": "en",
+      "title": "Workspace access checklist",
+      "file": "topics/en/administration/access-checklist.md",
+      "revision": 15,
+      "sha256": "bbc18e291e73084a7b23cec669bf5c09e6035af95f3854922a0999ebd1082d2b"
+    },
+    {
+      "topicId": "administration/audit-logs",
+      "locale": "en",
+      "title": "Filter, inspect, and export audit logs",
+      "file": "topics/en/administration/audit-logs.md",
+      "revision": 15,
+      "sha256": "831d244cc312f4a0511913e37877835c12927439ddf03ebb0f1cc6c4f4cc8446"
+    },
+    {
+      "topicId": "administration/identity-and-provisioning",
+      "locale": "en",
+      "title": "Configure SSO, directory sync, and group roles",
+      "file": "topics/en/administration/identity-and-provisioning.md",
+      "revision": 15,
+      "sha256": "6fa1ccad05c52cf475d0d5b49bf1684bc306fa0cbbd9f0f8d2590a69bffbc5d4"
+    },
+    {
+      "topicId": "administration/members-and-spaces",
+      "locale": "en",
+      "title": "Manage members and Spaces",
+      "file": "topics/en/administration/members-and-spaces.md",
+      "revision": 15,
+      "sha256": "f0f2a24d118a85ae1ce9fb222e3cbc04ffdecd4976824b22b56f3c9be2eb5a0a"
+    },
+    {
+      "topicId": "administration/support",
+      "locale": "en",
+      "title": "Get help from Counso",
+      "file": "topics/en/administration/support.md",
+      "revision": 15,
+      "sha256": "916b12eb695d597703cab095a2dbebad37b70786a3e506e0ada3e3a65716bb59"
+    },
+    {
+      "topicId": "administration/usage-and-seats",
+      "locale": "en",
+      "title": "Review usage and seat access",
+      "file": "topics/en/administration/usage-and-seats.md",
+      "revision": 15,
+      "sha256": "1c809421077999a2c0b77e61fe457190296cc332e80a22c3cdf15fc936b87ed6"
+    },
+    {
+      "topicId": "integrations/channels",
+      "locale": "en",
+      "title": "Channels and message integrations",
+      "file": "topics/en/integrations/channels.md",
+      "revision": 45,
+      "sha256": "d6252eb6370c8594ccd01ef4c9e5607210921f4d7bf2fb924ef7ad8cbe7f7500"
+    },
+    {
+      "topicId": "integrations/confluence",
+      "locale": "en",
+      "title": "Confluence connection and tools",
+      "file": "topics/en/integrations/confluence.md",
+      "revision": 45,
+      "sha256": "dfe3999fba70c5613b295574e4af305b9c5d027c41f6fcc0882010c04d1aaa67"
+    },
+    {
+      "topicId": "integrations/connections-and-tools",
+      "locale": "en",
+      "title": "Connections and tools",
+      "file": "topics/en/integrations/connections-and-tools.md",
+      "revision": 45,
+      "sha256": "71a557f563c8ac8366eb2043163f145d5a52463bc182759fdc368ac8b25ea847"
+    },
+    {
+      "topicId": "integrations/data-platforms",
+      "locale": "en",
+      "title": "Data platform connections and tools",
+      "file": "topics/en/integrations/data-platforms.md",
+      "revision": 45,
+      "sha256": "07ad20948649eb3caf44289f05e56df34b62b90d8fcff55743401b9d4ca0168b"
+    },
+    {
+      "topicId": "integrations/gong",
+      "locale": "en",
+      "title": "Gong connection and tools",
+      "file": "topics/en/integrations/gong.md",
+      "revision": 45,
+      "sha256": "438dbf767cfc03d38559c66ae200e9e8af5c5e487319dd72ebf5ab778e6a7b52"
+    },
+    {
+      "topicId": "integrations/google",
+      "locale": "en",
+      "title": "Google connections and tools",
+      "file": "topics/en/integrations/google.md",
+      "revision": 45,
+      "sha256": "040a53a0044cede43763f0fff96d81ebc729d98d242906b75427dc889239b676"
+    },
+    {
+      "topicId": "integrations/microsoft",
+      "locale": "en",
+      "title": "Microsoft connections and tools",
+      "file": "topics/en/integrations/microsoft.md",
+      "revision": 45,
+      "sha256": "799d39b74e99234931a11f068c01b5fa28512d93a1b67bac206c1677dea98e24"
+    },
+    {
+      "topicId": "integrations/netsuite",
+      "locale": "en",
+      "title": "NetSuite tool",
+      "file": "topics/en/integrations/netsuite.md",
+      "revision": 45,
+      "sha256": "af1b1d8e8c32831aa55c5990dfc5b4853f8d19b1f469d4343d21747938cda587"
+    },
+    {
+      "topicId": "integrations/notion",
+      "locale": "en",
+      "title": "Notion connection and tools",
+      "file": "topics/en/integrations/notion.md",
+      "revision": 45,
+      "sha256": "309e39193e527bf005613827db293753cb9e16d3ccb9617eb68d53a8dc916a1a"
+    },
+    {
+      "topicId": "integrations/personal-and-shared",
+      "locale": "en",
+      "title": "Personal and shared credentials",
+      "file": "topics/en/integrations/personal-and-shared.md",
+      "revision": 45,
+      "sha256": "523b010bc59d5dda02581550b1697a9f255a917505bee4434378d911f743617e"
+    },
+    {
+      "topicId": "integrations/power-bi",
+      "locale": "en",
+      "title": "Power BI tool",
+      "file": "topics/en/integrations/power-bi.md",
+      "revision": 45,
+      "sha256": "39cc2fe69c1aff9dfef2208f2a7c352a361b885b684b2e5dffa7a09181fef8de"
+    },
+    {
+      "topicId": "integrations/remote-mcp",
+      "locale": "en",
+      "title": "Add a remote MCP server",
+      "file": "topics/en/integrations/remote-mcp.md",
+      "revision": 45,
+      "sha256": "6816cf9f34bf8f0958479782eb90d865902766daad4f4d88869dba57e0ca56bc"
+    },
+    {
+      "topicId": "integrations/slack",
+      "locale": "en",
+      "title": "Slack connections and tools",
+      "file": "topics/en/integrations/slack.md",
+      "revision": 45,
+      "sha256": "83a27fdc78858d3ec1028015e07fb95ffb4c73c5904abc3a178f86eab32a56dc"
+    },
+    {
+      "topicId": "integrations/tools-catalog",
+      "locale": "en",
+      "title": "Provider tools catalog",
+      "file": "topics/en/integrations/tools-catalog.md",
+      "revision": 45,
+      "sha256": "ea77fb88bb3b44446baba7df3f8c3d5075f0bc727df37bb4933d84e68a1014a7"
+    },
+    {
+      "topicId": "skills/overview",
+      "locale": "zh-cn",
+      "title": "认识 Skills",
+      "file": "topics/zh-cn/skills/overview.md",
+      "revision": 11,
+      "sha256": "a2949bd860b9033b1ae81c86d80c61062a4a1b8078f5a4ca146cc7b8e0be2e55"
+    },
+    {
+      "topicId": "skills/find-and-manage",
+      "locale": "zh-cn",
+      "title": "查找和管理 Skills",
+      "file": "topics/zh-cn/skills/find-and-manage.md",
+      "revision": 11,
+      "sha256": "8b5149ae739588f6d9b232224ec266695c16bce7bfadc1497a0264b6952f44ca"
+    },
+    {
+      "topicId": "skills/access-and-versions",
+      "locale": "zh-cn",
+      "title": "管理 Skill 访问和版本",
+      "file": "topics/zh-cn/skills/access-and-versions.md",
+      "revision": 11,
+      "sha256": "beaaf4cacbb8faa20045b40735ffd1ca8d20be7b0bae51e5c029ea9cb7d485c1"
+    },
+    {
+      "topicId": "skills/create-and-configure",
+      "locale": "zh-cn",
+      "title": "创建和配置 Skill",
+      "file": "topics/zh-cn/skills/create-and-configure.md",
+      "revision": 11,
+      "sha256": "ee5c8360c4e2250cd80197ea4c747da67a4d235b5a13ce53c44b203ee9fe10a2"
+    },
+    {
+      "topicId": "skills/improve",
+      "locale": "zh-cn",
+      "title": "根据实际使用改进 Skill",
+      "file": "topics/zh-cn/skills/improve.md",
+      "revision": 11,
+      "sha256": "02bebf98c2e5a4de086b823687a33ce7f02055da69bafc000a2720c50681b995"
+    },
+    {
+      "topicId": "administration/access-checklist",
+      "locale": "zh-cn",
+      "title": "工作区访问检查清单",
+      "file": "topics/zh-cn/administration/access-checklist.md",
+      "revision": 15,
+      "sha256": "850517b4013ad4644ede560fa7647c9e3857d7aa32bc53247764284ef631c0da"
+    },
+    {
+      "topicId": "administration/audit-logs",
+      "locale": "zh-cn",
+      "title": "筛选、查看并导出审计日志",
+      "file": "topics/zh-cn/administration/audit-logs.md",
+      "revision": 15,
+      "sha256": "295a5a460f9758c2ba1495bfa1bb0aeffc8e0135f82eac207e72631c2d465dc6"
+    },
+    {
+      "topicId": "administration/identity-and-provisioning",
+      "locale": "zh-cn",
+      "title": "配置 SSO、目录同步和群组角色",
+      "file": "topics/zh-cn/administration/identity-and-provisioning.md",
+      "revision": 15,
+      "sha256": "31e0742009001fbd027d848f5319f1b9f926d6215ee96cef68018cde37ae8fe4"
+    },
+    {
+      "topicId": "administration/members-and-spaces",
+      "locale": "zh-cn",
+      "title": "管理成员和 Spaces",
+      "file": "topics/zh-cn/administration/members-and-spaces.md",
+      "revision": 15,
+      "sha256": "2991387de8583585731be930fdf58c0802a49217b782f4cc7f29fe757107fb45"
+    },
+    {
+      "topicId": "administration/support",
+      "locale": "zh-cn",
+      "title": "获取 Counso 支持",
+      "file": "topics/zh-cn/administration/support.md",
+      "revision": 15,
+      "sha256": "23be173ae268ca05961881b250f5b547bbf8c46b09872df6c225cafe5ace46fb"
+    },
+    {
+      "topicId": "administration/usage-and-seats",
+      "locale": "zh-cn",
+      "title": "检查用量和席位访问",
+      "file": "topics/zh-cn/administration/usage-and-seats.md",
+      "revision": 15,
+      "sha256": "a430b6f62751141db974d3009e2eeb891828d8a33e0290cb8f0cfb2c1aa93f88"
+    },
+    {
+      "topicId": "skills/overview",
+      "locale": "en",
+      "title": "Understand Skills",
+      "file": "topics/en/skills/overview.md",
+      "revision": 11,
+      "sha256": "ddfdcd4d6831606a6d35c5348419b9fb76d42dbc7fd2b6aed18e5a914b3ff21e"
+    },
+    {
+      "topicId": "skills/find-and-manage",
+      "locale": "en",
+      "title": "Find and manage Skills",
+      "file": "topics/en/skills/find-and-manage.md",
+      "revision": 11,
+      "sha256": "a9118c924f9f798a3f7e299a87e4c3611689847b725e6e4dc25ea6b02c8bf28b"
+    },
+    {
+      "topicId": "skills/access-and-versions",
+      "locale": "en",
+      "title": "Control Skill access and versions",
+      "file": "topics/en/skills/access-and-versions.md",
+      "revision": 11,
+      "sha256": "4c975c3ba9c031dd29ba9942f049dd4f2d5858e5e628dc47c2f59769914a93da"
+    },
+    {
+      "topicId": "skills/create-and-configure",
+      "locale": "en",
+      "title": "Create and configure a Skill",
+      "file": "topics/en/skills/create-and-configure.md",
+      "revision": 11,
+      "sha256": "84f73b9ec39deb6ed03dfc0269f1983855769086cd87920fb2d652787905b259"
+    },
+    {
+      "topicId": "skills/improve",
+      "locale": "en",
+      "title": "Improve a Skill from real use",
+      "file": "topics/en/skills/improve.md",
+      "revision": 11,
+      "sha256": "bd85b6b657196ca48ce7d7c618cad64446807d1b19aae6246d03bede5181d9a1"
+    },
+    {
+      "topicId": "pods/files",
+      "locale": "en",
+      "title": "Work with Pod files",
+      "file": "topics/en/pods/files.md",
+      "revision": 12,
+      "sha256": "beca9bc618033b70d9db849e0dcf1ba86366b8e532ed01212b7a0436226093b4"
+    },
+    {
+      "topicId": "pods/frames",
+      "locale": "en",
+      "title": "Create and use Frames",
+      "file": "topics/en/pods/frames.md",
+      "revision": 12,
+      "sha256": "032421e6481cdf9bb678d86519d8958da39970a69f32afc6bbb0e11f6aca620b"
+    },
+    {
+      "topicId": "pods/members-and-conversations",
+      "locale": "en",
+      "title": "Manage Pod members and conversations",
+      "file": "topics/en/pods/members-and-conversations.md",
+      "revision": 12,
+      "sha256": "8784777d7861d5ca618c1ef878b1d595d6d01b0b2d652b0203ae0ea4df6bc505"
+    },
+    {
+      "topicId": "pods/overview",
+      "locale": "en",
+      "title": "Understand Pods",
+      "file": "topics/en/pods/overview.md",
+      "revision": 12,
+      "sha256": "99be349afc7482c56312c12438a5babfe77862eb72f0dfbf0f2158ec70c7e35b"
+    },
+    {
+      "topicId": "pods/tasks",
+      "locale": "en",
+      "title": "Manage Pod tasks",
+      "file": "topics/en/pods/tasks.md",
+      "revision": 12,
+      "sha256": "c9092c180e8e849240b185dc0b8282310d2a92e39befdbbbf0ca197baf0bf658"
+    },
+    {
+      "topicId": "integrations/channels",
+      "locale": "zh-cn",
+      "title": "渠道与消息集成",
+      "file": "topics/zh-cn/integrations/channels.md",
+      "revision": 45,
+      "sha256": "2a02b9ebb8313cd4731725f89f93e8794199b0425316eec679e11cd002e242c2"
+    },
+    {
+      "topicId": "integrations/confluence",
+      "locale": "zh-cn",
+      "title": "Confluence 连接与工具",
+      "file": "topics/zh-cn/integrations/confluence.md",
+      "revision": 45,
+      "sha256": "aaac399c4e05e5ddd4af794fb8d2f46afcd1f7a851084e85856484863b6feee1"
+    },
+    {
+      "topicId": "integrations/connections-and-tools",
+      "locale": "zh-cn",
+      "title": "连接与工具",
+      "file": "topics/zh-cn/integrations/connections-and-tools.md",
+      "revision": 45,
+      "sha256": "16a8f677f126eaf6e04349eb15877fbd0c4c2f6e77ae044b9b17e497df8859fe"
+    },
+    {
+      "topicId": "integrations/data-platforms",
+      "locale": "zh-cn",
+      "title": "数据平台连接与工具",
+      "file": "topics/zh-cn/integrations/data-platforms.md",
+      "revision": 45,
+      "sha256": "fbe9e166885c0614330cf197b01424417009d4424f9686a902ebbb7f4abc50a2"
+    },
+    {
+      "topicId": "integrations/gong",
+      "locale": "zh-cn",
+      "title": "Gong 连接与工具",
+      "file": "topics/zh-cn/integrations/gong.md",
+      "revision": 45,
+      "sha256": "41a18237d1abc3488927975ee315f771eb75cafccb9f12374cafbdaece858ab0"
+    },
+    {
+      "topicId": "integrations/google",
+      "locale": "zh-cn",
+      "title": "Google 连接与工具",
+      "file": "topics/zh-cn/integrations/google.md",
+      "revision": 45,
+      "sha256": "9fb9632c725bc72a92b93e6da5244ea076ef3a49d696da8129fe6c80a4dcce43"
+    },
+    {
+      "topicId": "integrations/microsoft",
+      "locale": "zh-cn",
+      "title": "Microsoft 连接与工具",
+      "file": "topics/zh-cn/integrations/microsoft.md",
+      "revision": 45,
+      "sha256": "2f187abd41f9b6abd1502e87e991ff141ea5b5276e35b659405071359babed1f"
+    },
+    {
+      "topicId": "integrations/netsuite",
+      "locale": "zh-cn",
+      "title": "NetSuite 工具",
+      "file": "topics/zh-cn/integrations/netsuite.md",
+      "revision": 45,
+      "sha256": "69979b726f88952213d6af4cf5cf4b2e04ad1d266370f699f951c6a77e53acae"
+    },
+    {
+      "topicId": "integrations/notion",
+      "locale": "zh-cn",
+      "title": "Notion 连接与工具",
+      "file": "topics/zh-cn/integrations/notion.md",
+      "revision": 45,
+      "sha256": "331a3ea1667cbedd98128b1f9b6ebcbda3f4580bef986622b764ddb817939bb8"
+    },
+    {
+      "topicId": "integrations/personal-and-shared",
+      "locale": "zh-cn",
+      "title": "个人与共享授权",
+      "file": "topics/zh-cn/integrations/personal-and-shared.md",
+      "revision": 45,
+      "sha256": "64b7c8e845f51f4bea1e3fc4a8377c19cf7c50caf409f1b162d95127509d83ed"
+    },
+    {
+      "topicId": "integrations/power-bi",
+      "locale": "zh-cn",
+      "title": "Power BI 工具",
+      "file": "topics/zh-cn/integrations/power-bi.md",
+      "revision": 45,
+      "sha256": "b523e71df6fc1712af24391f83e10c71c3581b85ae785dc8185caeb9dde40433"
+    },
+    {
+      "topicId": "integrations/remote-mcp",
+      "locale": "zh-cn",
+      "title": "添加远程 MCP 服务器",
+      "file": "topics/zh-cn/integrations/remote-mcp.md",
+      "revision": 45,
+      "sha256": "706ac5ea374c67895c1a15cd12c11c724104294e31954ef986027b1e8236c4d8"
+    },
+    {
+      "topicId": "integrations/slack",
+      "locale": "zh-cn",
+      "title": "Slack 连接与工具",
+      "file": "topics/zh-cn/integrations/slack.md",
+      "revision": 45,
+      "sha256": "8da8749bc212e88fa8d7c21e06f72544e8a857786b25a08648a6ef1d2b05f0ff"
+    },
+    {
+      "topicId": "integrations/tools-catalog",
+      "locale": "zh-cn",
+      "title": "服务商工具目录",
+      "file": "topics/zh-cn/integrations/tools-catalog.md",
+      "revision": 45,
+      "sha256": "3d0705222bea128043cc616d2a6fd888b8885bafaa8cce75792b3e1655f3a2a2"
+    },
+    {
+      "topicId": "guides/team-adoption",
+      "locale": "zh-cn",
+      "title": "让团队从一个用例走向持续使用",
+      "file": "topics/zh-cn/guides/team-adoption.md",
+      "revision": 12,
+      "sha256": "cfaabe096abf39b996a806879e061d43118e8e62fe512a6f1e01f19d476caf97"
+    },
+    {
+      "topicId": "guides/customer-collaboration",
+      "locale": "zh-cn",
+      "title": "安全地与客户协作",
+      "file": "topics/zh-cn/guides/customer-collaboration.md",
+      "revision": 12,
+      "sha256": "6e84518d6bc9fd1f97e20639f933827638385236bdf6b5c6de899e909071a7c3"
+    },
+    {
+      "topicId": "guides/data-review",
+      "locale": "zh-cn",
+      "title": "使用智能体复核数据",
+      "file": "topics/zh-cn/guides/data-review.md",
+      "revision": 12,
+      "sha256": "b0fe5e34b4af9903ec4f267e4520e55d23f13871abee27c4db5507f08842e628"
+    },
+    {
+      "topicId": "guides/knowledge-work",
+      "locale": "zh-cn",
+      "title": "使用智能体完成知识工作",
+      "file": "topics/zh-cn/guides/knowledge-work.md",
+      "revision": 12,
+      "sha256": "f1610a60e6999031ab94d1067d02f18402189ecc0567c184292776ff030ce904"
+    },
+    {
+      "topicId": "automations/filters-and-limits",
+      "locale": "zh-cn",
+      "title": "过滤自动化事件并管理限制",
+      "file": "topics/zh-cn/automations/filters-and-limits.md",
+      "revision": 9,
+      "sha256": "ee4f350892b557a593f240438803855457ad97f5e651caa1903c49b0320a75bf"
+    },
+    {
+      "topicId": "automations/schedules",
+      "locale": "zh-cn",
+      "title": "为助手设置计划",
+      "file": "topics/zh-cn/automations/schedules.md",
+      "revision": 9,
+      "sha256": "5a30c33045e091670fa58214b94318ea1762ee159e66571d57766f505e633200"
+    },
+    {
+      "topicId": "automations/webhooks",
+      "locale": "zh-cn",
+      "title": "使用 Webhook 触发助手",
+      "file": "topics/zh-cn/automations/webhooks.md",
+      "revision": 9,
+      "sha256": "d5b5e87a503b00706347cd63edc6b214986279bdebd6c2ef7ae44776895bb75a"
+    },
+    {
+      "topicId": "getting-started/introduction",
+      "locale": "en",
+      "title": "Introduction to Counso AI",
+      "file": "topics/en/getting-started/introduction.md",
+      "revision": 12,
+      "sha256": "61851b29e53fe69d0b174c4eb5ae1e8ff6ae37a1d3a950bd9b0555e6f75ff53c"
+    },
+    {
+      "topicId": "getting-started/workspace-navigation",
+      "locale": "en",
+      "title": "Workspace navigation",
+      "file": "topics/en/getting-started/workspace-navigation.md",
+      "revision": 12,
+      "sha256": "94f6f63b8eaae9216717915fc930030ef71b20ab816bf5c08f8ea4176b1603fd"
+    },
+    {
+      "topicId": "getting-started/first-conversation",
+      "locale": "en",
+      "title": "Start your first conversation",
+      "file": "topics/en/getting-started/first-conversation.md",
+      "revision": 12,
+      "sha256": "44301ab31dd025409d36c9a6e2fdf67ed182724bd4868f6d2351cefa677a506e"
+    },
+    {
+      "topicId": "getting-started/write-a-clear-request",
+      "locale": "en",
+      "title": "Write a clear request",
+      "file": "topics/en/getting-started/write-a-clear-request.md",
+      "revision": 12,
+      "sha256": "42338f6f683316476bc73c68aac8044e9849e5227dddba9fdc1ca7900c88fe87"
+    },
+    {
+      "topicId": "getting-started/review-results",
+      "locale": "en",
+      "title": "Review results before relying on them",
+      "file": "topics/en/getting-started/review-results.md",
+      "revision": 12,
+      "sha256": "181cceb1ed75358b1f72e4f404d9950b5913e1651e1a958d4ec06e90948742db"
+    },
+    {
+      "topicId": "getting-started/conversation-settings",
+      "locale": "en",
+      "title": "Manage conversations and identify an Agent",
+      "file": "topics/en/getting-started/conversation-settings.md",
+      "revision": 12,
+      "sha256": "a234ad789c9c515dd5b7924e1ab6bad6b6890c7c1cc5371f186b1a773e44da00"
+    },
+    {
+      "topicId": "agents/choose-an-agent",
+      "locale": "zh-cn",
+      "title": "选择智能体",
+      "file": "topics/zh-cn/agents/choose-an-agent.md",
+      "revision": 19,
+      "sha256": "29a13269fcf13ffd2ded9ece13492b44e74d9f1dc03c9f4f49bba36b5ee93b54"
+    },
+    {
+      "topicId": "agents/create-an-agent",
+      "locale": "zh-cn",
+      "title": "创建智能体",
+      "file": "topics/zh-cn/agents/create-an-agent.md",
+      "revision": 19,
+      "sha256": "339e42f62bf6bf85439571ff00985eab70d07e29d4f04efc0beca0763267edba"
+    },
+    {
+      "topicId": "agents/write-instructions",
+      "locale": "zh-cn",
+      "title": "编写智能体指令",
+      "file": "topics/zh-cn/agents/write-instructions.md",
+      "revision": 19,
+      "sha256": "c75a478a8264fd0cefdff1bb3f7af1c17f97b3dbe6515287bdc26e029d3805ef"
+    },
+    {
+      "topicId": "agents/data-and-access",
+      "locale": "zh-cn",
+      "title": "管理智能体的数据与访问",
+      "file": "topics/zh-cn/agents/data-and-access.md",
+      "revision": 19,
+      "sha256": "216583be5c23b25358a41953ebb0b42f09b8b4c76d6ff0311d166adcfefb3b76"
+    },
+    {
+      "topicId": "agents/capabilities-and-knowledge",
+      "locale": "zh-cn",
+      "title": "添加能力和知识",
+      "file": "topics/zh-cn/agents/capabilities-and-knowledge.md",
+      "revision": 19,
+      "sha256": "c786ed88e07177afa86922bea23554b35a9a62ed1823f46586d007f13b6f2b6b"
+    },
+    {
+      "topicId": "agents/preview-and-improve",
+      "locale": "zh-cn",
+      "title": "预览并改进智能体",
+      "file": "topics/zh-cn/agents/preview-and-improve.md",
+      "revision": 19,
+      "sha256": "ba6aa9f019c7af33cce846860e948c3f62709c0ccbbbab7155db81809f43841e"
+    },
+    {
+      "topicId": "agents/manage-and-share",
+      "locale": "zh-cn",
+      "title": "管理和共享智能体",
+      "file": "topics/zh-cn/agents/manage-and-share.md",
+      "revision": 19,
+      "sha256": "0f9ebe1b78232c5eba19416c09529919c778baf9c890479205d0febcd4030164"
+    },
+    {
+      "topicId": "agents/advanced-work-modes",
+      "locale": "zh-cn",
+      "title": "选择高级助手工作方式",
+      "file": "topics/zh-cn/agents/advanced-work-modes.md",
+      "revision": 19,
+      "sha256": "941232f0b54f6d8d1193843a0a41926f4acb0aea67fc97253328a14cf0f56226"
+    },
+    {
+      "topicId": "agents/context-and-compaction",
+      "locale": "zh-cn",
+      "title": "管理长对话的上下文",
+      "file": "topics/zh-cn/agents/context-and-compaction.md",
+      "revision": 19,
+      "sha256": "f481bd6808d872bca8ba6a05fd644bc68c9637f0d35e43fd582e8f14dab9ef29"
+    },
+    {
+      "topicId": "agents/model-selection",
+      "locale": "zh-cn",
+      "title": "选择对话或智能体使用的模型",
+      "file": "topics/zh-cn/agents/model-selection.md",
+      "revision": 19,
+      "sha256": "2377cf80b9409fde04c2d52a28b0d2fd1fd793f8f34e83e91d8ca4746811b397"
+    },
+    {
+      "topicId": "agents/structured-output",
+      "locale": "zh-cn",
+      "title": "请求结构化回答",
+      "file": "topics/zh-cn/agents/structured-output.md",
+      "revision": 19,
+      "sha256": "e104eaf603260741ddcef6125faef293a1ab3fc103dec29465efe5145234bbd6"
+    },
+    {
+      "topicId": "knowledge/overview",
+      "locale": "zh-cn",
+      "title": "认识 Knowledge",
+      "file": "topics/zh-cn/knowledge/overview.md",
+      "revision": 13,
+      "sha256": "46cb1524fcb0a1d7868c3075c91943c87c97678a37f4bf11d6dcdf5c94d86396"
+    },
+    {
+      "topicId": "knowledge/choose-sources",
+      "locale": "zh-cn",
+      "title": "选择 Knowledge 来源",
+      "file": "topics/zh-cn/knowledge/choose-sources.md",
+      "revision": 13,
+      "sha256": "85ab3c177c462bf08222ac51936de7cd4c13f08c113bc667db28104c3d03133a"
+    },
+    {
+      "topicId": "knowledge/check-citations",
+      "locale": "zh-cn",
+      "title": "检查回答背后的来源",
+      "file": "topics/zh-cn/knowledge/check-citations.md",
+      "revision": 13,
+      "sha256": "764417c1bb7e12c1fc630b8f8b9b6365f8483554a2eb42db3f676cdf2b050515"
+    },
+    {
+      "topicId": "knowledge/troubleshoot-missing-information",
+      "locale": "zh-cn",
+      "title": "排查缺失信息",
+      "file": "topics/zh-cn/knowledge/troubleshoot-missing-information.md",
+      "revision": 13,
+      "sha256": "b643b61ebe9eb7d58d4a4fb100e755654c4af787e5681d85adb338f6a938c79f"
+    },
+    {
+      "topicId": "knowledge/understand-limits",
+      "locale": "zh-cn",
+      "title": "了解 Knowledge 的限制",
+      "file": "topics/zh-cn/knowledge/understand-limits.md",
+      "revision": 13,
+      "sha256": "54563d252c20d143a59950f4fe37834a39ce7972230871d270b1e007f8cb617b"
+    },
+    {
+      "topicId": "knowledge/search-extract-and-query",
+      "locale": "zh-cn",
+      "title": "选择检索、提取或表格查询",
+      "file": "topics/zh-cn/knowledge/search-extract-and-query.md",
+      "revision": 13,
+      "sha256": "9cd5c4775914bb65abb8fe612ed54d27a270d912953417aaa392b37de77014ac"
+    },
+    {
+      "topicId": "knowledge/working-with-documents",
+      "locale": "zh-cn",
+      "title": "使用文档、图片和表格",
+      "file": "topics/zh-cn/knowledge/working-with-documents.md",
+      "revision": 13,
+      "sha256": "cb732dbfda90581d892b37bdf511dd8b6d4902a6935367d3add1960d2808e0dc"
+    },
+    {
+      "topicId": "pods/files",
+      "locale": "zh-cn",
+      "title": "使用 Pod 文件",
+      "file": "topics/zh-cn/pods/files.md",
+      "revision": 12,
+      "sha256": "a2f180baca71d07978c6aa3794a65e8b84384d60b79f4ef39f0eb1ccaeffac5a"
+    },
+    {
+      "topicId": "pods/frames",
+      "locale": "zh-cn",
+      "title": "创建和使用 Frames",
+      "file": "topics/zh-cn/pods/frames.md",
+      "revision": 12,
+      "sha256": "f6b9ac81b0c94431d66a8df638e3928a637c59c497d81b121bc98bbee130ceed"
+    },
+    {
+      "topicId": "pods/members-and-conversations",
+      "locale": "zh-cn",
+      "title": "管理 Pod 成员和对话",
+      "file": "topics/zh-cn/pods/members-and-conversations.md",
+      "revision": 12,
+      "sha256": "7e4727ee32d362446888058bbb0fad3256f6794448aa3a8db137890bc3f373d3"
+    },
+    {
+      "topicId": "pods/overview",
+      "locale": "zh-cn",
+      "title": "了解 Pods",
+      "file": "topics/zh-cn/pods/overview.md",
+      "revision": 12,
+      "sha256": "4deb2a713173b420b7cf35383873766578507cadee419aef63e472303dc94e13"
+    },
+    {
+      "topicId": "pods/tasks",
+      "locale": "zh-cn",
+      "title": "管理 Pod 任务",
+      "file": "topics/zh-cn/pods/tasks.md",
+      "revision": 12,
+      "sha256": "fe80f5fa9014132b7d1a184899741852c76eb67d5fd1f8c9378ddf08459cdf63"
+    },
+    {
+      "topicId": "agents/choose-an-agent",
+      "locale": "en",
+      "title": "Choose an Agent",
+      "file": "topics/en/agents/choose-an-agent.md",
+      "revision": 20,
+      "sha256": "20938931674849e71085c00a39ead690283f626898c326761478c1117c64cf6e"
+    },
+    {
+      "topicId": "agents/create-an-agent",
+      "locale": "en",
+      "title": "Create an Agent",
+      "file": "topics/en/agents/create-an-agent.md",
+      "revision": 20,
+      "sha256": "dfb659697a8493f201abe5f407c4b9e256928bb03725033093ab3ee5b9584ac2"
+    },
+    {
+      "topicId": "agents/write-instructions",
+      "locale": "en",
+      "title": "Write Agent instructions",
+      "file": "topics/en/agents/write-instructions.md",
+      "revision": 20,
+      "sha256": "f671df25a477ecde12b6e71ab32a0e19cd90caab4194cbede3515032fe705e6a"
+    },
+    {
+      "topicId": "agents/data-and-access",
+      "locale": "en",
+      "title": "Manage Agent data and access",
+      "file": "topics/en/agents/data-and-access.md",
+      "revision": 20,
+      "sha256": "690f8b11b17b445670d0c98f5674f58087a5906880b232b93edd612126a2f5db"
+    },
+    {
+      "topicId": "agents/capabilities-and-knowledge",
+      "locale": "en",
+      "title": "Add capabilities and knowledge",
+      "file": "topics/en/agents/capabilities-and-knowledge.md",
+      "revision": 20,
+      "sha256": "baa12772e312f67a19329254ea6526223ea3306146cef2402834e538883ffb61"
+    },
+    {
+      "topicId": "agents/preview-and-improve",
+      "locale": "en",
+      "title": "Preview and improve an Agent",
+      "file": "topics/en/agents/preview-and-improve.md",
+      "revision": 20,
+      "sha256": "dd139df5cc1c27fa6197b1d1ef6511461d24a119d4c092fd0ff3d838913a0019"
+    },
+    {
+      "topicId": "agents/manage-and-share",
+      "locale": "en",
+      "title": "Manage and share an Agent",
+      "file": "topics/en/agents/manage-and-share.md",
+      "revision": 20,
+      "sha256": "f41560e313bf0ee24c7399d9cb8304ac5f89f4ad742079fc3d1213f822bd1ec2"
+    },
+    {
+      "topicId": "agents/advanced-work-modes",
+      "locale": "en",
+      "title": "Choose an advanced Agent work mode",
+      "file": "topics/en/agents/advanced-work-modes.md",
+      "revision": 20,
+      "sha256": "43f4e7f97d38545063d1b73d542453926d86bac2a5501957ba8f494bf127a08b"
+    },
+    {
+      "topicId": "agents/context-and-compaction",
+      "locale": "en",
+      "title": "Manage context in long conversations",
+      "file": "topics/en/agents/context-and-compaction.md",
+      "revision": 20,
+      "sha256": "2f00c6447270107382d2b02b91ed21be7cc6d19e2c8a6609d2b09963fcabb5ee"
+    },
+    {
+      "topicId": "agents/model-selection",
+      "locale": "en",
+      "title": "Choose a model for a conversation or Agent",
+      "file": "topics/en/agents/model-selection.md",
+      "revision": 20,
+      "sha256": "8c22f7298bb11fb44888959ae9b44617659e23c18b19137a2ec9488218a25591"
+    },
+    {
+      "topicId": "agents/structured-output",
+      "locale": "en",
+      "title": "Request structured output",
+      "file": "topics/en/agents/structured-output.md",
+      "revision": 20,
+      "sha256": "aa2bbba2f7816b2cfd7431dcd607f985585743d6da329cef45a1a949912cec5c"
+    },
+    {
+      "topicId": "automations/filters-and-limits",
+      "locale": "en",
+      "title": "Filter automation events and manage limits",
+      "file": "topics/en/automations/filters-and-limits.md",
+      "revision": 9,
+      "sha256": "dbda5603ea5680f234043d12c4b1ec567d9249c359a11221146dae005c65197c"
+    },
+    {
+      "topicId": "automations/schedules",
+      "locale": "en",
+      "title": "Schedule an Agent",
+      "file": "topics/en/automations/schedules.md",
+      "revision": 9,
+      "sha256": "bb2d13d4d75281ef02f5708acdb9dcde3166f8cc0f19187721fe3aeb3747ab5d"
+    },
+    {
+      "topicId": "automations/webhooks",
+      "locale": "en",
+      "title": "Trigger an Agent with a webhook",
+      "file": "topics/en/automations/webhooks.md",
+      "revision": 9,
+      "sha256": "0614ed6e2fef06a0563433a281b29239cb49946d5f727737c55a817a877a347c"
+    }
+  ],
+  "source": {
+    "provider": "local-markdown",
+    "maintenance": "GitHub Markdown is the maintained source; Feishu is a review copy."
+  }
+}
