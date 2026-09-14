@@ -6,6 +6,8 @@
 
 按平台查看具体说明：
 
+- [Slack](slack.md)
+- [GitHub](github.md)
 - [Google Drive](google-drive.md)
 - [Notion](notion.md)
 - [Confluence](confluence.md)

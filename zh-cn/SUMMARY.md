@@ -145,6 +145,9 @@
 - [为共享 Frame 添加品牌信息](docs/user-documentation/agents/frames/white-labeled-frames.md)
 - [将 Google Sheets 工作迁移到 Google Drive](docs/user-documentation/agents/tools/google-sheets-deprecated.md)
 
+- [GitHub](docs/user-documentation/agents/tools/github.md)
+- [Monday.com](docs/user-documentation/agents/tools/monday-com.md)
+
 ## Pods
 
 - [了解 Pods](docs/user-documentation/pods/overview.md)
@@ -200,3 +203,14 @@
 - [培训团队优化积分使用](docs/user-documentation/admins/usage-seats-and-credits/train-team-credit-optimization.md)
 - [订阅与账单](docs/user-documentation/admins/billing/subscriptions-and-payments.md)
 - [排查工作区管理问题](docs/user-documentation/admins/admin-troubleshooting/admin-troubleshooting.md)
+- [连接 GitHub](docs/user-documentation/admins/connections-management/github.md)
+- [连接 Slack 知识](docs/user-documentation/admins/connections-management/slack.md)
+- [排查 Slack 连接与工具问题](docs/user-documentation/admins/admin-troubleshooting/slack-troubleshooting.md)
+
+## 集成与接入
+
+- [将 MCP 客户端连接到 Counso](docs/user-documentation/agents/integrations/counso-mcp-server.md)
+- [在 Slack 频道设置自动回复](docs/user-documentation/agents/integrations/counso-in-slack/slack-auto-reply.md)
+- [在 Slack Workflow 中使用智能体](docs/user-documentation/agents/integrations/counso-in-slack/slack-workflows.md)
+- [自动加入新的 Slack 频道](docs/user-documentation/agents/integrations/counso-in-slack/slack-auto-join.md)
+- [使用会议转录](docs/user-documentation/agents/integrations/meeting-transcripts.md)

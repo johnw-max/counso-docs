@@ -1,50 +1,59 @@
-# 尚未提供的文档与 URL
+# 文档发布范围与准备稿
 
-当前提供 183 篇完整的中英文文档。以下列出其余全部 175 项，区分暂不开放的集成教程、本版不提供的开发资料，以及不纳入 Counso 的历史内容。
+当前提供 193 篇中英文正文，另有 19 篇中英文准备稿。是否进入用户目录，按教程依赖的内容判断；工作区尚未完成配置，本身不是隐藏配置教程的理由。
 
-## 暂不开放的集成教程（29 篇）
+## 配置与使用说明
 
-这些条目对应的 Counso 专用应用、服务或使用流程尚未确认可供客户使用。前端入口应暂时隐藏；本文档包已将它们移出正常导航，原 URL 保留简短的“文档更新中”提示，承接可能遗漏的旧链接。对应能力可以交付后，再补充教程并开放入口。
+以下 10 篇配置与使用说明列入正常目录。使用前需完成相应的部署配置和工作区授权。应用注册、凭据、回调、事件接收、后台服务及功能开关，由部署管理员完成；普通用户按正文执行授权、选择范围和使用步骤。
 
-表内“当前缺项”供开发交付核对，不展示在用户页面。页面只使用 [英文提示](en/UPDATING.md) 或[中文提示](zh-cn/UPDATING.md)，也不计入完整文档。每个地址的展示标题、提示文件和路径均列在 `translations.json` 的 `notice` 字段；包含旧品牌的路径通过 `redirects.json` 转到 Counso 路径，中文在英文路径前加 `/zh-cn`。
+| 主题 | 类型 | 部署前提 | 文章 |
+| --- | --- | --- | --- |
+| GitHub 工具 | 应用配置 | 注册并配置相应用途的 GitHub App、凭据与回调，再授权仓库；上游已有对应工具或同步实现。 | [EN](en/docs/user-documentation/agents/tools/github.md) · [中文](zh-cn/docs/user-documentation/agents/tools/github.md) |
+| Monday 工具 | OAuth 配置 | 注册自己的 Monday OAuth 应用，填写部署回调和凭据；从 Counso 发起授权，不沿用原教程的固定应用 ID。 | [EN](en/docs/user-documentation/agents/tools/monday-com.md) · [中文](zh-cn/docs/user-documentation/agents/tools/monday-com.md) |
+| 外部客户端连接 Counso MCP | 服务与 OAuth 配置 | 部署 MCP 服务及其 OAuth 授权后提供实际端点；这篇是客户端使用说明，不开放 API/SDK 文档。 | [EN](en/docs/user-documentation/agents/integrations/counso-mcp-server.md) · [中文](zh-cn/docs/user-documentation/agents/integrations/counso-mcp-server.md) |
+| Slack 自动回复 | 配置与部署 | 配置独立 Slack Bot 应用及消息接收服务，再选择频道和智能体；与数据同步连接分开。 | [EN](en/docs/user-documentation/agents/integrations/counso-in-slack/slack-auto-reply.md) · [中文](zh-cn/docs/user-documentation/agents/integrations/counso-in-slack/slack-auto-reply.md) |
+| Slack Workflow | 管理员授权 | 配置 Slack Bot，并由部署管理员登记 Workflow 名称及允许访问的受限 Space。 | [EN](en/docs/user-documentation/agents/integrations/counso-in-slack/slack-workflows.md) · [中文](zh-cn/docs/user-documentation/agents/integrations/counso-in-slack/slack-workflows.md) |
+| Slack 自动加入频道 | 配置与开关 | 先配置 Slack 数据连接和事件接收，再启用自动加入并设置匹配规则。 | [EN](en/docs/user-documentation/agents/integrations/counso-in-slack/slack-auto-join.md) · [中文](zh-cn/docs/user-documentation/agents/integrations/counso-in-slack/slack-auto-join.md) |
+| 会议转录 | 使用与自动化配置 | 普通使用说明保留；自动处理另外要求转录来源、后台处理服务和工作区设置。 | [EN](en/docs/user-documentation/agents/integrations/meeting-transcripts.md) · [中文](zh-cn/docs/user-documentation/agents/integrations/meeting-transcripts.md) |
+| GitHub 数据同步 | 应用配置 | 注册并配置相应用途的 GitHub App、凭据与回调，再授权仓库；上游已有对应工具或同步实现。 | [EN](en/docs/user-documentation/admins/connections-management/github.md) · [中文](zh-cn/docs/user-documentation/admins/connections-management/github.md) |
+| Slack 数据同步 | 配置与部署 | 自建 Slack App 的凭据、当前部署的 OAuth 回调和事件接收地址；运行已有同步服务并开启相应设置。 | [EN](en/docs/user-documentation/admins/connections-management/slack.md) · [中文](zh-cn/docs/user-documentation/admins/connections-management/slack.md) |
+| Slack 排障 | 使用说明 | 分别排查数据同步、对话机器人、个人工具，不把一类连接的权限套用到另一类。 | [EN](en/docs/user-documentation/admins/admin-troubleshooting/slack-troubleshooting.md) · [中文](zh-cn/docs/user-documentation/admins/admin-troubleshooting/slack-troubleshooting.md) |
 
-| 页面 | 原始 URL | 当前缺项 |
-| --- | --- | --- |
-| 产品支持 Skill | [https://docs.dust.tt/docs/user-documentation/agents/dust-support](https://docs.dust.tt/docs/user-documentation/agents/dust-support) | Counso 专用帮助知识源和支持入口 |
-| GitHub 工具（GitHub App） | [https://docs.dust.tt/docs/user-documentation/agents/tools/github](https://docs.dust.tt/docs/user-documentation/agents/tools/github) | Counso GitHub App 身份、安装和权限配置 |
-| Monday.com 应用 | [https://docs.dust.tt/docs/user-documentation/agents/tools/monday-com](https://docs.dust.tt/docs/user-documentation/agents/tools/monday-com) | Counso Monday.com 应用安装和授权 |
-| 从外部客户端连接 Counso MCP | [https://docs.dust.tt/docs/user-documentation/agents/integrations/dust-mcp-server](https://docs.dust.tt/docs/user-documentation/agents/integrations/dust-mcp-server) | Counso 对外 MCP 服务端点及 OAuth 登录 |
-| Slack 自动回复 | [https://docs.dust.tt/docs/user-documentation/agents/integrations/dust-in-slack/slack-auto-reply](https://docs.dust.tt/docs/user-documentation/agents/integrations/dust-in-slack/slack-auto-reply) | Counso Slack 机器人与频道自动回复 |
-| Slack 工作流调用智能体 | [https://docs.dust.tt/docs/user-documentation/agents/integrations/dust-in-slack/slack-workflows](https://docs.dust.tt/docs/user-documentation/agents/integrations/dust-in-slack/slack-workflows) | Counso Slack 机器人与工作流授权 |
-| Slack 自动加入频道 | [https://docs.dust.tt/docs/user-documentation/agents/integrations/dust-in-slack/slack-auto-join](https://docs.dust.tt/docs/user-documentation/agents/integrations/dust-in-slack/slack-auto-join) | Counso Slack 机器人与自动加入配置 |
-| 通过邮件联系智能体 | [https://docs.dust.tt/docs/user-documentation/agents/integrations/send-and-forward-email-to-agents](https://docs.dust.tt/docs/user-documentation/agents/integrations/send-and-forward-email-to-agents) | Counso 邮件地址与收发处理服务 |
-| Zapier：调用智能体 | [https://docs.dust.tt/docs/user-documentation/agents/integrations/zapier](https://docs.dust.tt/docs/user-documentation/agents/integrations/zapier) | Counso Zapier 应用与调用动作 |
-| Make.com：调用智能体 | [https://docs.dust.tt/docs/user-documentation/agents/integrations/make-com](https://docs.dust.tt/docs/user-documentation/agents/integrations/make-com) | Counso Make 模块与账号连接 |
-| n8n：调用智能体与上传文档 | [https://docs.dust.tt/docs/user-documentation/agents/integrations/n8n](https://docs.dust.tt/docs/user-documentation/agents/integrations/n8n) | Counso 节点、连接地址与凭据配置 |
-| Power Automate 连接器 | [https://docs.dust.tt/docs/user-documentation/agents/integrations/power-automate](https://docs.dust.tt/docs/user-documentation/agents/integrations/power-automate) | Counso 连接器安装包 |
-| 自动处理会议转录 | [https://docs.dust.tt/docs/user-documentation/agents/integrations/meeting-transcripts](https://docs.dust.tt/docs/user-documentation/agents/integrations/meeting-transcripts) | Counso 会议记录监听与自动处理流程 |
-| Google Sheets 内的智能体插件 | [https://docs.dust.tt/docs/user-documentation/agents/integrations/google-sheets-add-on](https://docs.dust.tt/docs/user-documentation/agents/integrations/google-sheets-add-on) | Counso 插件及其安装和登录入口 |
-| Zendesk 内的智能体应用 | [https://docs.dust.tt/docs/user-documentation/agents/integrations/dust-in-zendesk](https://docs.dust.tt/docs/user-documentation/agents/integrations/dust-in-zendesk) | Counso Zendesk 应用及其安装和登录入口 |
-| 浏览器扩展 | [https://docs.dust.tt/docs/user-documentation/agents/integrations/browser-extension](https://docs.dust.tt/docs/user-documentation/agents/integrations/browser-extension) | Counso 浏览器扩展的分发与登录入口 |
-| Raycast 扩展 | [https://docs.dust.tt/docs/user-documentation/agents/integrations/raycast-extension](https://docs.dust.tt/docs/user-documentation/agents/integrations/raycast-extension) | Counso 扩展及登录配置 |
-| Teams 机器人 | [https://docs.dust.tt/docs/user-documentation/agents/integrations/dust-in-teams](https://docs.dust.tt/docs/user-documentation/agents/integrations/dust-in-teams) | Counso Teams 应用包与机器人连接 |
-| GitHub 数据同步 | [https://docs.dust.tt/docs/user-documentation/admins/connections-management/github](https://docs.dust.tt/docs/user-documentation/admins/connections-management/github) | Counso GitHub App 身份、安装和权限配置 |
-| Slack 数据同步 | [https://docs.dust.tt/docs/user-documentation/admins/connections-management/slack](https://docs.dust.tt/docs/user-documentation/admins/connections-management/slack) | Counso Slack 同步应用清单及事件接收配置 |
-| Slack 专用集成排障 | [https://docs.dust.tt/docs/user-documentation/admins/admin-troubleshooting/slack-troubleshooting](https://docs.dust.tt/docs/user-documentation/admins/admin-troubleshooting/slack-troubleshooting) | 随 Slack 专用集成提供的排障说明 |
-| 导入 Dropbox 文件 | [https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/beta-import-dropbox-files](https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/beta-import-dropbox-files) | Counso 导入脚本与目标资料库配置 |
-| 导入 Front 会话 | [https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/beta-import-front-conversations](https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/beta-import-front-conversations) | Counso 导入脚本与目标资料库配置 |
-| 导入 Guru 卡片 | [https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/beta-import-guru-cards](https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/beta-import-guru-cards) | Counso 导入脚本与目标资料库配置 |
-| 导入 HubSpot 数据 | [https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/beta-import-hubspot-data](https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/beta-import-hubspot-data) | Counso 导入脚本与目标资料库配置 |
-| 导入 Jira 问题 | [https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/beta-import-jira-issues](https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/beta-import-jira-issues) | Counso 导入脚本与目标资料库配置 |
-| 导入 Linear 问题 | [https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/beta-import-linear-issues](https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/beta-import-linear-issues) | Counso 导入脚本与目标资料库配置 |
-| 导入 Salesforce 数据 | [https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/beta-import-salesforce-data](https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/beta-import-salesforce-data) | Counso 导入脚本与目标资料库配置 |
-| Zapier：自动上传资料 | [https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/zapier-automatically-add-datasource](https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/zapier-automatically-add-datasource) | Counso Zapier 应用与资料上传动作 |
+Slack、GitHub 和 Monday 的源码提供配置自有应用的入口。原教程中的固定域名和应用 ID 是托管环境的值，不能直接用作 Counso 配置。注册并配置自己的应用后，可沿用已有集成实现。
 
-上述范围仅针对表内页面对应的实现。普通 Slack 个人工具、通用远程 MCP 接入，以及管理员可自行配置的第三方 OAuth 或 API Key 工具仍保留。Google Sheets 和 Zendesk 的外部智能体插件也不等于产品内的数据工具或连接。
+## 已准备、暂不进入用户目录的文章
+
+以下文章的双语品牌化稿件保存在 `prepared/`。正文保留用途、配置前提和使用流程；尚未提供的安装包、分发地址、脚本命令或服务地址不凭空补写。它们是适用的集成主题，并非永久排除的功能。
+
+`translations.json` 的 `prepared` 字段关联这些稿件；当前站点只使用 `notice` 显示简短的“文档更新中”。提供对应交付物并核对具体步骤后，可将准备稿移入正常正文并开放入口。
+
+| 主题 | 类别 | 原始 URL | 发布前还需补齐 | 准备稿 |
+| --- | --- | --- | --- | --- |
+| 产品支持指引 | 产品帮助 Skill | [https://docs.dust.tt/docs/user-documentation/agents/dust-support](https://docs.dust.tt/docs/user-documentation/agents/dust-support) | 将内置帮助检索来源和支持入口指向 Counso 文档，不沿用原产品知识源。 | [EN](prepared/en/docs/user-documentation/agents/counso-support.md) · [中文](prepared/zh-cn/docs/user-documentation/agents/counso-support.md) |
+| 通过邮件联系智能体 | 邮件服务 | [https://docs.dust.tt/docs/user-documentation/agents/integrations/send-and-forward-email-to-agents](https://docs.dust.tt/docs/user-documentation/agents/integrations/send-and-forward-email-to-agents) | 原实现包含固定收件域名；需设置 Counso 地址、邮件解析回调及回复服务。 | [EN](prepared/en/docs/user-documentation/agents/integrations/send-and-forward-email-to-agents.md) · [中文](prepared/zh-cn/docs/user-documentation/agents/integrations/send-and-forward-email-to-agents.md) |
+| 通过 Zapier 运行智能体 | 专用应用 | [https://docs.dust.tt/docs/user-documentation/agents/integrations/zapier](https://docs.dust.tt/docs/user-documentation/agents/integrations/zapier) | 提供 Counso Zapier 应用/动作及目标环境连接，不能使用原品牌应用代替。 | [EN](prepared/en/docs/user-documentation/agents/integrations/zapier.md) · [中文](prepared/zh-cn/docs/user-documentation/agents/integrations/zapier.md) |
+| 通过 Make 运行智能体 | 专用应用 | [https://docs.dust.tt/docs/user-documentation/agents/integrations/make-com](https://docs.dust.tt/docs/user-documentation/agents/integrations/make-com) | 提供 Counso Make 模块及连接配置。 | [EN](prepared/en/docs/user-documentation/agents/integrations/make-com.md) · [中文](prepared/zh-cn/docs/user-documentation/agents/integrations/make-com.md) |
+| 在 n8n 中使用 Counso | 节点包 | [https://docs.dust.tt/docs/user-documentation/agents/integrations/n8n](https://docs.dust.tt/docs/user-documentation/agents/integrations/n8n) | 现有节点固定连接原站的 US/EU 地址，需提供支持 Counso 地址和凭据的节点包。 | [EN](prepared/en/docs/user-documentation/agents/integrations/n8n.md) · [中文](prepared/zh-cn/docs/user-documentation/agents/integrations/n8n.md) |
+| 在 Power Automate 中使用 Counso | 连接器安装包 | [https://docs.dust.tt/docs/user-documentation/agents/integrations/power-automate](https://docs.dust.tt/docs/user-documentation/agents/integrations/power-automate) | 提供 Counso Solution 包及其中的主机、认证和动作配置。 | [EN](prepared/en/docs/user-documentation/agents/integrations/power-automate.md) · [中文](prepared/zh-cn/docs/user-documentation/agents/integrations/power-automate.md) |
+| 在 Google Sheets 中使用 Counso | 表格插件 | [https://docs.dust.tt/docs/user-documentation/agents/integrations/google-sheets-add-on](https://docs.dust.tt/docs/user-documentation/agents/integrations/google-sheets-add-on) | 提供 Counso 插件及安装、连接入口；原 Marketplace 插件不能视为我们的版本。 | [EN](prepared/en/docs/user-documentation/agents/integrations/google-sheets-add-on.md) · [中文](prepared/zh-cn/docs/user-documentation/agents/integrations/google-sheets-add-on.md) |
+| 在 Zendesk 中使用 Counso | Zendesk 应用 | [https://docs.dust.tt/docs/user-documentation/agents/integrations/dust-in-zendesk](https://docs.dust.tt/docs/user-documentation/agents/integrations/dust-in-zendesk) | 提供连接 Counso 服务与授权的应用包或分发入口。 | [EN](prepared/en/docs/user-documentation/agents/integrations/counso-in-zendesk.md) · [中文](prepared/zh-cn/docs/user-documentation/agents/integrations/counso-in-zendesk.md) |
+| 在浏览器中使用智能体 | 浏览器扩展 | [https://docs.dust.tt/docs/user-documentation/agents/integrations/browser-extension](https://docs.dust.tt/docs/user-documentation/agents/integrations/browser-extension) | 提供 Counso 扩展构建、登录配置和实际分发入口。 | [EN](prepared/en/docs/user-documentation/agents/integrations/browser-extension.md) · [中文](prepared/zh-cn/docs/user-documentation/agents/integrations/browser-extension.md) |
+| 通过 Raycast 使用 Counso | Raycast 扩展 | [https://docs.dust.tt/docs/user-documentation/agents/integrations/raycast-extension](https://docs.dust.tt/docs/user-documentation/agents/integrations/raycast-extension) | 扩展中的服务地址与 OAuth 客户端需指向 Counso，并提供安装来源。 | [EN](prepared/en/docs/user-documentation/agents/integrations/raycast-extension.md) · [中文](prepared/zh-cn/docs/user-documentation/agents/integrations/raycast-extension.md) |
+| 在 Microsoft Teams 中使用智能体 | Teams 应用包 | [https://docs.dust.tt/docs/user-documentation/agents/integrations/dust-in-teams](https://docs.dust.tt/docs/user-documentation/agents/integrations/dust-in-teams) | 提供 Counso Teams 应用包及对应机器人注册、消息服务和授权。 | [EN](prepared/en/docs/user-documentation/agents/integrations/counso-in-teams.md) · [中文](prepared/zh-cn/docs/user-documentation/agents/integrations/counso-in-teams.md) |
+| 将 Dropbox 文件导入 Counso | 导入脚本 | [https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/beta-import-dropbox-files](https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/beta-import-dropbox-files) | 提供面向 Counso 的脚本与运行配置，确认目标地址、授权、来源范围及更新处理方式；数据源本身可以使用。 | [EN](prepared/en/docs/user-documentation/data-sources/custom-connections/beta-import-dropbox-files.md) · [中文](prepared/zh-cn/docs/user-documentation/data-sources/custom-connections/beta-import-dropbox-files.md) |
+| 将 Front 会话导入 Counso | 导入脚本 | [https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/beta-import-front-conversations](https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/beta-import-front-conversations) | 提供面向 Counso 的脚本与运行配置，确认目标地址、授权、来源范围及更新处理方式；数据源本身可以使用。 | [EN](prepared/en/docs/user-documentation/data-sources/custom-connections/beta-import-front-conversations.md) · [中文](prepared/zh-cn/docs/user-documentation/data-sources/custom-connections/beta-import-front-conversations.md) |
+| 将 Guru 卡片导入 Counso | 导入脚本 | [https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/beta-import-guru-cards](https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/beta-import-guru-cards) | 提供面向 Counso 的脚本与运行配置，确认目标地址、授权、来源范围及更新处理方式；数据源本身可以使用。 | [EN](prepared/en/docs/user-documentation/data-sources/custom-connections/beta-import-guru-cards.md) · [中文](prepared/zh-cn/docs/user-documentation/data-sources/custom-connections/beta-import-guru-cards.md) |
+| 将 HubSpot 公司摘要导入 Counso | 导入脚本 | [https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/beta-import-hubspot-data](https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/beta-import-hubspot-data) | 提供面向 Counso 的脚本与运行配置，确认目标地址、授权、来源范围及更新处理方式；数据源本身可以使用。 | [EN](prepared/en/docs/user-documentation/data-sources/custom-connections/beta-import-hubspot-data.md) · [中文](prepared/zh-cn/docs/user-documentation/data-sources/custom-connections/beta-import-hubspot-data.md) |
+| 将 Jira Issue 导入 Counso | 导入脚本 | [https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/beta-import-jira-issues](https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/beta-import-jira-issues) | 提供面向 Counso 的脚本与运行配置，确认目标地址、授权、来源范围及更新处理方式；数据源本身可以使用。 | [EN](prepared/en/docs/user-documentation/data-sources/custom-connections/beta-import-jira-issues.md) · [中文](prepared/zh-cn/docs/user-documentation/data-sources/custom-connections/beta-import-jira-issues.md) |
+| 将 Linear Issue 导入 Counso | 导入脚本 | [https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/beta-import-linear-issues](https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/beta-import-linear-issues) | 提供面向 Counso 的脚本与运行配置，确认目标地址、授权、来源范围及更新处理方式；数据源本身可以使用。 | [EN](prepared/en/docs/user-documentation/data-sources/custom-connections/beta-import-linear-issues.md) · [中文](prepared/zh-cn/docs/user-documentation/data-sources/custom-connections/beta-import-linear-issues.md) |
+| 将 Salesforce 客户摘要导入 Counso | 导入脚本 | [https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/beta-import-salesforce-data](https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/beta-import-salesforce-data) | 提供面向 Counso 的脚本与运行配置，确认目标地址、授权、来源范围及更新处理方式；数据源本身可以使用。 | [EN](prepared/en/docs/user-documentation/data-sources/custom-connections/beta-import-salesforce-data.md) · [中文](prepared/zh-cn/docs/user-documentation/data-sources/custom-connections/beta-import-salesforce-data.md) |
+| 通过 Zapier 上传文档 | 专用应用 | [https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/zapier-automatically-add-datasource](https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/zapier-automatically-add-datasource) | 提供 Counso Zapier 上传动作、凭据和目标资料库配置。 | [EN](prepared/en/docs/user-documentation/data-sources/custom-connections/zapier-automatically-add-datasource.md) · [中文](prepared/zh-cn/docs/user-documentation/data-sources/custom-connections/zapier-automatically-add-datasource.md) |
+
+导入概念、资料整理和核对方法可以介绍；当前保留为准备稿的是具体脚本教程。仅将源平台凭据填入原脚本，不会自动把原站上传目标改成 Counso。公开 API 文档暂缓也不等于这些数据源不能连接。
 
 ## 本版不提供的开发资料（137 项）
 
-公开 API、SDK、CLI、客户端开发接口及相关参考资料本版不对外提供，不作为“更新中”页面展示，也不承诺后续开放。以下是全部原始条目；原文继续保存在 `source/` 中。
+公开 API、SDK、CLI、客户端开发接口及配套参考资料本版不对外提供，也不作为“更新中”页面展示。以下保留全部原始条目供查阅，其中 135 项来自站点地图，另有两份接口规范。
 
 | 原文标题 | 原始 URL |
 | --- | --- |
@@ -186,11 +195,9 @@
 | openapi | [https://docs.dust.tt/docs/developer-platform/dust-api-documentation/openapi.json](https://docs.dust.tt/docs/developer-platform/dust-api-documentation/openapi.json) |
 | swagger | [https://raw.githubusercontent.com/dust-tt/dust/refs/heads/main/front-api/public/swagger.json](https://raw.githubusercontent.com/dust-tt/dust/refs/heads/main/front-api/public/swagger.json) |
 
-其中 135 项来自站点地图，另有 OpenAPI、Swagger 两份接口规范文件。
+## 不纳入 Counso 的历史内容（9 项）
 
-## 不纳入 Counso 的内容（9 项）
-
-以下内容属于原产品历史、实验仓库导航或已弃用框架，不作为 Counso 使用文档。
+这些内容属于原产品更新历史、实验仓库导航或已弃用框架，不作为 Counso 使用文档。原文继续保留。
 
 | 原文标题 | 原始 URL | 原因 |
 | --- | --- | --- |

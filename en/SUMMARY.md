@@ -145,6 +145,9 @@
 - [Add your brand to shared Frames](docs/user-documentation/agents/frames/white-labeled-frames.md)
 - [Move Google Sheets work to Google Drive](docs/user-documentation/agents/tools/google-sheets-deprecated.md)
 
+- [GitHub](docs/user-documentation/agents/tools/github.md)
+- [Monday.com](docs/user-documentation/agents/tools/monday-com.md)
+
 ## Pods
 
 - [Understand Pods](docs/user-documentation/pods/overview.md)
@@ -200,3 +203,14 @@
 - [Train your team on credit optimization](docs/user-documentation/admins/usage-seats-and-credits/train-team-credit-optimization.md)
 - [Subscriptions and billing](docs/user-documentation/admins/billing/subscriptions-and-payments.md)
 - [Troubleshoot workspace administration](docs/user-documentation/admins/admin-troubleshooting/admin-troubleshooting.md)
+- [Connect GitHub](docs/user-documentation/admins/connections-management/github.md)
+- [Connect Slack knowledge](docs/user-documentation/admins/connections-management/slack.md)
+- [Troubleshoot Slack connections and tools](docs/user-documentation/admins/admin-troubleshooting/slack-troubleshooting.md)
+
+## Integrations
+
+- [Connect an MCP client to Counso](docs/user-documentation/agents/integrations/counso-mcp-server.md)
+- [Set up automatic replies in Slack channels](docs/user-documentation/agents/integrations/counso-in-slack/slack-auto-reply.md)
+- [Use an Agent in Slack workflows](docs/user-documentation/agents/integrations/counso-in-slack/slack-workflows.md)
+- [Automatically join new Slack channels](docs/user-documentation/agents/integrations/counso-in-slack/slack-auto-join.md)
+- [Work with meeting transcripts](docs/user-documentation/agents/integrations/meeting-transcripts.md)
