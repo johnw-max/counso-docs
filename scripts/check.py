@@ -22,6 +22,11 @@ def read_json(path):
     return json.loads((ROOT / path).read_text())
 def digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
+def branded_path(path):
+    return re.sub(r'(?<![A-Za-z0-9])dust(?![A-Za-z0-9])', 'counso', path, flags=re.I)
+def check_title(file, entry):
+    headings = re.findall(r'^# (.+)$', file.read_text(), re.M)
+    require(len(headings) == 1 and entry.get('title') == headings[0], 'Display title differs from article: ' + str(file.relative_to(ROOT)))
 def strip_code(text):
     return re.sub(r'^\s*(```|~~~).*?^\s*\1\s*$', '', text, flags=re.M | re.S)
 def anchors(text):
@@ -39,6 +44,9 @@ def anchors(text):
 data = read_json('translations.json')
 index = read_json('source/url-index.json')
 manifest = read_json('source/manifest.json')
+source_titles = {r['path']: r['title'] for r in manifest}
+require(data['schema_version'] == 3, 'Unexpected mapping version')
+require(data['publication'].get('route_policy') == 'counso-brand-slugs-with-legacy-redirects', 'Unexpected route policy')
 rows = data['pages']
 status_counts = Counter(r['status'] for r in rows)
 require(set(status_counts) <= {'publish', 'exclude_api', 'exclude_upstream', 'updating'}, 'Unknown publication status')
@@ -58,6 +66,7 @@ routes = {}
 for row in rows:
     path = row['original_repository_path']
     original = ROOT / row['original_file']
+    require(row.get('original_title') == source_titles.get(path), 'Original title differs from source manifest: ' + path)
     require(row['original_file'] == 'source/' + path, 'Original path changed: ' + path)
     require(original.is_file(), 'Original file missing: ' + path)
     if original.is_file():
@@ -75,12 +84,13 @@ for row in rows:
             file = ROOT / t['file']
             notice_files.add(t['file'])
             require(file.is_file(), 'Notice file missing: ' + t['file'])
-            canonical = urllib.parse.urlparse(row['original_url']).path
+            canonical = branded_path(urllib.parse.urlparse(row['original_url']).path)
             require(t['route'] == (canonical if lang == 'en' else '/zh-cn' + canonical), 'Unexpected notice route: ' + path)
             require(t['route'] not in routes, 'Duplicate notice route: ' + t['route'])
             routes[t['route']] = t['file']
             notice_routes.add(t['route'])
             if file.is_file():
+                check_title(file, t)
                 if args.update_hashes:
                     t['sha256'] = digest(file)
                 else:
@@ -95,13 +105,14 @@ for row in rows:
     for lang, t in translations.items():
         file = ROOT / t['file']
         expected.add(t['file'])
-        require(t['file'] == lang + '/' + path, 'Translation path changed: ' + path)
+        require(t['file'] == lang + '/' + branded_path(path), 'Unexpected translation path: ' + path)
         require(file.is_file(), 'Translation missing: ' + t['file'])
-        canonical = urllib.parse.urlparse(row['original_url']).path
+        canonical = branded_path(urllib.parse.urlparse(row['original_url']).path)
         require(t['route'] == (canonical if lang == 'en' else '/zh-cn' + canonical), 'Unexpected route: ' + t['route'])
         require(t['route'] not in routes, 'Duplicate published route: ' + t['route'])
         routes[t['route']] = t['file']
         if file.is_file():
+            check_title(file, t)
             if args.update_hashes:
                 t['sha256'] = digest(file)
             else:
@@ -115,6 +126,17 @@ for r in redirects['redirects']:
     require(r['to'] in routes, 'Redirect destination absent: ' + r['to'])
     require(r['from'] not in routes, 'Redirect shadows article: ' + r['from'])
     seen.add(r['from'])
+redirect_targets = {r['from']: r['to'] for r in redirects['redirects']}
+for row in rows:
+    if row['status'] not in {'publish', 'updating'}:
+        continue
+    entries = row['translations'] if row['status'] == 'publish' else row['notice']
+    original_path = urllib.parse.urlparse(row['original_url']).path
+    for lang, entry in entries.items():
+        old_route = original_path if lang == 'en' else '/zh-cn' + original_path
+        if old_route != entry['route']:
+            require(redirect_targets.get(old_route) == entry['route'], 'Missing legacy brand redirect: ' + old_route)
+        require(entry['route'] == branded_path(entry['route']), 'Old brand in published route: ' + entry['route'])
 
 link_count = 0
 all_files = sorted(expected | notice_files | {'en/SUMMARY.md', 'zh-cn/SUMMARY.md', 'README.md', 'PUBLICATION-STATUS.md'})
@@ -127,7 +149,7 @@ for rel in all_files:
     require(len(re.findall(r'^# ', text, re.M)) == 1, 'Expected one main heading: ' + rel)
     if rel not in {'README.md', 'PUBLICATION-STATUS.md'}:
         visible = re.sub(r'\]\([^)]*\)', ']', text)
-        require(not re.search(r'\bDust\b|\bdust\b|未部署|飞书|Feishu|TODO|TBD|整改安排|需要适配|待适配|hold_integration|upstream implementation', visible), 'Brand or scaffolding in copy: ' + rel)
+        require(not re.search(r'\bdust\b|\baduster\b|未部署|飞书|Feishu|TODO|TBD|整改安排|需要适配|待适配|hold_integration|upstream implementation', visible, re.I), 'Brand or scaffolding in copy: ' + rel)
         require(not re.search(r'https?://(?:[^/\s]+\.)?dust\.tt', text), 'Upstream product link in copy: ' + rel)
     for target in re.findall(r'(?<!!)\[[^\]\n]+\]\(([^\s)]+)(?:\s+"[^"]*")?\)', strip_code(text)):
         parsed = urllib.parse.urlparse(target.strip('<>'))

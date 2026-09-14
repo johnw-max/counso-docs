@@ -14,4 +14,4 @@ Counso 可辅助知识检索、内容起草、资料整理和团队协作。具�
 - [产品与设计](product-and-design.md)：检查文案、整理反馈和准备发布材料。
 - [团队协作](collaboration.md)：共享对话、安排跟进和标记待确认事项。
 
-开始前定义资料范围、复核责任和成功标准。更多方法请看[团队试用指南](../dust-rollout-guide/designing-use-cases.md)。
+开始前定义资料范围、复核责任和成功标准。更多方法请看[团队试用指南](../counso-rollout-guide/designing-use-cases.md)。

@@ -1,4 +1,4 @@
-# Administrator guide: prepare the workspace
+# Set up your Counso workspace
 
 Before a team uses a new workflow, confirm that members can sign in, connected sources are in scope, and Agent access matches the intended audience. Menus and available connections vary by workspace, so use the controls currently shown in your Admin area.
 

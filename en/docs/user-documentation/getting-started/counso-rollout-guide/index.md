@@ -1,10 +1,10 @@
-# Counso team rollout guide
+# Counso rollout guide
 
 This guide helps a team start with one concrete workflow and build a repeatable way of working. Agree on an owner, permitted sources, and a reviewer before deciding whether to expand the scope.
 
 ## A practical sequence
 
-1. [Welcome to Counso](welcome-to-dust.md): explain the workspace and its boundaries.
+1. [Welcome to Counso](welcome-to-counso.md): explain the workspace and its boundaries.
 2. [Plan a pilot](launch-strategy.md): choose the owner, participants, and measures.
 3. [Design a use case](designing-use-cases.md): identify repeatable work that is suitable to test.
 4. [Train and support the team](educate-activate.md): practise asking questions, checking sources, and handling uncertainty.

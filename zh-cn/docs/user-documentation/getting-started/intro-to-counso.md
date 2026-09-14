@@ -21,4 +21,4 @@ Counso 是一个共享 AI 工作空间，供团队使用已配置的智能体、
 
 ## 接下来可以了解
 
-开始一段对话、[创建第一个智能体](../agents/create-your-first-agent.md)，以及[检查回答是否准确](faq/managing-agents/does-the-dust-agent-give-accurate-and-safe-responses.md)。
+开始一段对话、[创建第一个智能体](../agents/create-your-first-agent.md)，以及[检查回答是否准确](faq/managing-agents/does-the-counso-agent-give-accurate-and-safe-responses.md)。

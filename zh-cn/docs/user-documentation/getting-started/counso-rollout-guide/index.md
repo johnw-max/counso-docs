@@ -4,7 +4,7 @@
 
 ## 建议的推进顺序
 
-1. [了解 Counso](welcome-to-dust.md)：说明工作区用途和适用边界。
+1. [了解 Counso](welcome-to-counso.md)：说明工作区用途和适用边界。
 2. [制定试用计划](launch-strategy.md)：确定负责人、参与人和衡量方式。
 3. [梳理使用场景](designing-use-cases.md)：找出适合先试的重复工作。
 4. [培训和支持团队](educate-activate.md)：让成员会提问、核对来源并处理不确定结果。

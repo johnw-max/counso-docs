@@ -21,4 +21,4 @@ Use a shared Pod when teammates need a common place for conversations, files, an
 
 ## What to explore next
 
-Learn how to start a conversation, [create your first Agent](../agents/create-your-first-agent.md), and [check whether an answer is accurate](faq/managing-agents/does-the-dust-agent-give-accurate-and-safe-responses.md).
+Learn how to start a conversation, [create your first Agent](../agents/create-your-first-agent.md), and [check whether an answer is accurate](faq/managing-agents/does-the-counso-agent-give-accurate-and-safe-responses.md).

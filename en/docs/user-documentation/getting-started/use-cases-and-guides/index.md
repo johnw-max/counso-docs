@@ -14,4 +14,4 @@ Counso can assist with knowledge retrieval, drafting, organising information, an
 - [Product and design](product-and-design.md): copy review, feedback organisation, and launch drafts.
 - [Collaboration](collaboration.md): shared discussions, follow-ups, and escalations.
 
-Before starting, define the source scope, review owner, and success criteria. See [Design a useful use case](../dust-rollout-guide/designing-use-cases.md) for a simple way to plan a pilot.
+Before starting, define the source scope, review owner, and success criteria. See [Design a useful use case](../counso-rollout-guide/designing-use-cases.md) for a simple way to plan a pilot.
