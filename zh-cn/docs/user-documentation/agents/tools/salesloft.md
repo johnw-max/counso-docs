@@ -8,4 +8,4 @@ Salesloft 工具可让 Agent 获取销售节奏及相关销售上下文，例如
 
 ## 可用操作
 
-原工具集包括 `List Actions` 和 `Get Action`。文档列出的读取权限为 `cadences:read`、`people:read`、`team:read` 和 `calls:read`。请连接拥有目标销售节奏资料的账号，并先在限定账号范围内列出操作。
+可用工具包括 `List Actions` 和 `Get Action`。文档列出的读取权限为 `cadences:read`、`people:read`、`team:read` 和 `calls:read`。请连接拥有目标销售节奏资料的账号，并先在限定账号范围内列出操作。

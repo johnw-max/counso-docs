@@ -78,7 +78,6 @@
 - [Let an Agent discover Skills](docs/user-documentation/agents/discover-skills.md)
 - [Discover Tools](docs/user-documentation/agents/discover-tools.md)
 - [Go Deep](docs/user-documentation/agents/go-deep.md)
-- [Product support guidance](docs/user-documentation/agents/dust-support.md)
 - [Review Skill improvement suggestions](docs/user-documentation/agents/self-improving-skills.md)
 
 ## Capabilities
@@ -108,7 +107,6 @@
 - [Gong](docs/user-documentation/agents/tools/gong.md)
 - [Freshservice](docs/user-documentation/agents/tools/freshservice.md)
 - [Front](docs/user-documentation/agents/tools/front.md)
-- [GitHub](docs/user-documentation/agents/tools/github.md)
 - [Gmail](docs/user-documentation/agents/tools/gmail.md)
 - [Google Calendar](docs/user-documentation/agents/tools/google-calendar.md)
 - [Google Drive](docs/user-documentation/agents/tools/google-drive.md)
@@ -121,7 +119,6 @@
 - [Microsoft Teams](docs/user-documentation/agents/tools/microsoft-teams.md)
 - [Microsoft Excel](docs/user-documentation/agents/tools/microsoft-excel.md)
 - [Miro](docs/user-documentation/agents/tools/miro.md)
-- [Monday.com](docs/user-documentation/agents/tools/monday-com.md)
 - [NetSuite](docs/user-documentation/agents/tools/netsuite.md)
 - [Notion](docs/user-documentation/agents/tools/notion.md)
 - [Power BI](docs/user-documentation/agents/tools/power-bi.md)
@@ -146,15 +143,7 @@
 - [Filter webhook payloads](docs/user-documentation/agents/triggers/webhooks/filter-webhooks-payload.md)
 - [Set limits for webhook triggers](docs/user-documentation/agents/triggers/webhooks/rate-limiting.md)
 - [Add your brand to shared Frames](docs/user-documentation/agents/frames/white-labeled-frames.md)
-- [Connect an MCP client to Counso](docs/user-documentation/agents/integrations/dust-mcp-server.md)
-- [Set up automatic replies in Slack channels](docs/user-documentation/agents/integrations/dust-in-slack/slack-auto-reply.md)
-- [Use an Agent in Slack workflows](docs/user-documentation/agents/integrations/dust-in-slack/slack-workflows.md)
-- [Email an Agent](docs/user-documentation/agents/integrations/send-and-forward-email-to-agents.md)
-- [Use meeting transcripts with Agents](docs/user-documentation/agents/integrations/meeting-transcripts.md)
-- [Use Agents from your browser](docs/user-documentation/agents/integrations/browser-extension.md)
-- [Use Agents in Microsoft Teams](docs/user-documentation/agents/integrations/dust-in-teams.md)
 - [Move Google Sheets work to Google Drive](docs/user-documentation/agents/tools/google-sheets-deprecated.md)
-- [Automatically join new Slack channels](docs/user-documentation/agents/integrations/dust-in-slack/slack-auto-join.md)
 
 ## Pods
 
@@ -189,13 +178,11 @@
 - [Connect Notion](docs/user-documentation/admins/connections-management/notion.md)
 - [Connect Confluence](docs/user-documentation/admins/connections-management/confluence.md)
 - [Connect Intercom](docs/user-documentation/admins/connections-management/intercom.md)
-- [Connect GitHub](docs/user-documentation/admins/connections-management/github.md)
 - [Connect Microsoft](docs/user-documentation/admins/connections-management/microsoft.md)
 - [Connect Zendesk](docs/user-documentation/admins/connections-management/zendesk.md)
 - [Connect Snowflake](docs/user-documentation/admins/connections-management/snowflake.md)
 - [Connect BigQuery](docs/user-documentation/admins/connections-management/bigquery.md)
 - [Connect Gong](docs/user-documentation/admins/connections-management/gong.md)
-- [Connect Slack knowledge](docs/user-documentation/admins/connections-management/slack.md)
 - [Add a remote MCP server](docs/user-documentation/admins/tools-management/adding-an-mcp-server.md)
 - [Personal and shared credentials for tools](docs/user-documentation/admins/tools-management/personal-vs-shared-credentials.md)
 - [Connect Salesforce](docs/user-documentation/admins/tools-management/salesforce/salesforce.md)
@@ -213,4 +200,3 @@
 - [Train your team on credit optimization](docs/user-documentation/admins/usage-seats-and-credits/train-team-credit-optimization.md)
 - [Subscriptions and billing](docs/user-documentation/admins/billing/subscriptions-and-payments.md)
 - [Troubleshoot workspace administration](docs/user-documentation/admins/admin-troubleshooting/admin-troubleshooting.md)
-- [Troubleshoot the Slack integration](docs/user-documentation/admins/admin-troubleshooting/slack-troubleshooting.md)

@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "source": {
     "repository": "https://github.com/ByteCodeMonkey/counso-docs",
     "commit": "4bf686cfa77adaa9799318f9a903fcca7aa29437",
@@ -16,9 +16,9 @@
     "source_files": 358,
     "sitemap_urls": 356,
     "exclude_upstream": 9,
-    "publish": 197,
+    "publish": 183,
     "exclude_api": 137,
-    "hold_integration": 15
+    "updating": 29
   },
   "pages": [
     {
@@ -29,7 +29,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/changelog.md",
       "in_sitemap": true,
       "status": "exclude_upstream",
-      "reason": "Release history of the upstream product, not Counso release history.",
+      "reason": "原产品的更新历史，不属于 Counso 更新记录。",
       "translations": null
     },
     {
@@ -766,7 +766,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/user-documentation/getting-started/faq/managing-agents/is-there-a-dust-conversation-api.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -1579,7 +1579,7 @@
         "zh-cn": {
           "file": "zh-cn/docs/user-documentation/agents/go-deep.md",
           "route": "/zh-cn/docs/user-documentation/agents/go-deep",
-          "sha256": "f96f3a758a227a464a89aff6f4e267af483eba027abf8d53ebbee180e53c9293"
+          "sha256": "0cf66245ad246bb691dfd182cddb2cb7f115855f302dd733a812471f0dfa8320"
         }
       }
     },
@@ -1590,18 +1590,19 @@
       "original_sha256": "61005b09f9479634a4a28adfee9d153c0b16dca67001247bfeb3185e47f777f0",
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/user-documentation/agents/dust-support.md",
       "in_sitemap": true,
-      "status": "publish",
-      "reason": "有对应的 Counso 用户或管理员任务；按原主题保留操作说明，并复用相关 Counso 文案。",
-      "translations": {
+      "status": "updating",
+      "reason": "文档更新中",
+      "translations": null,
+      "notice": {
         "en": {
-          "file": "en/docs/user-documentation/agents/dust-support.md",
+          "file": "en/UPDATING.md",
           "route": "/docs/user-documentation/agents/dust-support",
-          "sha256": "eb87585c9149408bd9a7648587bbe5207177723be7fe2aed1544fb8bbae7b848"
+          "sha256": "f1d9428214126f7efa16ac58c1ee57dc3d86f926d06abeeda61b53fa4035f7cd"
         },
         "zh-cn": {
-          "file": "zh-cn/docs/user-documentation/agents/dust-support.md",
+          "file": "zh-cn/UPDATING.md",
           "route": "/zh-cn/docs/user-documentation/agents/dust-support",
-          "sha256": "5129c1463b0a02b5ba6240ee22112a8429d3027f15fd2abd398d2b4b8abf4b88"
+          "sha256": "86bffbc7fd8d083bfe095702927cc7c7070d70bc5b3ada8dafd017d6cb99d4ae"
         }
       }
     },
@@ -1970,7 +1971,7 @@
         "en": {
           "file": "en/docs/user-documentation/agents/tools/ashby.md",
           "route": "/docs/user-documentation/agents/tools/ashby",
-          "sha256": "6fa56a7e6037f8c1ebbd24320f615a618da2d2935fd280923eb2d03462a4e158"
+          "sha256": "e8bee0718895ea8516bafffe66ab272b106b81a1a60b050a3fa71250a542b6a5"
         },
         "zh-cn": {
           "file": "zh-cn/docs/user-documentation/agents/tools/ashby.md",
@@ -2184,18 +2185,19 @@
       "original_sha256": "e7ce20983fabea32f854560136805a209b4c7c6c6919913dea511f208592cd40",
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/user-documentation/agents/tools/github.md",
       "in_sitemap": true,
-      "status": "publish",
-      "reason": "Created a dedicated English and Chinese article at the original relative path, preserving this page as an independently addressable document.",
-      "translations": {
+      "status": "updating",
+      "reason": "文档更新中",
+      "translations": null,
+      "notice": {
         "en": {
-          "file": "en/docs/user-documentation/agents/tools/github.md",
+          "file": "en/UPDATING.md",
           "route": "/docs/user-documentation/agents/tools/github",
-          "sha256": "a5acc3a8c8d5646b2337d13b0eb747e48cf8335acd69c3c2ff379f15525d4830"
+          "sha256": "f1d9428214126f7efa16ac58c1ee57dc3d86f926d06abeeda61b53fa4035f7cd"
         },
         "zh-cn": {
-          "file": "zh-cn/docs/user-documentation/agents/tools/github.md",
+          "file": "zh-cn/UPDATING.md",
           "route": "/zh-cn/docs/user-documentation/agents/tools/github",
-          "sha256": "c7e1b5b5928ee1ce3d30e57ccdd9d7a27236953c92bd425e20cd14d08d957cdd"
+          "sha256": "86bffbc7fd8d083bfe095702927cc7c7070d70bc5b3ada8dafd017d6cb99d4ae"
         }
       }
     },
@@ -2470,18 +2472,19 @@
       "original_sha256": "c5c4d97c09389b1b0244cf0f34a75c68a6121eff25b2ca764502a85ebba2f603",
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/user-documentation/agents/tools/monday-com.md",
       "in_sitemap": true,
-      "status": "publish",
-      "reason": "Created a dedicated English and Chinese article at the original relative path, preserving this page as an independently addressable document.",
-      "translations": {
+      "status": "updating",
+      "reason": "文档更新中",
+      "translations": null,
+      "notice": {
         "en": {
-          "file": "en/docs/user-documentation/agents/tools/monday-com.md",
+          "file": "en/UPDATING.md",
           "route": "/docs/user-documentation/agents/tools/monday-com",
-          "sha256": "1f0c95a23ffefb4d66384041ee6d8f76804cdf906e83c7f63fc15cf22b41ede9"
+          "sha256": "f1d9428214126f7efa16ac58c1ee57dc3d86f926d06abeeda61b53fa4035f7cd"
         },
         "zh-cn": {
-          "file": "zh-cn/docs/user-documentation/agents/tools/monday-com.md",
+          "file": "zh-cn/UPDATING.md",
           "route": "/zh-cn/docs/user-documentation/agents/tools/monday-com",
-          "sha256": "f9e9f3685dcc03f1249dc92362c433116eca403fb95feaa780f5c00e3ae4d5e3"
+          "sha256": "86bffbc7fd8d083bfe095702927cc7c7070d70bc5b3ada8dafd017d6cb99d4ae"
         }
       }
     },
@@ -2586,12 +2589,12 @@
         "en": {
           "file": "en/docs/user-documentation/agents/tools/slack-tools.md",
           "route": "/docs/user-documentation/agents/tools/slack-tools",
-          "sha256": "a023a29d198b65c4391253d68324a42f94df8ca5b44dd7c91ebdd6fb4686599d"
+          "sha256": "2c94dcc2702b85c6b41cb1454bd4e1298d053e1dd4f2138daf92a2c19a206772"
         },
         "zh-cn": {
           "file": "zh-cn/docs/user-documentation/agents/tools/slack-tools.md",
           "route": "/zh-cn/docs/user-documentation/agents/tools/slack-tools",
-          "sha256": "79a5663be34237a6b401c73b650231ca9d5449a1c6a361c9f5f6196b84791bd6"
+          "sha256": "264dcae81074208f6f0a1269503df26d2d81241c5b7ceaa2b074066505feb1db"
         }
       }
     },
@@ -2696,12 +2699,12 @@
         "en": {
           "file": "en/docs/user-documentation/agents/tools/salesloft.md",
           "route": "/docs/user-documentation/agents/tools/salesloft",
-          "sha256": "cd10a84bdc7263d8a5de3988dc83432df92d345e8e97e8a9f6536471814719fb"
+          "sha256": "d04271afb7e7abe5bad9b492b3290d4fb727d6088ca0ada084c710ab1bff8fed"
         },
         "zh-cn": {
           "file": "zh-cn/docs/user-documentation/agents/tools/salesloft.md",
           "route": "/zh-cn/docs/user-documentation/agents/tools/salesloft",
-          "sha256": "921471ffd608fdcf0a6e6ff36830471ea549445c04edf12884566e651ac75b01"
+          "sha256": "4b7fb69706259fa1dd764d2a71559e08697d27cc3df1464aec8649611357159e"
         }
       }
     },
@@ -3042,18 +3045,19 @@
       "original_sha256": "41989054d45e47498bf8b2a7e6e820f750c97f6c2ed08b03e996ac1f48e8dd5d",
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/user-documentation/agents/integrations/dust-mcp-server.md",
       "in_sitemap": true,
-      "status": "publish",
-      "reason": "",
-      "translations": {
+      "status": "updating",
+      "reason": "更新中",
+      "translations": null,
+      "notice": {
         "en": {
-          "file": "en/docs/user-documentation/agents/integrations/dust-mcp-server.md",
+          "file": "en/UPDATING.md",
           "route": "/docs/user-documentation/agents/integrations/dust-mcp-server",
-          "sha256": "e0d18f359e52c9dade39d632a0b005a47a1e00c0f22bdc3516cf6d73d1e87924"
+          "sha256": "f1d9428214126f7efa16ac58c1ee57dc3d86f926d06abeeda61b53fa4035f7cd"
         },
         "zh-cn": {
-          "file": "zh-cn/docs/user-documentation/agents/integrations/dust-mcp-server.md",
+          "file": "zh-cn/UPDATING.md",
           "route": "/zh-cn/docs/user-documentation/agents/integrations/dust-mcp-server",
-          "sha256": "57dd4ced77cf3c71c0fd2a2b618f1f12047f62febf28f176942b292c7fc0bee6"
+          "sha256": "86bffbc7fd8d083bfe095702927cc7c7070d70bc5b3ada8dafd017d6cb99d4ae"
         }
       }
     },
@@ -3064,18 +3068,19 @@
       "original_sha256": "cb614e7e85fa7baf2df25db80fd7df4e486299903afa2c4ab3fbd4de28d2468d",
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/user-documentation/agents/integrations/dust-in-slack/slack-auto-reply.md",
       "in_sitemap": true,
-      "status": "publish",
-      "reason": "有对应的 Counso 用户或管理员任务；按原主题保留操作说明，并复用相关 Counso 文案。",
-      "translations": {
+      "status": "updating",
+      "reason": "更新中",
+      "translations": null,
+      "notice": {
         "en": {
-          "file": "en/docs/user-documentation/agents/integrations/dust-in-slack/slack-auto-reply.md",
+          "file": "en/UPDATING.md",
           "route": "/docs/user-documentation/agents/integrations/dust-in-slack/slack-auto-reply",
-          "sha256": "95635d65208eaabf8e42e64556db4b558bfb738ad9a0e35d1e585fd39a483d29"
+          "sha256": "f1d9428214126f7efa16ac58c1ee57dc3d86f926d06abeeda61b53fa4035f7cd"
         },
         "zh-cn": {
-          "file": "zh-cn/docs/user-documentation/agents/integrations/dust-in-slack/slack-auto-reply.md",
+          "file": "zh-cn/UPDATING.md",
           "route": "/zh-cn/docs/user-documentation/agents/integrations/dust-in-slack/slack-auto-reply",
-          "sha256": "5badcff787722cb895572f007b04cd8d644051e75c8b21be2a9eab97d10ca6ef"
+          "sha256": "86bffbc7fd8d083bfe095702927cc7c7070d70bc5b3ada8dafd017d6cb99d4ae"
         }
       }
     },
@@ -3086,18 +3091,19 @@
       "original_sha256": "961db7bef36761f807dd353addd6df0a0d6f0bee62ee14c94a6ac8fb5548699c",
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/user-documentation/agents/integrations/dust-in-slack/slack-workflows.md",
       "in_sitemap": true,
-      "status": "publish",
-      "reason": "有对应的 Counso 用户或管理员任务；按原主题保留操作说明，并复用相关 Counso 文案。",
-      "translations": {
+      "status": "updating",
+      "reason": "更新中",
+      "translations": null,
+      "notice": {
         "en": {
-          "file": "en/docs/user-documentation/agents/integrations/dust-in-slack/slack-workflows.md",
+          "file": "en/UPDATING.md",
           "route": "/docs/user-documentation/agents/integrations/dust-in-slack/slack-workflows",
-          "sha256": "c36a670faea09ae2dd50c1b232f697d377d5733d9605107adcb5dce0a1de3cdb"
+          "sha256": "f1d9428214126f7efa16ac58c1ee57dc3d86f926d06abeeda61b53fa4035f7cd"
         },
         "zh-cn": {
-          "file": "zh-cn/docs/user-documentation/agents/integrations/dust-in-slack/slack-workflows.md",
+          "file": "zh-cn/UPDATING.md",
           "route": "/zh-cn/docs/user-documentation/agents/integrations/dust-in-slack/slack-workflows",
-          "sha256": "775bc73f8cd95ab8f7fd0468d0fd92de0e41a703d4ff95f6dbcea8d8a704d47a"
+          "sha256": "86bffbc7fd8d083bfe095702927cc7c7070d70bc5b3ada8dafd017d6cb99d4ae"
         }
       }
     },
@@ -3108,18 +3114,19 @@
       "original_sha256": "dd3c79f988e9a08db3aa5fd882bc1a18c67bf4989c2d3da0d473aca510fc9bd6",
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/user-documentation/agents/integrations/dust-in-slack/slack-auto-join.md",
       "in_sitemap": true,
-      "status": "publish",
-      "reason": "有对应的 Counso 用户或管理员任务；按原主题保留操作说明，并复用相关 Counso 文案。",
-      "translations": {
+      "status": "updating",
+      "reason": "更新中",
+      "translations": null,
+      "notice": {
         "en": {
-          "file": "en/docs/user-documentation/agents/integrations/dust-in-slack/slack-auto-join.md",
+          "file": "en/UPDATING.md",
           "route": "/docs/user-documentation/agents/integrations/dust-in-slack/slack-auto-join",
-          "sha256": "41820f0bfbb32eba4994b2853a186d2393783741d8aca1f14f58e01d08340454"
+          "sha256": "f1d9428214126f7efa16ac58c1ee57dc3d86f926d06abeeda61b53fa4035f7cd"
         },
         "zh-cn": {
-          "file": "zh-cn/docs/user-documentation/agents/integrations/dust-in-slack/slack-auto-join.md",
+          "file": "zh-cn/UPDATING.md",
           "route": "/zh-cn/docs/user-documentation/agents/integrations/dust-in-slack/slack-auto-join",
-          "sha256": "29f1bd6c707ee79599d4ef388352215afcf769fa08b73bcc093a654f9aa1bff1"
+          "sha256": "86bffbc7fd8d083bfe095702927cc7c7070d70bc5b3ada8dafd017d6cb99d4ae"
         }
       }
     },
@@ -3130,18 +3137,19 @@
       "original_sha256": "30e4080fa9d704c042b7720485b1df3658eaa443941638bcb17d86a3efeeb39f",
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/user-documentation/agents/integrations/send-and-forward-email-to-agents.md",
       "in_sitemap": true,
-      "status": "publish",
-      "reason": "有对应的 Counso 用户或管理员任务；按原主题保留操作说明，并复用相关 Counso 文案。",
-      "translations": {
+      "status": "updating",
+      "reason": "更新中",
+      "translations": null,
+      "notice": {
         "en": {
-          "file": "en/docs/user-documentation/agents/integrations/send-and-forward-email-to-agents.md",
+          "file": "en/UPDATING.md",
           "route": "/docs/user-documentation/agents/integrations/send-and-forward-email-to-agents",
-          "sha256": "84bcd6d9e18fb66cd745e80c374b44cf82071ad831309b81c208db5293c73ece"
+          "sha256": "f1d9428214126f7efa16ac58c1ee57dc3d86f926d06abeeda61b53fa4035f7cd"
         },
         "zh-cn": {
-          "file": "zh-cn/docs/user-documentation/agents/integrations/send-and-forward-email-to-agents.md",
+          "file": "zh-cn/UPDATING.md",
           "route": "/zh-cn/docs/user-documentation/agents/integrations/send-and-forward-email-to-agents",
-          "sha256": "9f7895b7d7bbbb532dfdd0d179711e135301648ecb403bfaa77ef8c6e537091e"
+          "sha256": "86bffbc7fd8d083bfe095702927cc7c7070d70bc5b3ada8dafd017d6cb99d4ae"
         }
       }
     },
@@ -3152,9 +3160,21 @@
       "original_sha256": "0e005b4a340017ba58b40fe947cc3a1ad31e31affbe42d38f313001cab4a9a8c",
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/user-documentation/agents/integrations/zapier.md",
       "in_sitemap": true,
-      "status": "hold_integration",
-      "reason": "主题保留为外部自动化集成。原文使用现有 Dust Zapier 应用及 Talk to an Agent 动作；需要 Counso 对应应用或兼容动作与认证验证后发布使用步骤。",
-      "translations": null
+      "status": "updating",
+      "reason": "更新中",
+      "translations": null,
+      "notice": {
+        "en": {
+          "file": "en/UPDATING.md",
+          "route": "/docs/user-documentation/agents/integrations/zapier",
+          "sha256": "f1d9428214126f7efa16ac58c1ee57dc3d86f926d06abeeda61b53fa4035f7cd"
+        },
+        "zh-cn": {
+          "file": "zh-cn/UPDATING.md",
+          "route": "/zh-cn/docs/user-documentation/agents/integrations/zapier",
+          "sha256": "86bffbc7fd8d083bfe095702927cc7c7070d70bc5b3ada8dafd017d6cb99d4ae"
+        }
+      }
     },
     {
       "original_url": "https://docs.dust.tt/docs/user-documentation/agents/integrations/make-com",
@@ -3163,9 +3183,21 @@
       "original_sha256": "ae617ded2632a9ad12791e0180517e47ad3cc7163a1f7811145b643920963a12",
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/user-documentation/agents/integrations/make-com.md",
       "in_sitemap": true,
-      "status": "hold_integration",
-      "reason": "主题保留为外部自动化集成。原文使用现有 Dust Make 模块；Counso 模块、连接地址和账号认证尚未验证，不能直接替换产品名作为安装教程。",
-      "translations": null
+      "status": "updating",
+      "reason": "更新中",
+      "translations": null,
+      "notice": {
+        "en": {
+          "file": "en/UPDATING.md",
+          "route": "/docs/user-documentation/agents/integrations/make-com",
+          "sha256": "f1d9428214126f7efa16ac58c1ee57dc3d86f926d06abeeda61b53fa4035f7cd"
+        },
+        "zh-cn": {
+          "file": "zh-cn/UPDATING.md",
+          "route": "/zh-cn/docs/user-documentation/agents/integrations/make-com",
+          "sha256": "86bffbc7fd8d083bfe095702927cc7c7070d70bc5b3ada8dafd017d6cb99d4ae"
+        }
+      }
     },
     {
       "original_url": "https://docs.dust.tt/docs/user-documentation/agents/integrations/n8n",
@@ -3174,9 +3206,21 @@
       "original_sha256": "974f0dedd1ec5085d8c2f0f65186c47918c2a971f317125429b00bb0df0ca11a",
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/user-documentation/agents/integrations/n8n.md",
       "in_sitemap": true,
-      "status": "hold_integration",
-      "reason": "主题保留为外部自动化集成。上游 n8n 节点仅提供 US/EU 地址且请求目标固定为 Dust；需适配 Counso 服务地址、凭据检查、对话和文档上传操作后发布。",
-      "translations": null
+      "status": "updating",
+      "reason": "更新中",
+      "translations": null,
+      "notice": {
+        "en": {
+          "file": "en/UPDATING.md",
+          "route": "/docs/user-documentation/agents/integrations/n8n",
+          "sha256": "f1d9428214126f7efa16ac58c1ee57dc3d86f926d06abeeda61b53fa4035f7cd"
+        },
+        "zh-cn": {
+          "file": "zh-cn/UPDATING.md",
+          "route": "/zh-cn/docs/user-documentation/agents/integrations/n8n",
+          "sha256": "86bffbc7fd8d083bfe095702927cc7c7070d70bc5b3ada8dafd017d6cb99d4ae"
+        }
+      }
     },
     {
       "original_url": "https://docs.dust.tt/docs/user-documentation/agents/integrations/power-automate",
@@ -3185,9 +3229,21 @@
       "original_sha256": "4f8ff549c403b217088d50882e154214d52157fa76ff425a18fd01341f36bca7",
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/user-documentation/agents/integrations/power-automate.md",
       "in_sitemap": true,
-      "status": "hold_integration",
-      "reason": "主题保留为外部自动化集成。原文安装包是上游提供的 Power Automate Solution；需提供 Counso 的连接器包并核对主机、认证和两个动作后发布。",
-      "translations": null
+      "status": "updating",
+      "reason": "更新中",
+      "translations": null,
+      "notice": {
+        "en": {
+          "file": "en/UPDATING.md",
+          "route": "/docs/user-documentation/agents/integrations/power-automate",
+          "sha256": "f1d9428214126f7efa16ac58c1ee57dc3d86f926d06abeeda61b53fa4035f7cd"
+        },
+        "zh-cn": {
+          "file": "zh-cn/UPDATING.md",
+          "route": "/zh-cn/docs/user-documentation/agents/integrations/power-automate",
+          "sha256": "86bffbc7fd8d083bfe095702927cc7c7070d70bc5b3ada8dafd017d6cb99d4ae"
+        }
+      }
     },
     {
       "original_url": "https://docs.dust.tt/docs/user-documentation/agents/integrations/meeting-transcripts",
@@ -3196,18 +3252,19 @@
       "original_sha256": "ecb6fccfe58a54f9b8a51223468f3b76b5bf77686fed0168a3950af5f12efae2",
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/user-documentation/agents/integrations/meeting-transcripts.md",
       "in_sitemap": true,
-      "status": "publish",
-      "reason": "有对应的 Counso 用户或管理员任务；按原主题保留操作说明，并复用相关 Counso 文案。",
-      "translations": {
+      "status": "updating",
+      "reason": "更新中",
+      "translations": null,
+      "notice": {
         "en": {
-          "file": "en/docs/user-documentation/agents/integrations/meeting-transcripts.md",
+          "file": "en/UPDATING.md",
           "route": "/docs/user-documentation/agents/integrations/meeting-transcripts",
-          "sha256": "9bfcc51033d9785e943bfc57701ace9ac064f573e9f2274dab23f5c1c3da7053"
+          "sha256": "f1d9428214126f7efa16ac58c1ee57dc3d86f926d06abeeda61b53fa4035f7cd"
         },
         "zh-cn": {
-          "file": "zh-cn/docs/user-documentation/agents/integrations/meeting-transcripts.md",
+          "file": "zh-cn/UPDATING.md",
           "route": "/zh-cn/docs/user-documentation/agents/integrations/meeting-transcripts",
-          "sha256": "32791d9f893089305c947d2203227ecc772c71626314cacdb7a15930a1a61170"
+          "sha256": "86bffbc7fd8d083bfe095702927cc7c7070d70bc5b3ada8dafd017d6cb99d4ae"
         }
       }
     },
@@ -3218,9 +3275,21 @@
       "original_sha256": "e5d593249485e7533bed37b4c7e017fb288d108d83b9d1224baa319508baa298",
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/user-documentation/agents/integrations/google-sheets-add-on.md",
       "in_sitemap": true,
-      "status": "hold_integration",
-      "reason": "主题保留为表格内调用智能体的集成。原文链接到 Dust 的 Google Workspace Marketplace 插件，配置只有工作区、API Key 和区域；Counso 插件及登录配置尚未验证。此项不影响产品内 Google Drive/Sheets 工具。",
-      "translations": null
+      "status": "updating",
+      "reason": "更新中",
+      "translations": null,
+      "notice": {
+        "en": {
+          "file": "en/UPDATING.md",
+          "route": "/docs/user-documentation/agents/integrations/google-sheets-add-on",
+          "sha256": "f1d9428214126f7efa16ac58c1ee57dc3d86f926d06abeeda61b53fa4035f7cd"
+        },
+        "zh-cn": {
+          "file": "zh-cn/UPDATING.md",
+          "route": "/zh-cn/docs/user-documentation/agents/integrations/google-sheets-add-on",
+          "sha256": "86bffbc7fd8d083bfe095702927cc7c7070d70bc5b3ada8dafd017d6cb99d4ae"
+        }
+      }
     },
     {
       "original_url": "https://docs.dust.tt/docs/user-documentation/agents/integrations/dust-in-zendesk",
@@ -3229,9 +3298,21 @@
       "original_sha256": "db9f1129c98d152e115251454977937e87be2e687b40d4e67c99b04da42e070a",
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/user-documentation/agents/integrations/dust-in-zendesk.md",
       "in_sitemap": true,
-      "status": "hold_integration",
-      "reason": "主题保留为 Zendesk 内调用智能体的集成。原文指向 Dust Marketplace 应用，现有公开应用代码仍绑定 Dust 服务及认证；需 Counso 应用适配。此项不影响 Zendesk 数据连接和工具。",
-      "translations": null
+      "status": "updating",
+      "reason": "更新中",
+      "translations": null,
+      "notice": {
+        "en": {
+          "file": "en/UPDATING.md",
+          "route": "/docs/user-documentation/agents/integrations/dust-in-zendesk",
+          "sha256": "f1d9428214126f7efa16ac58c1ee57dc3d86f926d06abeeda61b53fa4035f7cd"
+        },
+        "zh-cn": {
+          "file": "zh-cn/UPDATING.md",
+          "route": "/zh-cn/docs/user-documentation/agents/integrations/dust-in-zendesk",
+          "sha256": "86bffbc7fd8d083bfe095702927cc7c7070d70bc5b3ada8dafd017d6cb99d4ae"
+        }
+      }
     },
     {
       "original_url": "https://docs.dust.tt/docs/user-documentation/agents/integrations/browser-extension",
@@ -3240,18 +3321,19 @@
       "original_sha256": "710466402db915a055876aa5540ff4fa7cc23f874b4fa33435e2a37fdeec75c0",
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/user-documentation/agents/integrations/browser-extension.md",
       "in_sitemap": true,
-      "status": "publish",
-      "reason": "有对应的 Counso 用户或管理员任务；按原主题保留操作说明，并复用相关 Counso 文案。",
-      "translations": {
+      "status": "updating",
+      "reason": "更新中",
+      "translations": null,
+      "notice": {
         "en": {
-          "file": "en/docs/user-documentation/agents/integrations/browser-extension.md",
+          "file": "en/UPDATING.md",
           "route": "/docs/user-documentation/agents/integrations/browser-extension",
-          "sha256": "3d94723b36e13d214da8d801f6e53b96aead5ba9e9f989a94ff145b9b0dbc70e"
+          "sha256": "f1d9428214126f7efa16ac58c1ee57dc3d86f926d06abeeda61b53fa4035f7cd"
         },
         "zh-cn": {
-          "file": "zh-cn/docs/user-documentation/agents/integrations/browser-extension.md",
+          "file": "zh-cn/UPDATING.md",
           "route": "/zh-cn/docs/user-documentation/agents/integrations/browser-extension",
-          "sha256": "9778f3ba3a02af883ef551f8bb5e560b6e09924651a9528c3b472081332572cf"
+          "sha256": "86bffbc7fd8d083bfe095702927cc7c7070d70bc5b3ada8dafd017d6cb99d4ae"
         }
       }
     },
@@ -3262,9 +3344,21 @@
       "original_sha256": "9ace0955216963fe5b06b6c90a6c6132a40bf2ca2d3d093653bb1c05157c287d",
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/user-documentation/agents/integrations/raycast-extension.md",
       "in_sitemap": true,
-      "status": "hold_integration",
-      "reason": "主题保留为桌面客户端集成。现有 Raycast 扩展源码绑定 Dust US/EU 服务地址及 OAuth 客户端；需提供 Counso 版本并验证登录，不能将上游商店插件直接视为 Counso 插件。",
-      "translations": null
+      "status": "updating",
+      "reason": "更新中",
+      "translations": null,
+      "notice": {
+        "en": {
+          "file": "en/UPDATING.md",
+          "route": "/docs/user-documentation/agents/integrations/raycast-extension",
+          "sha256": "f1d9428214126f7efa16ac58c1ee57dc3d86f926d06abeeda61b53fa4035f7cd"
+        },
+        "zh-cn": {
+          "file": "zh-cn/UPDATING.md",
+          "route": "/zh-cn/docs/user-documentation/agents/integrations/raycast-extension",
+          "sha256": "86bffbc7fd8d083bfe095702927cc7c7070d70bc5b3ada8dafd017d6cb99d4ae"
+        }
+      }
     },
     {
       "original_url": "https://docs.dust.tt/docs/user-documentation/agents/integrations/dust-in-teams",
@@ -3273,18 +3367,19 @@
       "original_sha256": "96732c955123fc9cc65b72707111edda149f085248ef4c1b152d2946cda7ff76",
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/user-documentation/agents/integrations/dust-in-teams.md",
       "in_sitemap": true,
-      "status": "publish",
-      "reason": "有对应的 Counso 用户或管理员任务；按原主题保留操作说明，并复用相关 Counso 文案。",
-      "translations": {
+      "status": "updating",
+      "reason": "更新中",
+      "translations": null,
+      "notice": {
         "en": {
-          "file": "en/docs/user-documentation/agents/integrations/dust-in-teams.md",
+          "file": "en/UPDATING.md",
           "route": "/docs/user-documentation/agents/integrations/dust-in-teams",
-          "sha256": "f6abc3b743e8496e3c308aa307f837e2b118cd3298c011242277c06923ceb807"
+          "sha256": "f1d9428214126f7efa16ac58c1ee57dc3d86f926d06abeeda61b53fa4035f7cd"
         },
         "zh-cn": {
-          "file": "zh-cn/docs/user-documentation/agents/integrations/dust-in-teams.md",
+          "file": "zh-cn/UPDATING.md",
           "route": "/zh-cn/docs/user-documentation/agents/integrations/dust-in-teams",
-          "sha256": "647a20813016450f6b71b94f4c67756e0d6ee043f71ba81aa17e6c48f9140fe5"
+          "sha256": "86bffbc7fd8d083bfe095702927cc7c7070d70bc5b3ada8dafd017d6cb99d4ae"
         }
       }
     },
@@ -3807,12 +3902,12 @@
         "en": {
           "file": "en/docs/user-documentation/admins/connections-management/index.md",
           "route": "/docs/user-documentation/admins/connections-management",
-          "sha256": "4e961f8f31a19ab9f4b6ad375f0a37ff380239628ca2616bca3a7cee752232ab"
+          "sha256": "7801292d6d9fd09d0e0bba9b50e851f540ab30d0cf79b91024030c74b2e5d641"
         },
         "zh-cn": {
           "file": "zh-cn/docs/user-documentation/admins/connections-management/index.md",
           "route": "/zh-cn/docs/user-documentation/admins/connections-management",
-          "sha256": "d0f7cb96812f10e358fa61672f2d567646b01ab233dfb0d21215b2dc63d70794"
+          "sha256": "b82057f19f2dfa36dbcfab5f4f7ff6682f833ba39633baf856ce148b463a751f"
         }
       }
     },
@@ -3911,18 +4006,19 @@
       "original_sha256": "65e173d4614f67bb3727fc23b043bf15460b72379c136874ced3eff468f84415",
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/user-documentation/admins/connections-management/github.md",
       "in_sitemap": true,
-      "status": "publish",
-      "reason": "",
-      "translations": {
+      "status": "updating",
+      "reason": "文档更新中",
+      "translations": null,
+      "notice": {
         "en": {
-          "file": "en/docs/user-documentation/admins/connections-management/github.md",
+          "file": "en/UPDATING.md",
           "route": "/docs/user-documentation/admins/connections-management/github",
-          "sha256": "3ba9167e40081fd78d5e12d7693271d2c9c803e5872354b23ed50bc0389f0da5"
+          "sha256": "f1d9428214126f7efa16ac58c1ee57dc3d86f926d06abeeda61b53fa4035f7cd"
         },
         "zh-cn": {
-          "file": "zh-cn/docs/user-documentation/admins/connections-management/github.md",
+          "file": "zh-cn/UPDATING.md",
           "route": "/zh-cn/docs/user-documentation/admins/connections-management/github",
-          "sha256": "7b160b2844239e0958f9e3c391b25259fc79c1237924cf336bddc5da2ad4a53b"
+          "sha256": "86bffbc7fd8d083bfe095702927cc7c7070d70bc5b3ada8dafd017d6cb99d4ae"
         }
       }
     },
@@ -4043,18 +4139,19 @@
       "original_sha256": "6ba0f1815fd02369e5dd4c35aa614b160cc7cfcd247e859d329d3bb9c1881f0a",
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/user-documentation/admins/connections-management/slack.md",
       "in_sitemap": true,
-      "status": "publish",
-      "reason": "",
-      "translations": {
+      "status": "updating",
+      "reason": "文档更新中",
+      "translations": null,
+      "notice": {
         "en": {
-          "file": "en/docs/user-documentation/admins/connections-management/slack.md",
+          "file": "en/UPDATING.md",
           "route": "/docs/user-documentation/admins/connections-management/slack",
-          "sha256": "7c9025e80ee998ff3e7497502f0df987a14d4620675a9efdb51b08367f8e9ba0"
+          "sha256": "f1d9428214126f7efa16ac58c1ee57dc3d86f926d06abeeda61b53fa4035f7cd"
         },
         "zh-cn": {
-          "file": "zh-cn/docs/user-documentation/admins/connections-management/slack.md",
+          "file": "zh-cn/UPDATING.md",
           "route": "/zh-cn/docs/user-documentation/admins/connections-management/slack",
-          "sha256": "533d490b5777337937fad976aa5a540d18cd23d615c68b6253254d73fa3a7b30"
+          "sha256": "86bffbc7fd8d083bfe095702927cc7c7070d70bc5b3ada8dafd017d6cb99d4ae"
         }
       }
     },
@@ -4439,18 +4536,19 @@
       "original_sha256": "df54a4b6cd397e6002480d2c53818f0e26715561ad7e646432c52965de42ba78",
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/user-documentation/admins/admin-troubleshooting/slack-troubleshooting.md",
       "in_sitemap": true,
-      "status": "publish",
-      "reason": "有对应的 Counso 用户或管理员任务；按原主题保留操作说明，并复用相关 Counso 文案。",
-      "translations": {
+      "status": "updating",
+      "reason": "文档更新中",
+      "translations": null,
+      "notice": {
         "en": {
-          "file": "en/docs/user-documentation/admins/admin-troubleshooting/slack-troubleshooting.md",
+          "file": "en/UPDATING.md",
           "route": "/docs/user-documentation/admins/admin-troubleshooting/slack-troubleshooting",
-          "sha256": "30a215c46ac1388d0003c7b8e694ac169f50f990af6b23438d646de0fc286afa"
+          "sha256": "f1d9428214126f7efa16ac58c1ee57dc3d86f926d06abeeda61b53fa4035f7cd"
         },
         "zh-cn": {
-          "file": "zh-cn/docs/user-documentation/admins/admin-troubleshooting/slack-troubleshooting.md",
+          "file": "zh-cn/UPDATING.md",
           "route": "/zh-cn/docs/user-documentation/admins/admin-troubleshooting/slack-troubleshooting",
-          "sha256": "cf573e9f48c3860bca8453fede734d8a3f0db6ba1ea00e908ba95b1c0f6244c6"
+          "sha256": "86bffbc7fd8d083bfe095702927cc7c7070d70bc5b3ada8dafd017d6cb99d4ae"
         }
       }
     },
@@ -4462,7 +4560,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/user-documentation/developers/client-side-mcp-server.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4473,7 +4571,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/developer-platform/overview/developer-platform.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4484,7 +4582,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/developer-platform/overview/javascript-sdk.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4495,7 +4593,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/developer-platform/core-concepts/datasources.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4506,7 +4604,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/developer-platform/core-concepts/chunks-and-documents.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4517,7 +4615,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/developer-platform/core-concepts/rate-limits.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4528,7 +4626,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/developer-platform/dust-api-documentation/openapi-and-postman.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4539,7 +4637,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-user/get-current-user.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4550,7 +4648,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-user/update-current-user.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4561,7 +4659,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/analytics/export-workspace-analytics.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4572,7 +4670,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/agents/list-agents.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4583,7 +4681,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/agents/export-agent-configuration-as-yaml.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4594,7 +4692,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/agents/get-agent-configuration.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4605,7 +4703,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/agents/archive-agent-configuration.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4616,7 +4714,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/agents/update-agent-configuration.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4627,7 +4725,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/agents/import-agent-configuration.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4638,7 +4736,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/agents/search-agents-by-name.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4649,7 +4747,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/conversations/cancel-message-generation-in-a-conversation.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4660,7 +4758,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/conversations/create-a-content-fragment.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4671,7 +4769,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/conversations/get-the-events-for-a-conversation.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4682,7 +4780,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/conversations/download-a-conversation-scoped-file-by-path.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4693,7 +4791,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/conversations/get-a-conversation.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4704,7 +4802,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/conversations/update-a-conversation.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4715,7 +4813,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/conversations/answer-a-user-question-in-a-conversation-message.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4726,7 +4824,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/conversations/edit-an-existing-message-in-a-conversation.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4737,7 +4835,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/conversations/get-events-for-a-message.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4748,7 +4846,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/conversations/validate-an-action-in-a-conversation-message.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4759,7 +4857,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/conversations/create-a-message.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4770,7 +4868,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/conversations/create-a-new-conversation.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4781,7 +4879,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/conversations/create-a-file-upload-url.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4792,7 +4890,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/feedbacks/get-feedbacks-for-a-conversation.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4803,7 +4901,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/feedbacks/submit-feedback-for-a-specific-message-in-a-conversation.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4814,7 +4912,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/feedbacks/delete-feedback-for-a-specific-message.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4825,7 +4923,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/mentions/get-mention-suggestions-for-a-conversation.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4836,7 +4934,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/mentions/parse-mentions-in-markdown-text.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4847,7 +4945,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/mentions/get-mention-suggestions.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4858,7 +4956,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/mcp/deregister-a-client-side-mcp-server.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4869,7 +4967,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/mcp/update-heartbeat-for-a-client-side-mcp-server.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4880,7 +4978,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/mcp/register-a-client-side-mcp-server.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4891,7 +4989,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/mcp/stream-mcp-tool-requests-for-a-workspace.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4902,7 +5000,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/mcp/submit-mcp-tool-execution-results.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4913,7 +5011,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/search/search-for-nodes-in-the-workspace-streaming.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4924,7 +5022,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/search/search-for-nodes-in-the-workspace.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4935,7 +5033,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/search/upload-a-tool-file.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4946,7 +5044,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/skills/archive-a-skill.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4957,7 +5055,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/skills/list-skills.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4968,7 +5066,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/skills/import-skills-from-uploaded-files.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4979,7 +5077,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/apps/get-an-app-run.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -4990,7 +5088,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/apps/create-an-app-run.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5001,7 +5099,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/apps/list-apps.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5012,7 +5110,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/datasourceviews/get-a-data-source-view.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5023,7 +5121,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/datasourceviews/delete-a-data-source-view.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5034,7 +5132,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/datasourceviews/update-a-data-source-view.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5045,7 +5143,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/datasourceviews/search-the-data-source-view.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5056,7 +5154,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/datasourceviews/list-data-source-views.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5067,7 +5165,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/datasources/check-the-upsert-queue-status-for-a-data-source.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5078,7 +5176,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/datasources/retrieve-a-document-from-a-data-source.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5089,7 +5187,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/datasources/upsert-a-document-in-a-data-source.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5100,7 +5198,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/datasources/delete-a-document-from-a-data-source.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5111,7 +5209,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/datasources/update-the-parents-of-a-document.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5122,7 +5220,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/datasources/get-documents.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5133,7 +5231,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/datasources/search-the-data-source.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5144,7 +5242,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/datasources/get-a-table.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5155,7 +5253,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/datasources/delete-a-table.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5166,7 +5264,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/datasources/get-a-row.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5177,7 +5275,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/datasources/delete-a-row.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5188,7 +5286,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/datasources/list-rows.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5199,7 +5297,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/datasources/upsert-rows.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5210,7 +5308,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/datasources/get-tables.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5221,7 +5319,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/datasources/upsert-a-table.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5232,7 +5330,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/datasources/get-data-sources.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5243,7 +5341,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/tools/list-available-mcp-server-views.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5254,7 +5352,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/spaces/list-available-spaces.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5265,7 +5363,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/triggers/get-a-trigger.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5276,7 +5374,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/triggers/receive-external-webhook-to-trigger-flows.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5287,7 +5385,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/triggers/list-triggers.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5298,7 +5396,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-analytics/list-consumption-analytics-facets.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5309,7 +5407,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-analytics/list-consumption-analytics-facets-1.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5320,7 +5418,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-analytics/list-consumption-analytics-facets-2.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5331,7 +5429,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-agents/list-agent-configurations.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5342,7 +5440,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-agents/create-an-agent-configuration.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5353,7 +5451,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-conversations/cancel-message-generation.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5364,7 +5462,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-conversations/compact-a-conversation.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5375,7 +5473,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-conversations/get-a-conversation-credit-attribution.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5386,7 +5484,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-conversations/create-a-content-fragment.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5397,7 +5495,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-conversations/get-conversation-feedbacks.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5408,7 +5506,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-conversations/get-a-conversation.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5419,7 +5517,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-conversations/delete-or-leave-a-conversation.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5430,7 +5528,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-conversations/update-a-conversation.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5441,7 +5539,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-conversations/get-conversation-participants.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5452,7 +5550,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-conversations/add-a-participant-to-a-conversation.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5463,7 +5561,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-conversations/list-selectable-spaces.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5474,7 +5572,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-conversations/select-spaces-for-a-conversation.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5485,7 +5583,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-conversations/cancel-a-wake-up.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5496,7 +5594,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-conversations/list-wake-ups-for-a-conversation.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5507,7 +5605,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-conversations/list-conversations.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5518,7 +5616,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-conversations/create-a-conversation.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5529,7 +5627,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-events/stream-conversation-events.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5540,7 +5638,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-events/stream-message-events.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5551,7 +5649,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-events/stream-sandbox-function-invocation-events.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5562,7 +5660,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-messages/get-a-single-action.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5573,7 +5671,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-messages/get-an-agent-message-credit-attribution.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5584,7 +5682,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-messages/edit-a-message.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5595,7 +5693,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-messages/submit-message-feedback.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5606,7 +5704,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-messages/delete-message-feedback.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5617,7 +5715,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-messages/get-a-message.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5628,7 +5726,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-messages/delete-a-message.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5639,7 +5737,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-messages/retry-an-agent-message.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5650,7 +5748,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-messages/list-messages-in-a-conversation.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5661,7 +5759,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-messages/post-a-message-to-a-conversation.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5672,7 +5770,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-assistant/resolve-a-conversation-go-template-draft.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5683,7 +5781,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-mentions/get-mention-suggestions.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5694,7 +5792,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-extension/get-extension-configuration.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5705,7 +5803,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-workspace/get-workspace-feature-flags.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5716,7 +5814,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-files/get-or-download-a-file.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5727,7 +5825,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-files/upload-file-content.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5738,7 +5836,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-files/delete-a-file.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5749,7 +5847,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-files/create-a-file-upload.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5760,7 +5858,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-spaces/get-a-data-source-view.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5771,7 +5869,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-spaces/delete-a-data-source-view.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5782,7 +5880,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-spaces/update-a-data-source-view.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5793,7 +5891,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-spaces/list-data-source-views.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5804,7 +5902,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-spaces/create-a-data-source-view.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5815,7 +5913,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-spaces/get-a-space.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5826,7 +5924,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-spaces/delete-a-space.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5837,7 +5935,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-spaces/update-a-space.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5848,7 +5946,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-spaces/get-project-notification-preference.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5859,7 +5957,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-spaces/set-project-notification-preference.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5870,7 +5968,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-spaces/list-spaces.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5881,7 +5979,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-spaces/create-a-space.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5892,7 +5990,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-authentication/initiate-workos-login.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5903,7 +6001,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-authentication/exchange-code-or-refresh-token.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5914,7 +6012,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/api-reference/private-authentication/revoke-a-session.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5925,7 +6023,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/developer-platform/dust-labs/dust-labs-repository.md",
       "in_sitemap": true,
       "status": "exclude_upstream",
-      "reason": "Retired upstream application framework or internal development implementation, outside Counso user documentation.",
+      "reason": "原产品实验仓库的导航说明，不作为 Counso 使用文档。",
       "translations": null
     },
     {
@@ -5936,7 +6034,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/developer-platform/dust-cli/dust-cli.md",
       "in_sitemap": true,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -5947,7 +6045,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/user-documentation/deprecated/legacy-dust-apps/creating-google-calendar-events-from-a-dust-agent.md",
       "in_sitemap": true,
       "status": "exclude_upstream",
-      "reason": "Retired upstream application framework or internal development implementation, outside Counso user documentation.",
+      "reason": "已弃用的旧应用框架或其示例，不纳入 Counso 文档。",
       "translations": null
     },
     {
@@ -5958,7 +6056,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/user-documentation/deprecated/legacy-dust-apps/allowing-an-agent-to-send-an-email.md",
       "in_sitemap": true,
       "status": "exclude_upstream",
-      "reason": "Retired upstream application framework or internal development implementation, outside Counso user documentation.",
+      "reason": "已弃用的旧应用框架或其示例，不纳入 Counso 文档。",
       "translations": null
     },
     {
@@ -5969,7 +6067,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/user-documentation/deprecated/dev-pre-configuring-a-custom-mcp-server.md",
       "in_sitemap": true,
       "status": "exclude_upstream",
-      "reason": "Retired upstream application framework or internal development implementation, outside Counso user documentation.",
+      "reason": "已弃用的开发端 MCP 预配置方式；现行 MCP 接入说明已保留。",
       "translations": null
     },
     {
@@ -5979,9 +6077,21 @@
       "original_sha256": "91728a767bdfe8d109feb14f1929765d9800e63598aeedc22b7099c7edbe6f30",
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/user-documentation/data-sources/custom-connections/beta-import-dropbox-files.md",
       "in_sitemap": true,
-      "status": "hold_integration",
-      "reason": "主题保留为自定义数据导入：Dropbox 文件及 Paper 文档。原文使用将目标 API 地址固定为 Dust 的实验脚本向资料库写入；它不是产品内原生 Connection。需适配 Counso 服务地址、认证与 Space/资料库标识并验证同步，再发布可执行教程。暂缓原因是脚本适配状态未验证，不是公开 API 文档暂缓或该数据源不适用。",
-      "translations": null
+      "status": "updating",
+      "reason": "更新中",
+      "translations": null,
+      "notice": {
+        "en": {
+          "file": "en/UPDATING.md",
+          "route": "/docs/user-documentation/data-sources/custom-connections/beta-import-dropbox-files",
+          "sha256": "f1d9428214126f7efa16ac58c1ee57dc3d86f926d06abeeda61b53fa4035f7cd"
+        },
+        "zh-cn": {
+          "file": "zh-cn/UPDATING.md",
+          "route": "/zh-cn/docs/user-documentation/data-sources/custom-connections/beta-import-dropbox-files",
+          "sha256": "86bffbc7fd8d083bfe095702927cc7c7070d70bc5b3ada8dafd017d6cb99d4ae"
+        }
+      }
     },
     {
       "original_url": "https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/beta-import-front-conversations",
@@ -5990,9 +6100,21 @@
       "original_sha256": "456d85c1b12cf32475286c814272a77ee4fbff3b4e4a9617663ba86774fc979b",
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/user-documentation/data-sources/custom-connections/beta-import-front-conversations.md",
       "in_sitemap": true,
-      "status": "hold_integration",
-      "reason": "主题保留为自定义数据导入：Front 收件箱会话及消息。原文使用将目标 API 地址固定为 Dust 的实验脚本向资料库写入；它不是产品内原生 Connection。需适配 Counso 服务地址、认证与 Space/资料库标识并验证同步，再发布可执行教程。暂缓原因是脚本适配状态未验证，不是公开 API 文档暂缓或该数据源不适用。",
-      "translations": null
+      "status": "updating",
+      "reason": "更新中",
+      "translations": null,
+      "notice": {
+        "en": {
+          "file": "en/UPDATING.md",
+          "route": "/docs/user-documentation/data-sources/custom-connections/beta-import-front-conversations",
+          "sha256": "f1d9428214126f7efa16ac58c1ee57dc3d86f926d06abeeda61b53fa4035f7cd"
+        },
+        "zh-cn": {
+          "file": "zh-cn/UPDATING.md",
+          "route": "/zh-cn/docs/user-documentation/data-sources/custom-connections/beta-import-front-conversations",
+          "sha256": "86bffbc7fd8d083bfe095702927cc7c7070d70bc5b3ada8dafd017d6cb99d4ae"
+        }
+      }
     },
     {
       "original_url": "https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/beta-import-guru-cards",
@@ -6001,9 +6123,21 @@
       "original_sha256": "fae727644edc87a9604c0f3955786c4b5b7a5dce7e22b34ffaac4b44158fd29c",
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/user-documentation/data-sources/custom-connections/beta-import-guru-cards.md",
       "in_sitemap": true,
-      "status": "hold_integration",
-      "reason": "主题保留为自定义数据导入：Guru 卡片及其知识库元数据。原文使用将目标 API 地址固定为 Dust 的实验脚本向资料库写入；它不是产品内原生 Connection。需适配 Counso 服务地址、认证与 Space/资料库标识并验证同步，再发布可执行教程。暂缓原因是脚本适配状态未验证，不是公开 API 文档暂缓或该数据源不适用。",
-      "translations": null
+      "status": "updating",
+      "reason": "更新中",
+      "translations": null,
+      "notice": {
+        "en": {
+          "file": "en/UPDATING.md",
+          "route": "/docs/user-documentation/data-sources/custom-connections/beta-import-guru-cards",
+          "sha256": "f1d9428214126f7efa16ac58c1ee57dc3d86f926d06abeeda61b53fa4035f7cd"
+        },
+        "zh-cn": {
+          "file": "zh-cn/UPDATING.md",
+          "route": "/zh-cn/docs/user-documentation/data-sources/custom-connections/beta-import-guru-cards",
+          "sha256": "86bffbc7fd8d083bfe095702927cc7c7070d70bc5b3ada8dafd017d6cb99d4ae"
+        }
+      }
     },
     {
       "original_url": "https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/beta-import-hubspot-data",
@@ -6012,9 +6146,21 @@
       "original_sha256": "e127c3bf1447fcdeba9cf2120e5824cbf4d24c651d7f2cee36f6b3b031f6ff11",
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/user-documentation/data-sources/custom-connections/beta-import-hubspot-data.md",
       "in_sitemap": true,
-      "status": "hold_integration",
-      "reason": "主题保留为自定义数据导入：HubSpot 公司、联系人、交易及笔记摘要。原文使用将目标 API 地址固定为 Dust 的实验脚本向资料库写入；它不是产品内原生 Connection。需适配 Counso 服务地址、认证与 Space/资料库标识并验证同步，再发布可执行教程。暂缓原因是脚本适配状态未验证，不是公开 API 文档暂缓或该数据源不适用。",
-      "translations": null
+      "status": "updating",
+      "reason": "更新中",
+      "translations": null,
+      "notice": {
+        "en": {
+          "file": "en/UPDATING.md",
+          "route": "/docs/user-documentation/data-sources/custom-connections/beta-import-hubspot-data",
+          "sha256": "f1d9428214126f7efa16ac58c1ee57dc3d86f926d06abeeda61b53fa4035f7cd"
+        },
+        "zh-cn": {
+          "file": "zh-cn/UPDATING.md",
+          "route": "/zh-cn/docs/user-documentation/data-sources/custom-connections/beta-import-hubspot-data",
+          "sha256": "86bffbc7fd8d083bfe095702927cc7c7070d70bc5b3ada8dafd017d6cb99d4ae"
+        }
+      }
     },
     {
       "original_url": "https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/beta-import-jira-issues",
@@ -6023,9 +6169,21 @@
       "original_sha256": "08b129c4dd726087b17e1ad70b34fd8c25e9e0d1eb5767923234e21d888a6927",
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/user-documentation/data-sources/custom-connections/beta-import-jira-issues.md",
       "in_sitemap": true,
-      "status": "hold_integration",
-      "reason": "主题保留为自定义数据导入：Jira 问题、评论及字段。原文使用将目标 API 地址固定为 Dust 的实验脚本向资料库写入；它不是产品内原生 Connection。需适配 Counso 服务地址、认证与 Space/资料库标识并验证同步，再发布可执行教程。暂缓原因是脚本适配状态未验证，不是公开 API 文档暂缓或该数据源不适用。",
-      "translations": null
+      "status": "updating",
+      "reason": "更新中",
+      "translations": null,
+      "notice": {
+        "en": {
+          "file": "en/UPDATING.md",
+          "route": "/docs/user-documentation/data-sources/custom-connections/beta-import-jira-issues",
+          "sha256": "f1d9428214126f7efa16ac58c1ee57dc3d86f926d06abeeda61b53fa4035f7cd"
+        },
+        "zh-cn": {
+          "file": "zh-cn/UPDATING.md",
+          "route": "/zh-cn/docs/user-documentation/data-sources/custom-connections/beta-import-jira-issues",
+          "sha256": "86bffbc7fd8d083bfe095702927cc7c7070d70bc5b3ada8dafd017d6cb99d4ae"
+        }
+      }
     },
     {
       "original_url": "https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/beta-import-linear-issues",
@@ -6034,9 +6192,21 @@
       "original_sha256": "09a0f9737464ac1d33328eac816883fe452a5ea9a9e69fb7cfdea216d3642e01",
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/user-documentation/data-sources/custom-connections/beta-import-linear-issues.md",
       "in_sitemap": true,
-      "status": "hold_integration",
-      "reason": "主题保留为自定义数据导入：Linear 问题及关联信息。原文使用将目标 API 地址固定为 Dust 的实验脚本向资料库写入；它不是产品内原生 Connection。需适配 Counso 服务地址、认证与 Space/资料库标识并验证同步，再发布可执行教程。暂缓原因是脚本适配状态未验证，不是公开 API 文档暂缓或该数据源不适用。",
-      "translations": null
+      "status": "updating",
+      "reason": "更新中",
+      "translations": null,
+      "notice": {
+        "en": {
+          "file": "en/UPDATING.md",
+          "route": "/docs/user-documentation/data-sources/custom-connections/beta-import-linear-issues",
+          "sha256": "f1d9428214126f7efa16ac58c1ee57dc3d86f926d06abeeda61b53fa4035f7cd"
+        },
+        "zh-cn": {
+          "file": "zh-cn/UPDATING.md",
+          "route": "/zh-cn/docs/user-documentation/data-sources/custom-connections/beta-import-linear-issues",
+          "sha256": "86bffbc7fd8d083bfe095702927cc7c7070d70bc5b3ada8dafd017d6cb99d4ae"
+        }
+      }
     },
     {
       "original_url": "https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/beta-import-salesforce-data",
@@ -6045,9 +6215,21 @@
       "original_sha256": "76d97221b0b0dee6b3912bd4e74f56cd1cc8c572e56af2d6d59bbcd4b5c355c1",
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/user-documentation/data-sources/custom-connections/beta-import-salesforce-data.md",
       "in_sitemap": true,
-      "status": "hold_integration",
-      "reason": "主题保留为自定义数据导入：Salesforce 客户及关联 CRM 记录。原文使用将目标 API 地址固定为 Dust 的实验脚本向资料库写入；它不是产品内原生 Connection。需适配 Counso 服务地址、认证与 Space/资料库标识并验证同步，再发布可执行教程。暂缓原因是脚本适配状态未验证，不是公开 API 文档暂缓或该数据源不适用。",
-      "translations": null
+      "status": "updating",
+      "reason": "更新中",
+      "translations": null,
+      "notice": {
+        "en": {
+          "file": "en/UPDATING.md",
+          "route": "/docs/user-documentation/data-sources/custom-connections/beta-import-salesforce-data",
+          "sha256": "f1d9428214126f7efa16ac58c1ee57dc3d86f926d06abeeda61b53fa4035f7cd"
+        },
+        "zh-cn": {
+          "file": "zh-cn/UPDATING.md",
+          "route": "/zh-cn/docs/user-documentation/data-sources/custom-connections/beta-import-salesforce-data",
+          "sha256": "86bffbc7fd8d083bfe095702927cc7c7070d70bc5b3ada8dafd017d6cb99d4ae"
+        }
+      }
     },
     {
       "original_url": "https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/zapier-automatically-add-datasource",
@@ -6056,9 +6238,21 @@
       "original_sha256": "c3b00779fa36235e0878c6667c74e4e767f09868e1bf05c2dfe2e392ab90019d",
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/user-documentation/data-sources/custom-connections/zapier-automatically-add-datasource.md",
       "in_sitemap": true,
-      "status": "hold_integration",
-      "reason": "主题保留为自动化资料导入。原文使用 Dust 的 Zapier 应用及 Upload Document 动作，不是自托管导入脚本；需验证 Counso 对应动作、认证和目标资料库后发布。",
-      "translations": null
+      "status": "updating",
+      "reason": "更新中",
+      "translations": null,
+      "notice": {
+        "en": {
+          "file": "en/UPDATING.md",
+          "route": "/docs/user-documentation/data-sources/custom-connections/zapier-automatically-add-datasource",
+          "sha256": "f1d9428214126f7efa16ac58c1ee57dc3d86f926d06abeeda61b53fa4035f7cd"
+        },
+        "zh-cn": {
+          "file": "zh-cn/UPDATING.md",
+          "route": "/zh-cn/docs/user-documentation/data-sources/custom-connections/zapier-automatically-add-datasource",
+          "sha256": "86bffbc7fd8d083bfe095702927cc7c7070d70bc5b3ada8dafd017d6cb99d4ae"
+        }
+      }
     },
     {
       "original_url": "https://docs.dust.tt/docs/developer-platform/legacy-dust-apps/what-is-a-dust-app",
@@ -6068,7 +6262,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/developer-platform/legacy-dust-apps/what-is-a-dust-app.md",
       "in_sitemap": true,
       "status": "exclude_upstream",
-      "reason": "Retired upstream application framework or internal development implementation, outside Counso user documentation.",
+      "reason": "已弃用的旧应用框架或其示例，不纳入 Counso 文档。",
       "translations": null
     },
     {
@@ -6079,7 +6273,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/developer-platform/legacy-dust-apps/dust-apps-core-concepts.md",
       "in_sitemap": true,
       "status": "exclude_upstream",
-      "reason": "Retired upstream application framework or internal development implementation, outside Counso user documentation.",
+      "reason": "已弃用的旧应用框架或其示例，不纳入 Counso 文档。",
       "translations": null
     },
     {
@@ -6090,7 +6284,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/developer-platform/legacy-dust-apps/build-your-first-dust-app.md",
       "in_sitemap": true,
       "status": "exclude_upstream",
-      "reason": "Retired upstream application framework or internal development implementation, outside Counso user documentation.",
+      "reason": "已弃用的旧应用框架或其示例，不纳入 Counso 文档。",
       "translations": null
     },
     {
@@ -6101,7 +6295,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/developer-platform/legacy-dust-apps/blocks/core-blocks.md",
       "in_sitemap": true,
       "status": "exclude_upstream",
-      "reason": "Retired upstream application framework or internal development implementation, outside Counso user documentation.",
+      "reason": "已弃用的旧应用框架或其示例，不纳入 Counso 文档。",
       "translations": null
     },
     {
@@ -6112,7 +6306,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/developer-platform/dust-api-documentation/openapi.json",
       "in_sitemap": false,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     },
     {
@@ -6123,7 +6317,7 @@
       "original_source": "https://github.com/ByteCodeMonkey/counso-docs/blob/4bf686cfa77adaa9799318f9a903fcca7aa29437/docs/developer-platform/dust-api-documentation/swagger.json",
       "in_sitemap": false,
       "status": "exclude_api",
-      "reason": "本版暂不发布公开 API 及配套开发文档，保留原文与原始 URL 映射。",
+      "reason": "本版不提供公开 API 及配套开发文档。",
       "translations": null
     }
   ]

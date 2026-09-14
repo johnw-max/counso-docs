@@ -78,7 +78,6 @@
 - [让智能体发现 Skills](docs/user-documentation/agents/discover-skills.md)
 - [Discover Tools（发现工具）](docs/user-documentation/agents/discover-tools.md)
 - [Go Deep（深入研究）](docs/user-documentation/agents/go-deep.md)
-- [产品支持指引](docs/user-documentation/agents/dust-support.md)
 - [查看 Skill 改进建议](docs/user-documentation/agents/self-improving-skills.md)
 
 ## 知识与工具
@@ -108,7 +107,6 @@
 - [Gong](docs/user-documentation/agents/tools/gong.md)
 - [Freshservice](docs/user-documentation/agents/tools/freshservice.md)
 - [Front](docs/user-documentation/agents/tools/front.md)
-- [GitHub](docs/user-documentation/agents/tools/github.md)
 - [Gmail](docs/user-documentation/agents/tools/gmail.md)
 - [Google Calendar](docs/user-documentation/agents/tools/google-calendar.md)
 - [Google Drive](docs/user-documentation/agents/tools/google-drive.md)
@@ -121,7 +119,6 @@
 - [Microsoft Teams](docs/user-documentation/agents/tools/microsoft-teams.md)
 - [Microsoft Excel](docs/user-documentation/agents/tools/microsoft-excel.md)
 - [Miro](docs/user-documentation/agents/tools/miro.md)
-- [Monday.com](docs/user-documentation/agents/tools/monday-com.md)
 - [NetSuite](docs/user-documentation/agents/tools/netsuite.md)
 - [Notion](docs/user-documentation/agents/tools/notion.md)
 - [Power BI](docs/user-documentation/agents/tools/power-bi.md)
@@ -146,15 +143,7 @@
 - [筛选 Webhook 负载](docs/user-documentation/agents/triggers/webhooks/filter-webhooks-payload.md)
 - [设置 Webhook 触发器的频率限制](docs/user-documentation/agents/triggers/webhooks/rate-limiting.md)
 - [为共享 Frame 添加品牌信息](docs/user-documentation/agents/frames/white-labeled-frames.md)
-- [将 MCP 客户端连接到 Counso](docs/user-documentation/agents/integrations/dust-mcp-server.md)
-- [在 Slack 频道设置自动回复](docs/user-documentation/agents/integrations/dust-in-slack/slack-auto-reply.md)
-- [在 Slack Workflow 中使用智能体](docs/user-documentation/agents/integrations/dust-in-slack/slack-workflows.md)
-- [通过邮件联系智能体](docs/user-documentation/agents/integrations/send-and-forward-email-to-agents.md)
-- [使用智能体处理会议记录](docs/user-documentation/agents/integrations/meeting-transcripts.md)
-- [在浏览器中使用智能体](docs/user-documentation/agents/integrations/browser-extension.md)
-- [在 Microsoft Teams 中使用智能体](docs/user-documentation/agents/integrations/dust-in-teams.md)
 - [将 Google Sheets 工作迁移到 Google Drive](docs/user-documentation/agents/tools/google-sheets-deprecated.md)
-- [自动加入新的 Slack 频道](docs/user-documentation/agents/integrations/dust-in-slack/slack-auto-join.md)
 
 ## Pods
 
@@ -189,13 +178,11 @@
 - [连接 Notion](docs/user-documentation/admins/connections-management/notion.md)
 - [连接 Confluence](docs/user-documentation/admins/connections-management/confluence.md)
 - [连接 Intercom](docs/user-documentation/admins/connections-management/intercom.md)
-- [连接 GitHub](docs/user-documentation/admins/connections-management/github.md)
 - [连接 Microsoft](docs/user-documentation/admins/connections-management/microsoft.md)
 - [连接 Zendesk](docs/user-documentation/admins/connections-management/zendesk.md)
 - [连接 Snowflake](docs/user-documentation/admins/connections-management/snowflake.md)
 - [连接 BigQuery](docs/user-documentation/admins/connections-management/bigquery.md)
 - [连接 Gong](docs/user-documentation/admins/connections-management/gong.md)
-- [连接 Slack 知识](docs/user-documentation/admins/connections-management/slack.md)
 - [添加远程 MCP 服务器](docs/user-documentation/admins/tools-management/adding-an-mcp-server.md)
 - [工具的个人与共享凭据](docs/user-documentation/admins/tools-management/personal-vs-shared-credentials.md)
 - [连接 Salesforce](docs/user-documentation/admins/tools-management/salesforce/salesforce.md)
@@ -213,4 +200,3 @@
 - [培训团队优化积分使用](docs/user-documentation/admins/usage-seats-and-credits/train-team-credit-optimization.md)
 - [订阅与账单](docs/user-documentation/admins/billing/subscriptions-and-payments.md)
 - [排查工作区管理问题](docs/user-documentation/admins/admin-troubleshooting/admin-troubleshooting.md)
-- [排查 Slack 集成问题](docs/user-documentation/admins/admin-troubleshooting/slack-troubleshooting.md)

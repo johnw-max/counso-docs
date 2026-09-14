@@ -8,4 +8,4 @@ Start with a read of one cadence and one task. Before changing an activity or ta
 
 ## Available operations
 
-The source toolset includes `List Actions` and `Get Action`. The API key requires `cadences:read`, `people:read`, `team:read`, and `calls:read` for the documented retrievals. Connect the account that owns the required cadence data and start by listing actions within the intended account scope.
+Available tools include `List Actions` and `Get Action`. The API key requires `cadences:read`, `people:read`, `team:read`, and `calls:read` for the documented retrievals. Connect the account that owns the required cadence data and start by listing actions within the intended account scope.

@@ -41,7 +41,7 @@ index = read_json('source/url-index.json')
 manifest = read_json('source/manifest.json')
 rows = data['pages']
 status_counts = Counter(r['status'] for r in rows)
-require(set(status_counts) <= {'publish', 'exclude_api', 'exclude_upstream', 'hold_integration'}, 'Unknown publication status')
+require(set(status_counts) <= {'publish', 'exclude_api', 'exclude_upstream', 'updating'}, 'Unknown publication status')
 require(data['counts'] == {'source_files': len(rows), 'sitemap_urls': sum(r['in_sitemap'] for r in rows), **dict(status_counts)}, 'Publication counts differ from page records')
 require(len(rows) == len(manifest), 'Source manifest count mismatch')
 require(len({r['original_file'] for r in rows}) == len(rows), 'Duplicate original file')
@@ -52,6 +52,8 @@ require(urls == set(index['routes']), 'Source sitemap and URL index differ')
 require(urls == {r['original_url'] for r in rows if r['in_sitemap']}, 'Sitemap URL missing from translations')
 require(digest(ROOT / 'source/sitemap.xml') == index['source']['sitemap_sha256'], 'Source sitemap hash changed')
 expected = set()
+notice_files = set()
+notice_routes = set()
 routes = {}
 for row in rows:
     path = row['original_repository_path']
@@ -63,9 +65,32 @@ for row in rows:
     if row['in_sitemap']:
         require(index['routes'].get(row['original_url']) == path, 'Peer URL mapping changed: ' + path)
     translations = row['translations']
+    if row['status'] == 'updating':
+        require(translations is None, 'Updating page must not claim a completed translation: ' + path)
+        notice = row.get('notice', {})
+        require(set(notice) == {'en', 'zh-cn'}, 'Missing notice language: ' + path)
+        require(row['in_sitemap'], 'Notice needs an original page URL: ' + path)
+        for lang, t in notice.items():
+            require(t['file'] == lang + '/UPDATING.md', 'Unexpected notice file: ' + path)
+            file = ROOT / t['file']
+            notice_files.add(t['file'])
+            require(file.is_file(), 'Notice file missing: ' + t['file'])
+            canonical = urllib.parse.urlparse(row['original_url']).path
+            require(t['route'] == (canonical if lang == 'en' else '/zh-cn' + canonical), 'Unexpected notice route: ' + path)
+            require(t['route'] not in routes, 'Duplicate notice route: ' + t['route'])
+            routes[t['route']] = t['file']
+            notice_routes.add(t['route'])
+            if file.is_file():
+                if args.update_hashes:
+                    t['sha256'] = digest(file)
+                else:
+                    require(digest(file) == t['sha256'], 'Notice hash stale: ' + t['file'])
+        continue
     if row['status'] != 'publish':
         require(translations is None and bool(row['reason']), 'Excluded source requires a reason and no translations: ' + path)
+        require('notice' not in row, 'Excluded source must not promise an update: ' + path)
         continue
+    require('notice' not in row, 'Published article still contains a notice: ' + path)
     require(set(translations) == {'en', 'zh-cn'}, 'Missing language: ' + path)
     for lang, t in translations.items():
         file = ROOT / t['file']
@@ -82,7 +107,7 @@ for row in rows:
             else:
                 require(digest(file) == t['sha256'], 'Translation hash stale: ' + t['file'])
 actual = {str(f.relative_to(ROOT)) for lang in ['en', 'zh-cn'] for f in (ROOT / lang).rglob('*.md') if f.name != 'SUMMARY.md'}
-require(actual == expected, 'Unexpected or missing Markdown: ' + str(sorted(actual ^ expected)))
+require(actual == expected | notice_files, 'Unexpected or missing Markdown: ' + str(sorted(actual ^ (expected | notice_files))))
 redirects = read_json('redirects.json')
 seen = set()
 for r in redirects['redirects']:
@@ -92,7 +117,7 @@ for r in redirects['redirects']:
     seen.add(r['from'])
 
 link_count = 0
-all_files = sorted(expected | {'en/SUMMARY.md', 'zh-cn/SUMMARY.md', 'README.md'})
+all_files = sorted(expected | notice_files | {'en/SUMMARY.md', 'zh-cn/SUMMARY.md', 'README.md', 'PUBLICATION-STATUS.md'})
 for rel in all_files:
     file = ROOT / rel
     require(file.is_file(), 'Missing index: ' + rel)
@@ -100,9 +125,9 @@ for rel in all_files:
         continue
     text = file.read_text()
     require(len(re.findall(r'^# ', text, re.M)) == 1, 'Expected one main heading: ' + rel)
-    if rel != 'README.md':
+    if rel not in {'README.md', 'PUBLICATION-STATUS.md'}:
         visible = re.sub(r'\]\([^)]*\)', ']', text)
-        require(not re.search(r'\bDust\b|\bdust\b|未部署|飞书|Feishu|TODO|TBD|整改安排', visible), 'Brand or scaffolding in copy: ' + rel)
+        require(not re.search(r'\bDust\b|\bdust\b|未部署|飞书|Feishu|TODO|TBD|整改安排|需要适配|待适配|hold_integration|upstream implementation', visible), 'Brand or scaffolding in copy: ' + rel)
         require(not re.search(r'https?://(?:[^/\s]+\.)?dust\.tt', text), 'Upstream product link in copy: ' + rel)
     for target in re.findall(r'(?<!!)\[[^\]\n]+\]\(([^\s)]+)(?:\s+"[^"]*")?\)', strip_code(text)):
         parsed = urllib.parse.urlparse(target.strip('<>'))
@@ -113,9 +138,14 @@ for rel in all_files:
         linked = (file.parent / urllib.parse.unquote(parsed.path)).resolve() if parsed.path else file
         require(linked.is_relative_to(ROOT), 'Link leaves repository: ' + rel + ' → ' + target)
         require(linked.exists(), 'Broken file link: ' + rel + ' → ' + target)
+        if linked.is_relative_to(ROOT) and (rel in {'en/SUMMARY.md', 'zh-cn/SUMMARY.md'} or rel in expected):
+            require(str(linked.relative_to(ROOT)) not in notice_files, 'Unreleased capability linked from user documentation: ' + rel)
         if parsed.fragment and linked.is_file() and linked.suffix == '.md':
             require(urllib.parse.unquote(parsed.fragment) in anchors(linked.read_text()), 'Broken anchor: ' + rel + ' → ' + target)
-summary = {'source_files': len(rows), 'sitemap_urls': len(urls), 'published_pairs': len(expected) // 2, 'language_files': len(expected), 'published_routes': len(routes), 'redirects': len(seen), 'relative_links_checked': link_count, 'errors': errors}
+status_text = (ROOT / 'PUBLICATION-STATUS.md').read_text()
+listed_urls = re.findall(r'^\|[^\n]*\| \[(https?://[^\]]+)\]\(', status_text, re.M)
+require(Counter(listed_urls) == Counter(r['original_url'] for r in rows if r['status'] != 'publish'), 'Unpublished URL inventory differs from mapping')
+summary = {'source_files': len(rows), 'sitemap_urls': len(urls), 'published_pairs': len(expected) // 2, 'language_files': len(expected), 'published_routes': len(routes) - len(notice_routes), 'updating_pages': len(notice_routes) // 2, 'notice_routes': len(notice_routes), 'redirects': len(seen), 'relative_links_checked': link_count, 'errors': errors}
 if args.update_hashes and not errors:
     temporary = ROOT / '.translations.json.tmp'
     temporary.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
