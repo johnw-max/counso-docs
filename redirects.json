@@ -1,0 +1,351 @@
+{
+  "redirects": [
+    {
+      "from": "/",
+      "to": "/docs/user-documentation/getting-started/intro-to-dust",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/getting-started/intro-to-dust"
+    },
+    {
+      "from": "/docs/ashby-mcp",
+      "to": "/docs/user-documentation/agents/tools/ashby",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/agents/tools/ashby"
+    },
+    {
+      "from": "/docs/bigquery",
+      "to": "/docs/user-documentation/admins/connections-management/bigquery",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/admins/connections-management/bigquery"
+    },
+    {
+      "from": "/docs/confluence-connection",
+      "to": "/docs/user-documentation/admins/connections-management/confluence",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/admins/connections-management/confluence"
+    },
+    {
+      "from": "/docs/confluence-tool",
+      "to": "/docs/user-documentation/agents/tools/confluence",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/agents/tools/confluence"
+    },
+    {
+      "from": "/docs/context-compaction",
+      "to": "/docs/user-documentation/agents/context-compaction",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/agents/context-compaction"
+    },
+    {
+      "from": "/docs/credit-management",
+      "to": "/docs/user-documentation/admins/usage-seats-and-credits/credit-management",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/admins/usage-seats-and-credits/credit-management"
+    },
+    {
+      "from": "/docs/credits",
+      "to": "/docs/user-documentation/admins/usage-seats-and-credits/credits",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/admins/usage-seats-and-credits/credits"
+    },
+    {
+      "from": "/docs/data",
+      "to": "/docs/user-documentation/admins/spaces-management",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/admins/spaces-management"
+    },
+    {
+      "from": "/docs/databricks",
+      "to": "/docs/user-documentation/agents/tools/databricks",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/agents/tools/databricks"
+    },
+    {
+      "from": "/docs/dust-in-teams",
+      "to": "/docs/user-documentation/agents/integrations/dust-in-teams",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/agents/integrations/dust-in-teams"
+    },
+    {
+      "from": "/docs/email-agents",
+      "to": "/docs/user-documentation/agents/integrations/send-and-forward-email-to-agents",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/agents/integrations/send-and-forward-email-to-agents"
+    },
+    {
+      "from": "/docs/filter-webhooks-payload",
+      "to": "/docs/user-documentation/agents/triggers/webhooks/filter-webhooks-payload",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/agents/triggers/webhooks/filter-webhooks-payload"
+    },
+    {
+      "from": "/docs/freshservice",
+      "to": "/docs/user-documentation/agents/tools/freshservice",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/agents/tools/freshservice"
+    },
+    {
+      "from": "/docs/front-mcp",
+      "to": "/docs/user-documentation/agents/tools/front",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/agents/tools/front"
+    },
+    {
+      "from": "/docs/github-connection",
+      "to": "/docs/user-documentation/admins/connections-management/github",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/admins/connections-management/github"
+    },
+    {
+      "from": "/docs/gmail",
+      "to": "/docs/user-documentation/agents/tools/gmail",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/agents/tools/gmail"
+    },
+    {
+      "from": "/docs/gong-connection",
+      "to": "/docs/user-documentation/admins/connections-management/gong",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/admins/connections-management/gong"
+    },
+    {
+      "from": "/docs/gong-mcp",
+      "to": "/docs/user-documentation/agents/tools/gong",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/agents/tools/gong"
+    },
+    {
+      "from": "/docs/google-calendar",
+      "to": "/docs/user-documentation/agents/tools/google-calendar",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/agents/tools/google-calendar"
+    },
+    {
+      "from": "/docs/google-drive",
+      "to": "/docs/user-documentation/admins/connections-management/google-drive",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/admins/connections-management/google-drive"
+    },
+    {
+      "from": "/docs/google-drive-connection",
+      "to": "/docs/user-documentation/admins/connections-management/google-drive",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/admins/connections-management/google-drive"
+    },
+    {
+      "from": "/docs/google-sheets",
+      "to": "/docs/user-documentation/agents/tools/google-sheets-deprecated",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/agents/tools/google-sheets-deprecated"
+    },
+    {
+      "from": "/docs/hubspot",
+      "to": "/docs/user-documentation/agents/tools/hubspot",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/agents/tools/hubspot"
+    },
+    {
+      "from": "/docs/intercom-connection",
+      "to": "/docs/user-documentation/admins/connections-management/intercom",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/admins/connections-management/intercom"
+    },
+    {
+      "from": "/docs/intro",
+      "to": "/docs/user-documentation/getting-started/intro-to-dust",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/getting-started/intro-to-dust"
+    },
+    {
+      "from": "/docs/jira",
+      "to": "/docs/user-documentation/agents/tools/jira",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/agents/tools/jira"
+    },
+    {
+      "from": "/docs/knowledge",
+      "to": "/docs/user-documentation/getting-started/use-cases-and-guides/knowledge",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/getting-started/use-cases-and-guides/knowledge"
+    },
+    {
+      "from": "/docs/microsoft-connection",
+      "to": "/docs/user-documentation/admins/connections-management/microsoft",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/admins/connections-management/microsoft"
+    },
+    {
+      "from": "/docs/microsoft-drive-tool-setup",
+      "to": "/docs/user-documentation/agents/tools/microsoft-sharepoint-and-onedrive",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/agents/tools/microsoft-sharepoint-and-onedrive"
+    },
+    {
+      "from": "/docs/microsoft-teams-tool-setup",
+      "to": "/docs/user-documentation/agents/tools/microsoft-teams",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/agents/tools/microsoft-teams"
+    },
+    {
+      "from": "/docs/monday",
+      "to": "/docs/user-documentation/agents/tools/monday-com",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/agents/tools/monday-com"
+    },
+    {
+      "from": "/docs/netsuite",
+      "to": "/docs/user-documentation/agents/tools/netsuite",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/agents/tools/netsuite"
+    },
+    {
+      "from": "/docs/notion-connection",
+      "to": "/docs/user-documentation/admins/connections-management/notion",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/admins/connections-management/notion"
+    },
+    {
+      "from": "/docs/notion-mcp",
+      "to": "/docs/user-documentation/agents/tools/notion",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/agents/tools/notion"
+    },
+    {
+      "from": "/docs/outlook-tool-setup",
+      "to": "/docs/user-documentation/agents/tools/microsoft-outlook",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/agents/tools/microsoft-outlook"
+    },
+    {
+      "from": "/docs/personal-vs-workspace-credentials-for-tools-mcp-servers",
+      "to": "/docs/user-documentation/admins/tools-management/personal-vs-shared-credentials",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/admins/tools-management/personal-vs-shared-credentials"
+    },
+    {
+      "from": "/docs/power-bi",
+      "to": "/docs/user-documentation/agents/tools/power-bi",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/agents/tools/power-bi"
+    },
+    {
+      "from": "/docs/productboard",
+      "to": "/docs/user-documentation/agents/tools/productboard",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/agents/tools/productboard"
+    },
+    {
+      "from": "/docs/remote-mcp-server",
+      "to": "/docs/user-documentation/admins/tools-management/adding-an-mcp-server",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/admins/tools-management/adding-an-mcp-server"
+    },
+    {
+      "from": "/docs/salesforce",
+      "to": "/docs/user-documentation/admins/tools-management/salesforce/salesforce",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/admins/tools-management/salesforce/salesforce"
+    },
+    {
+      "from": "/docs/salesloft-mcp",
+      "to": "/docs/user-documentation/agents/tools/salesloft",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/agents/tools/salesloft"
+    },
+    {
+      "from": "/docs/scheduling-your-agent-beta",
+      "to": "/docs/user-documentation/agents/triggers/schedules",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/agents/triggers/schedules"
+    },
+    {
+      "from": "/docs/seat-management",
+      "to": "/docs/user-documentation/admins/usage-seats-and-credits/seat-management",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/admins/usage-seats-and-credits/seat-management"
+    },
+    {
+      "from": "/docs/self-improving-skills",
+      "to": "/docs/user-documentation/agents/self-improving-skills",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/agents/self-improving-skills"
+    },
+    {
+      "from": "/docs/skills",
+      "to": "/docs/user-documentation/agents/skills/skills-overview",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/agents/skills/skills-overview"
+    },
+    {
+      "from": "/docs/slab-mcp",
+      "to": "/docs/user-documentation/agents/tools/slab",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/agents/tools/slab"
+    },
+    {
+      "from": "/docs/slack",
+      "to": "/docs/user-documentation/agents/integrations/dust-in-slack/slack-workflows",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/agents/integrations/dust-in-slack/slack-workflows"
+    },
+    {
+      "from": "/docs/slack-connection",
+      "to": "/docs/user-documentation/admins/connections-management/slack",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/admins/connections-management/slack"
+    },
+    {
+      "from": "/docs/slack-mcp",
+      "to": "/docs/user-documentation/agents/tools/slack-tools",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/agents/tools/slack-tools"
+    },
+    {
+      "from": "/docs/snowflake-connection",
+      "to": "/docs/user-documentation/admins/connections-management/snowflake",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/admins/connections-management/snowflake"
+    },
+    {
+      "from": "/docs/snowflake-tool",
+      "to": "/docs/user-documentation/agents/tools/snowflake",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/agents/tools/snowflake"
+    },
+    {
+      "from": "/docs/statuspage-mcp",
+      "to": "/docs/user-documentation/agents/tools/statuspage",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/agents/tools/statuspage"
+    },
+    {
+      "from": "/docs/structured-output-format",
+      "to": "/docs/user-documentation/agents/structured-output-format",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/agents/structured-output-format"
+    },
+    {
+      "from": "/docs/subscriptions",
+      "to": "/docs/user-documentation/admins/billing/subscriptions-and-payments",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/admins/billing/subscriptions-and-payments"
+    },
+    {
+      "from": "/docs/triggers",
+      "to": "/docs/user-documentation/agents/triggers/schedules",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/agents/triggers/schedules"
+    },
+    {
+      "from": "/docs/ukg-ready",
+      "to": "/docs/user-documentation/agents/tools/ukg-ready",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/agents/tools/ukg-ready"
+    },
+    {
+      "from": "/docs/understanding-llms-context-windows",
+      "to": "/docs/user-documentation/agents/llm-best-practices/understanding-llms-context-windows",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/agents/llm-best-practices/understanding-llms-context-windows"
+    },
+    {
+      "from": "/docs/user-documentation/agents/create-your-frist-agent",
+      "to": "/docs/user-documentation/agents/create-your-first-agent",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/agents/create-your-first-agent"
+    },
+    {
+      "from": "/docs/val-town",
+      "to": "/docs/user-documentation/agents/tools/val-town",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/agents/tools/val-town"
+    },
+    {
+      "from": "/docs/vanta",
+      "to": "/docs/user-documentation/agents/tools/vanta",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/agents/tools/vanta"
+    },
+    {
+      "from": "/docs/website-connection",
+      "to": "/docs/user-documentation/data-sources/websites",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/data-sources/websites"
+    },
+    {
+      "from": "/docs/zendesk-connection",
+      "to": "/docs/user-documentation/admins/connections-management/zendesk",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/admins/connections-management/zendesk"
+    }
+  ],
+  "excluded": [
+    {
+      "path": "/docs/client-side-mcp-server",
+      "status": "exclude_api",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/developers/client-side-mcp-server"
+    },
+    {
+      "path": "/reference",
+      "status": "exclude_api",
+      "original_url": "https://docs.dust.tt/api-reference/private-user/get-current-user"
+    },
+    {
+      "path": "/reference/",
+      "status": "exclude_api",
+      "original_url": "https://docs.dust.tt/api-reference/private-user/get-current-user"
+    },
+    {
+      "path": "/reference/developer-platform-overview",
+      "status": "exclude_api",
+      "original_url": "https://docs.dust.tt/docs/developer-platform/overview/developer-platform"
+    },
+    {
+      "path": "/reference/introduction-to-dust-apps",
+      "status": "exclude_api",
+      "original_url": "https://docs.dust.tt/api-reference/private-user/get-current-user"
+    },
+    {
+      "path": "/reference/post_api-v1-w-wid-vaults-vid-apps-aid-runs",
+      "status": "exclude_api",
+      "original_url": "https://docs.dust.tt/api-reference/private-user/get-current-user"
+    }
+  ]
+}

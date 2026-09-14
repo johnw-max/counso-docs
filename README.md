@@ -1,61 +1,55 @@
 # Counso Docs
 
-Counso 的中英文文档、原 URL 对应关系和可部署静态站点，共 61 个主题、122 篇中英文文章。
+Counso 的英文和中文文档，按原文章路径逐篇对应。目录以 [ByteCodeMonkey/counso-docs](https://github.com/ByteCodeMonkey/counso-docs/tree/4bf686cfa77adaa9799318f9a903fcca7aa29437) 的原文索引为准。
 
-**Markdown 是正式维护源。** 在这里修改和审阅文章，再从同一版本生成网站。
+- [English documentation](en/SUMMARY.md)
+- [中文文档](zh-cn/SUMMARY.md)
+- [原 URL → 原文 → 中英文正文](translations.json)
 
-## 阅读文档
+## 文件对应
 
-- [English documentation](content/indexes/en.md)
-- [中文文档](content/indexes/zh-cn.md)
-- [URL 映射说明](mapping/README.md)
+| 文件 | 用途 |
+| --- | --- |
+| `source/` | 原始 Markdown、sitemap 和 URL 索引，保持来源版本不变。 |
+| `en/` | 英文改写，目录和文件名与原文一致。 |
+| `zh-cn/` | 中文改写，目录和文件名与原文一致。 |
+| `translations.json` | 每个原 URL、原文文件、双语文件、发布路径和校验值。 |
+| `redirects.json` | 现有短链接及已知拼写错误的跳转目标；不替代原文索引。 |
 
-## 直接部署
-
-`site/dist/` 是已构建的静态目录。将其中的内容部署到 `docs.counso.ai`，不要把整个仓库作为网站根目录。
-
-重新构建：
-
-```sh
-cd site
-npm ci
-npm run build
-npm run check:release
-```
-
-构建环境与 Nginx 配置见 [site/README.md](site/README.md)。构建读取仓库内的 Markdown 和映射。
-
-## 原地址如何对应到新文章
+例如：
 
 ```text
-原 sitemap / llms.txt
-        ↓
-reference/url-to-original.json
-        ↓ 原地址、原 Markdown、固定来源版本
-mapping/routes.json
-        ↓ 对应主题、语言、章节和文件
-content/topics/ + content/additions/
-        ↓
-site/dist/
+https://docs.dust.tt/docs/user-documentation/agents/create-your-first-agent
+  → source/docs/user-documentation/agents/create-your-first-agent.md
+  → en/docs/user-documentation/agents/create-your-first-agent.md
+  → zh-cn/docs/user-documentation/agents/create-your-first-agent.md
 ```
 
-- [原文索引](reference/url-to-original.json)记录原 URL、原始 Markdown 文件路径、内容校验值及固定版本的源文件链接。
-- [路由映射](mapping/routes.json)将原地址与 Counso 中英文文章对应起来；有多篇相关说明的入口会同时记录关联文章。
-- [正文清单](content/manifest.json)与[补充文章清单](content/additions-manifest.json)记录本地文件和校验值。
-- 本次发布的 26 个应用文档入口保留路径，不要求应用改成另一套文章路径。章节兼容方式见路由说明。
+`source/url-index.json` 保留原仓库的映射，里面的文件路径相对于 `source/`。`translations.json` 的文件路径相对于仓库根目录，可直接读取，无需再按标题匹配。
 
-原始文档已有独立归档，本仓库用固定版本链接关联，避免维护第二份原文。需要在本地查看全部原始 Markdown 时，可运行：
+## 接入文档站
+
+只发布 `translations.json` 中 `status: publish` 的正文。英文沿用原 URL 路径，中文在相同路径前加 `/zh-cn`；实际路径已逐项写在 `translations` 的 `route` 字段中。例如：
+
+```text
+英文 /docs/user-documentation/agents/create-your-first-agent
+中文 /zh-cn/docs/user-documentation/agents/create-your-first-agent
+```
+
+不要从标题重新生成 slug。原目录的 `index.md` 对应目录本身的 URL；具体以 `route` 为准。正文中的相对 `.md` 链接可直接在 GitHub 阅读，接入网站时按同一清单转换为页面地址，并保留链接的章节锚点。
+
+`source/` 是查阅原文的资料，不作为 Counso 网站正文发布。原路径中保留的历史产品名称用于兼容链接，不决定页面标题或品牌。此仓库提供 Markdown 与对应关系，页面渲染沿用现有文档系统。
+
+## 发布范围
+
+原文索引中的 356 个页面和 2 份接口规范均有记录。其中 196 页提供完整的双语文件。公开 API、依赖该 API 的扩展与导入脚本暂不发布；上游发布历史和已弃用开发框架也不作为 Counso 文档发布。这些条目保留原文及排除原因，不生成占位文章。
+
+文档中的第三方工具与数据连接按各工作区实际启用的能力使用。OAuth 应用、回调地址和部署出口地址须取当前环境的配置值。
+
+## 检查
 
 ```sh
-python3 scripts/fetch_originals.py
+python3 scripts/check.py
 ```
 
-脚本恢复 356 篇原始 Markdown 和 2 份规范，并逐份核对校验值。它不参与 Counso 网站构建。原始文档是来源资料，不是直接发布的 Counso 正文；原始资料中未采用的页面会在映射里保留明确状态。
-
-## 日常维护
-
-1. 修改 `content/topics/en/`、`content/topics/zh-cn/` 或 `content/additions/` 中对应文章；文档互链使用相对 `.md` 路径，在 GitHub 上也能阅读。
-2. 文章改名或新增时，同时更新清单和映射。保留已有入口，避免应用帮助链接失效。
-3. 重新构建并检查，然后提交正文、映射与对应静态输出。
-
-API 文档暂不发布。相关的 5 个旧入口及开发者稿件已从本次发布范围移除；依赖 Counso API 密钥的外部插件说明也不包含在内。应用中的对应入口应先隐藏，具体范围记录在 `content/release-policy.json` 和路由映射中。
+检查覆盖全部原文索引、双语配对、文件校验值、页面路径、跳转目标及 Markdown 内链。修改正文后，运行 `python3 scripts/check.py --update-hashes`，通过检查后会同步更新正文校验值。
