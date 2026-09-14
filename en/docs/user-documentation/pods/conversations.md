@@ -1,24 +1,34 @@
 # Pod conversations
 
-Conversations in a Pod give its members a shared place to ask Agents questions, discuss evidence, and record decisions. Use the Pod conversation when the context should remain available to that Pod’s audience.
+The **Conversations** tab lists conversations created in a Pod. Every Pod member can see and contribute to them. Conversations are indexed automatically, so Agents can search and refer to earlier Pod discussions.
 
 ## Start a conversation
 
-1. Open the Pod and choose **Conversations**.
-2. Start a new conversation and state the task, relevant period or file, and desired result.
-3. Mention an Agent when you want it to respond. Mention a teammate when you need their attention.
-4. Keep the discussion focused; record a follow-up as a task when it has a clear owner and next step.
+1. Open the Pod and select **Conversations**.
+2. Write your message and type **@** to mention an Agent.
+3. Select the Agent and press **Enter**. The conversation is created in the Pod and visible to its members.
 
-Before posting, check the Pod membership and do not paste information from a source that other members are not allowed to see. Joining a shared conversation does not expand anyone’s permissions in the underlying system.
+Mentioning an Agent prompts it to respond. Mentioning a teammate notifies them. If the person is not yet a Pod member, the interface prompts you to add them; the required Pod role still applies.
 
-## Find and follow work
+Agents can also create conversations, post updates, or share results in a Pod. A configured trigger or scheduled wake-up can have an Agent use the Pods skill to find the target Pod and post relevant context.
 
-Use the conversation list and any available filters to return to recent or unread discussions. Search terms that name the project, document, or decision are easier for teammates to find later. Notification preferences may be personal, so assign an owner when a response is required rather than relying only on a notification.
+## Find a conversation
 
-## External or scheduled activity
+In a Pod with multiple members, use the conversation filters:
 
-If an Agent is configured to receive a supported trigger, it may create or update a Pod conversation. A trigger requires a connection, suitable permissions, and explicit configuration. Review the resulting post as shared workspace content; it may be visible to every Pod member.
+| Filter | Shows |
+|---|---|
+| **Mine** | Conversations where you have sent a message. |
+| **Group** | Conversations involving more than one person. |
+| **All** | Every conversation in the Pod. |
+| **Hide triggered** | Hides triggered-Agent conversations from your own list. |
 
-## What conversations do not do
+**Hide triggered** is a personal preference for that Pod; it does not hide conversations from other members. Triggered conversations have a **⚡** before the title. Use the search bar above the list to search conversation content across the Pod.
 
-A conversation is a collaboration record, not an approval or ledger entry. A message saying “done” does not prove that an external system accepted a change. For important updates, check the destination and keep its confirmation with the work.
+## Join and set notifications
+
+For an Open Pod, select **Join the [Pod name] Pod** at the bottom of Conversations to join and participate. A Restricted Pod has no join button; a Pod Editor must invite you.
+
+Notification preferences are set separately by each member for each Pod. Open the Pod, select **...** in the top-right corner, then choose **New conversations: All or Never** and **New messages: All, Mentions only, or Never**. Configure notification channels such as in-app, Slack, or email in your profile settings.
+
+A Pod conversation is a shared collaboration record. Check the relevant source system separately when a message reports that an external action is complete.

@@ -8,7 +8,7 @@ For email creation, prefer a draft for review. Sending requires the correct reci
 
 ## Available operations
 
-The toolset includes `getmessages` for searching and reading messages, `getattachment` for retrieving an attachment, `getdrafts`, `createdraft`, `createreplydraft`, `deletedraft`, and `sendmail`. Draft and send operations require write authorization. Review the draft in Gmail before sending and check the target mailbox identity.
+The toolset includes `get_messages` for searching and reading messages, `get_attachment` for retrieving an attachment, `get_drafts`, `create_draft`, `create_reply_draft`, `delete_draft`, and `send_mail`. Draft and send operations require write authorization. Review the draft in Gmail before sending and check the target mailbox identity.
 
 ## Actions and approvals
 

@@ -1,6 +1,6 @@
 # Add a remote MCP server
 
-A remote MCP server exposes a provider's tools to Agents through the Model Context Protocol. Adding one to Counso configures Counso as an MCP client; it does not publish a Counso API. The server's provider remains responsible for its own tools, service availability, permissions, and data handling.
+A remote MCP server exposes a provider's tools to Agents through the Model Context Protocol. Counso connects to the server as an MCP client. The provider manages the tools and their permissions.
 
 ## Add and share a server
 

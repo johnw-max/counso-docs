@@ -8,7 +8,7 @@ Gmail 工具使用已连接用户的 Google 身份搜索和读取邮件；获得
 
 ## 可用操作
 
-工具集包括用于搜索和读取邮件的 `getmessages`、获取附件的 `getattachment`、`getdrafts`、`createdraft`、`createreplydraft`、`deletedraft` 和 `sendmail`。创建、删除草稿及发送邮件需要写入授权。发送前应在 Gmail 中检查草稿和目标邮箱身份。
+工具集包括用于搜索和读取邮件的 `get_messages`、获取附件的 `get_attachment`、`get_drafts`、`create_draft`、`create_reply_draft`、`delete_draft` 和 `send_mail`。创建、删除草稿及发送邮件需要写入授权。发送前应在 Gmail 中检查草稿和目标邮箱身份。
 
 ## 操作与确认
 

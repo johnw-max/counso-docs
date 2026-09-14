@@ -1,6 +1,6 @@
 # 添加远程 MCP 服务器
 
-远程 MCP 服务器通过 Model Context Protocol 向 Agent 提供第三方工具。将其添加到 Counso，意味着 Counso 作为 MCP 客户端连接远程服务器；这不会对外发布 Counso API。服务器提供方仍负责其工具、服务可用性、权限和数据处理。
+远程 MCP 服务器通过 Model Context Protocol 向 Agent 提供第三方工具。Counso 作为 MCP 客户端连接服务器，工具及其权限由服务器提供方管理。
 
 ## 添加并分享服务器
 

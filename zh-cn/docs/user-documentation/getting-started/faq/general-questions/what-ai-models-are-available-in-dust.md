@@ -1,4 +1,4 @@
-# Which AI models are available in Counso?
+# Counso 提供哪些 AI 模型？
 
 模型选择器会显示你当前可以使用的模型。管理员可能会限制可选范围，具体列表也会随工作区设置和模型供应情况变化。
 

@@ -10,7 +10,7 @@ For a straightforward question, Deep Dive may answer directly. For a more involv
 
 1. Planning the investigation and identifying distinct research questions.
 2. Delegating parts of the work to specialist agents, such as document search, web research, or database analysis.
-3. Running independent research tasks in parallel (the upstream implementation describes up to six sub-agent tasks at once).
+3. Running independent research tasks in parallel, with up to six sub-agent tasks at once.
 4. Combining results into a structured response with citations.
 
 Long investigations can take several minutes. Follow the visible progress and review sources, coverage, and assumptions before relying on the synthesis.
@@ -30,6 +30,6 @@ These capabilities are not automatic guarantees. A connection must be available,
 
 ## Permissions and limitations
 
-The Agent works within the data and tools available to it and the access rules that apply to the person using it. It cannot use a Restricted Space unless the caller and Agent are allowed to access it. In the documented upstream configuration, Deep Dive cannot use the separate **Table Query** action; a warehouse query capability, where enabled, is different from that action. Workspace administrators may disable the default Deep Dive Agent.
+The default Deep Dive Agent uses Knowledge and Tools from **Company Data**, subject to the current user's permissions. It cannot access **Restricted Spaces** or the separate **Table Query** action used for spreadsheet and Notion tables. Its data warehouse queries are a different capability. Tools with Personal authentication use the current user's connected account, and sub-agents inherit the same access limits. Workspace administrators can disable the default Deep Dive Agent.
 
 Use Deep Dive for research and synthesis. Review its conclusions against source records before making a decision or updating another system.

@@ -1,41 +1,30 @@
 # Filter webhook payloads
 
-Filters decide whether an incoming webhook event should start an Agent run. For a supported integration, the builder may help generate a filter from a plain-language description. For a custom webhook, write an expression using the payload fields the sender actually provides.
+A filter decides whether an incoming webhook event starts an Agent run. For a supported integration, the builder can help generate a filter from a plain-language description. For a custom webhook, write an expression using fields in the payload sent by that source.
 
 ## Expression format
 
-The filter uses Lisp-style S-expressions: `(operator argument ...)`. Each expression evaluates to `true` (process the event) or `false` (ignore it). Strings use double quotes, numbers are unquoted, booleans are `true` or `false`, and lists use parentheses.
+Filters use Lisp-style S-expressions: `(operator argument ...)`. An expression evaluates to true (process the event) or false (ignore it). Put strings in double quotes; write numbers and booleans without quotes. Lists use parentheses.
 
-Refer to fields by dot-separated paths, such as `"action"`, `"issue.state"`, or `"pull_request.head.ref"`. For a field inside each object in an array, use `*`, for example `"tags.*.name"`. Paths must match the JSON payload.
+Refer to fields by dot-separated paths, such as `"action"`, `"issue.state"`, or `"pull_request.head.ref"`. Use `*` for fields inside objects in an array, for example `"tags.*.name"`. Field paths are case-sensitive and must match the JSON payload.
 
 ## Operators
 
 | Operator | Purpose | Example |
 |---|---|---|
-| `and` | All nested expressions must be true | `(and (eq "action" "opened") (eq "issue.state" "open"))` |
-| `or` | At least one nested expression is true | `(or (eq "action" "opened") (eq "action" "edited"))` |
-| `not` | Negates one expression | `(not (eq "issue.state" "closed"))` |
-| `eq` | Exact equality for strings, numbers, or booleans | `(eq "issue.number" 42)` |
-| `starts-with` | String begins with a prefix | `(starts-with "pull_request.head.ref" "feature/")` |
-| `has` | Array contains a value | `(has "issue.labels" "bug")` |
-| `has-all` | Array contains every listed value | `(has-all "issue.labels" ("bug" "critical"))` |
-| `has-any` | Array contains at least one listed value | `(has-any "issue.labels" ("bug" "enhancement"))` |
-| `gt`, `gte`, `lt`, `lte` | Numeric comparison | `(gte "pull_request.changed_files" 5)` |
-| `exists` | Field exists and is not null/undefined | `(exists "issue.milestone")` |
+| `and` | All nested expressions must be true. | `(and (eq "action" "opened") (eq "issue.state" "open"))` |
+| `or` | At least one nested expression must be true. | `(or (eq "action" "opened") (eq "action" "edited"))` |
+| `not` | Negates one expression. | `(not (eq "issue.state" "closed"))` |
+| `eq` | Tests exact equality for strings, numbers, or booleans. | `(eq "issue.number" 42)` |
+| `starts-with` | Tests whether a string begins with a prefix. | `(starts-with "pull_request.head.ref" "feature/")` |
+| `has` | Tests whether an array contains a value. | `(has "issue.labels" "bug")` |
+| `has-all` | Tests whether an array contains every listed value. | `(has-all "issue.labels" ("bug" "critical"))` |
+| `has-any` | Tests whether an array contains at least one listed value. | `(has-any "issue.labels" ("bug" "enhancement"))` |
+| `gt`, `gte`, `lt`, `lte` | Compare numeric values. | `(gte "pull_request.changed_files" 5)` |
+| `exists` | Tests whether a field exists and is not null or undefined. | `(exists "issue.milestone")` |
 
-To express “not equal”, use `(not (eq "field" value))`. `starts-with` applies to string values; numeric comparisons require a number.
+To test “not equal,” use `(not (eq "field" value))`. starts-with applies to strings; numeric operators require numeric values.
 
-## Example: route important pull requests
+## Test a filter
 
-```text
-(and
-  (eq "action" "opened")
-  (starts-with "pull_request.head.ref" "release/")
-  (gte "pull_request.changed_files" 2))
-```
-
-This accepts only newly opened pull requests from a `release/` branch with at least two changed files. Adapt the field paths and values to the sender's actual payload.
-
-## Test before relying on a filter
-
-Use sample events that should match and events that should be rejected. Check exact field names, types, case, nested paths, and array contents. A missing field or type mismatch may cause the expression not to match. Keep the expression readable and add conditions gradually.
+Test with sample payloads that should match and should be rejected. Check field names, types, capitalization, nested paths, and array contents. Comparisons are type-safe: incompatible types evaluate to false. Missing or null fields evaluate to false for every operation except `(not (exists "field"))`, which evaluates to true. Empty lists passed to has-all or has-any evaluate to false. Whitespace and line breaks do not affect an expression.

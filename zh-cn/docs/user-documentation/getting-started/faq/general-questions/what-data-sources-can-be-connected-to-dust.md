@@ -1,4 +1,4 @@
-# What data sources can be connected to Counso?
+# Counso 可以连接哪些数据源？
 
 Counso 可以使用管理员已连接到工作区的数据源和业务应用，也可以处理你有权限直接添加的文件。不同工作区可用的连接器可能不同。
 

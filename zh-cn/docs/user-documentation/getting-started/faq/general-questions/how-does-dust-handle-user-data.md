@@ -1,4 +1,4 @@
-# How does Counso handle user data?
+# Counso 如何处理用户数据？
 
 请以 Counso 服务和组织提供的隐私及安全说明为准。管理员可以说明已连接的数据源、访问对象以及适用的工作区政策。
 

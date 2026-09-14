@@ -1,43 +1,23 @@
 # Create and use Frames
 
-A Frame is an interactive file saved in a Pod. It can present a dashboard, report, or status view using Pod conversations, tasks, and files.
+A Frame is an interactive file saved in a Pod. It can show a dashboard, report, status view, or another interface created by an Agent.
 
-## Before you begin
+## View and pin a Frame
 
-Choose one purpose and the data it should show. Keep a pinned banner compact and glanceable. Decide whether the view is a generated snapshot or a configured view that reads saved Pod records and tasks.
+Open a Frame from the Pod's **Files** tab to preview it. Editors can pin it so it appears at the top of **Conversations** for every Pod member.
 
-## Create and pin a Frame
+The banner is **280px tall** and spans the full width of the Conversations tab. Only one Frame can be pinned at a time; pinning another replaces the current one. To pin, use the Frame's **...** menu in Files and choose **Pin as Pod banner**, or use **Pin** in the preview header. To unpin, use **Unpin Pod banner** in the Files menu, toggle **Pinned** off in the preview, or hover over the banner and select the unpin control. Only Editors see the pin controls.
 
-1. In a Pod conversation, ask an agent that can create Frames to build the view from named Pod sources.
-2. Ask it to save the result in the Pod's **Files** area.
-3. Open the Frame preview and check the layout, links, and displayed values.
-4. From the file menu or preview, choose **Pin as Pod banner** if all members should see it at the top of Conversations.
-5. Hover the banner to hide it for yourself, open it full screen, or unpin it if you are an Editor.
+The banner controls also let you hide it for yourself, show it again, or open it full screen. Hiding is personal; unpinning changes the shared Pod banner.
 
-Only one Frame is pinned at a time. Pinning another Frame replaces the existing banner. Hiding the banner is personal; unpinning changes the Pod for everyone.
+## Keep a Frame up to date
 
-## Refresh a changing view
+A Frame is generated from the Pod data available at that point in time. It does not update by itself. For a changing view, configure an Agent to use the wake-up tool on a recurring schedule, read the latest Pod tasks, conversations, or files, and regenerate the Frame by overwriting the same file. The pinned banner stays attached to that file and shows its updated version the next time a member opens the Pod; you do not need to pin it again.
 
-An ordinary generated Frame is a snapshot. To update it, ask an agent to read the latest Pod data and overwrite the same Frame, then review the new file. The banner remains attached to that file; it does not need to be pinned again after each overwrite.
+For example, ask an Agent to create and save a weekly status Frame, pin it, then ask it in a new conversation to use the wake-up tool every Monday to read the latest tasks and summary and overwrite that Frame.
 
-A configured data-reading view can load saved Pod records and native Tasks when it opens and when you choose its **Refresh** action. It can update the display from those saved records without rewriting the Frame source each time. This is a read of the configured records while the view is open; it does not mean the view executes tasks in the background while closed.
+Design banner Frames for the fixed 280px height: show a few shared, glanceable facts and avoid content that needs vertical scrolling. Check the pinned banner itself after creating or updating it, since its rendering space differs from the preview.
 
-When a value matters, keep the underlying task, file, or connected system as the source of truth. A checkbox or number shown in a Frame is a projection until the underlying record is saved and can be read back.
+## Use the underlying record as the source
 
-## What you should see afterward
-
-Members see the pinned Frame when they open the Pod, and they can open the full file for detail. A snapshot shows its regenerated version; a configured data-reading view shows the latest saved records it can read after opening or refreshing.
-
-## Common questions
-
-### Why does the banner look different from the preview?
-
-The banner and preview have different rendering space. Check the pinned view itself and simplify content that is clipped at the fixed height.
-
-### Why is a value old after I changed a task?
-
-For a snapshot, regenerate or overwrite the Frame. For a configured data-reading view, use **Refresh** and check that the underlying task was saved and is readable. Do not use a displayed value as proof that the source record changed.
-
-### Who can pin or unpin a Frame?
-
-Pod Editors manage the shared banner. Members can view it and can hide it for themselves.
+A Frame displays information from Pod content. When a value matters, check the underlying task, file, or connected system; a displayed value does not itself update that source.

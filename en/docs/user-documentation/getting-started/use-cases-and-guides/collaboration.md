@@ -1,27 +1,29 @@
-# Team collaboration use cases
+# Collaborate in conversations
 
-A shared conversation or Pod can keep discussion, evidence, decisions, and follow-up work together. Choose the collaboration space by audience: do not move internal deliberation into a customer-facing area unless every member should see it.
+Use a conversation to work with an Agent and bring colleagues into the same thread when their input is useful.
 
-## Bring the right people into a conversation
+## Mention a colleague
 
-Use the mention picker to involve a colleague or Agent when the interface supports it. State what you need from them and by when. A mention can notify someone or start an invitation flow; it does not necessarily grant access to every source used in the conversation.
+1. In the message composer, type **@** to open the mention picker.
+2. Search for and select a colleague.
+3. Send the message with a clear request.
 
-## Share work in a Pod
+A colleague mention notifies them and brings them into the conversation. When an Agent asks to invite a colleague, review the invitation prompt before adding them.
 
-Use a Pod when a group needs a durable history and shared files or tasks. Name the purpose, add only the intended members, and record decisions in the conversation. Turn a follow-up into a task with an owner, expected result, and next step.
+## Share a conversation
 
-## Escalate when human judgment is needed
+1. Open the conversation.
+2. Select **Copy the link** in the top-right corner.
+3. Send the link to colleagues who should join.
 
-Agent instructions can ask it to flag cases that require a specialist, such as unclear evidence, a policy exception, or a customer commitment. It should explain why escalation is needed and what information is missing; the responsible person decides what happens next.
+People who join can see the conversation history and work with its Agents only if they also have access to those Agents. Check the audience before sharing, especially when a conversation uses Agents from restricted Spaces. A conversation you have not shared remains private to you.
 
-## Track work that needs attention
+## Ask an Agent to escalate
 
-Use unread or assigned views, if available, and keep task owners and status current. Notifications depend on each user’s settings. Do not treat the absence of a notification as evidence that no action is pending.
+When creating or editing an Agent, explain when it should ask a person for help and whom to mention. For example: “If you cannot answer confidently, mention @Aisha for billing questions and explain what information is missing.”
 
-## Suggested instruction
+The Agent should identify why it needs human input; the person remains responsible for the decision.
 
-```text
-If a source is missing, two policies conflict, or a requested action requires approval, stop and identify the issue, the evidence, and the person who should review it. Do not make the decision or send an external message.
-```
+## Keep track of conversations
 
-Before sharing a conversation, check its audience and the permissions to every connected source.
+The sidebar marks unread conversations with a blue dot and conversations waiting for your input with a yellow indicator. Opening a conversation marks it as read. Join conversations you need to follow, and leave ones you no longer need. Your profile notification settings control alerts and email digests for unread messages.
