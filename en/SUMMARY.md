@@ -214,3 +214,225 @@
 - [Use an Agent in Slack workflows](docs/user-documentation/agents/integrations/counso-in-slack/slack-workflows.md)
 - [Automatically join new Slack channels](docs/user-documentation/agents/integrations/counso-in-slack/slack-auto-join.md)
 - [Work with meeting transcripts](docs/user-documentation/agents/integrations/meeting-transcripts.md)
+
+
+## Developer documentation
+
+- [Is there a Counso Conversations API?](docs/user-documentation/getting-started/faq/managing-agents/is-there-a-counso-conversation-api.md)
+- [Client-side MCP servers](docs/user-documentation/developers/client-side-mcp-server.md)
+- [Counso developer platform](docs/developer-platform/overview/developer-platform.md)
+- [JavaScript SDK](docs/developer-platform/overview/javascript-sdk.md)
+- [Data sources](docs/developer-platform/core-concepts/datasources.md)
+- [Chunks and documents](docs/developer-platform/core-concepts/chunks-and-documents.md)
+- [API rate limits](docs/developer-platform/core-concepts/rate-limits.md)
+- [API specifications and Postman](docs/developer-platform/counso-api-documentation/openapi-and-postman.md)
+
+## API reference
+
+
+### User session: User
+
+- [Get current user](api-reference/private-user/get-current-user.md)
+- [Update current user](api-reference/private-user/update-current-user.md)
+
+### Analytics
+
+- [Export workspace analytics](api-reference/analytics/export-workspace-analytics.md)
+
+### Agents
+
+- [List agents](api-reference/agents/list-agents.md)
+- [Export agent configuration as YAML](api-reference/agents/export-agent-configuration-as-yaml.md)
+- [Get agent configuration](api-reference/agents/get-agent-configuration.md)
+- [Archive agent configuration](api-reference/agents/archive-agent-configuration.md)
+- [Update agent configuration](api-reference/agents/update-agent-configuration.md)
+- [Import agent configuration](api-reference/agents/import-agent-configuration.md)
+- [Search agents by name](api-reference/agents/search-agents-by-name.md)
+
+### Conversations
+
+- [Cancel message generation in a conversation](api-reference/conversations/cancel-message-generation-in-a-conversation.md)
+- [Create a content fragment](api-reference/conversations/create-a-content-fragment.md)
+- [Get the events for a conversation](api-reference/conversations/get-the-events-for-a-conversation.md)
+- [Download a conversation-scoped file by path](api-reference/conversations/download-a-conversation-scoped-file-by-path.md)
+- [Get a conversation](api-reference/conversations/get-a-conversation.md)
+- [Update a conversation](api-reference/conversations/update-a-conversation.md)
+- [Answer a user question in a conversation message](api-reference/conversations/answer-a-user-question-in-a-conversation-message.md)
+- [Edit an existing message in a conversation](api-reference/conversations/edit-an-existing-message-in-a-conversation.md)
+- [Get events for a message](api-reference/conversations/get-events-for-a-message.md)
+- [Validate an action in a conversation message](api-reference/conversations/validate-an-action-in-a-conversation-message.md)
+- [Create a message](api-reference/conversations/create-a-message.md)
+- [Create a new conversation](api-reference/conversations/create-a-new-conversation.md)
+- [Create a file upload URL](api-reference/conversations/create-a-file-upload-url.md)
+
+### Feedbacks
+
+- [Get feedbacks for a conversation](api-reference/feedbacks/get-feedbacks-for-a-conversation.md)
+- [Submit feedback for a specific message in a conversation](api-reference/feedbacks/submit-feedback-for-a-specific-message-in-a-conversation.md)
+- [Delete feedback for a specific message](api-reference/feedbacks/delete-feedback-for-a-specific-message.md)
+
+### Mentions
+
+- [Get mention suggestions for a conversation](api-reference/mentions/get-mention-suggestions-for-a-conversation.md)
+- [Parse mentions in markdown text](api-reference/mentions/parse-mentions-in-markdown-text.md)
+- [Get mention suggestions](api-reference/mentions/get-mention-suggestions.md)
+
+### Mcp
+
+- [Deregister a client-side MCP server](api-reference/mcp/deregister-a-client-side-mcp-server.md)
+- [Update heartbeat for a client-side MCP server](api-reference/mcp/update-heartbeat-for-a-client-side-mcp-server.md)
+- [Register a client-side MCP server](api-reference/mcp/register-a-client-side-mcp-server.md)
+- [Stream MCP tool requests for a workspace](api-reference/mcp/stream-mcp-tool-requests-for-a-workspace.md)
+- [Submit MCP tool execution results](api-reference/mcp/submit-mcp-tool-execution-results.md)
+
+### Search
+
+- [Search for nodes in the workspace (streaming)](api-reference/search/search-for-nodes-in-the-workspace-streaming.md)
+- [Search for nodes in the workspace](api-reference/search/search-for-nodes-in-the-workspace.md)
+- [Upload a tool file](api-reference/search/upload-a-tool-file.md)
+
+### Skills
+
+- [Archive a skill](api-reference/skills/archive-a-skill.md)
+- [List skills](api-reference/skills/list-skills.md)
+- [Import skills from uploaded files](api-reference/skills/import-skills-from-uploaded-files.md)
+
+### Apps
+
+- [Get an app run](api-reference/apps/get-an-app-run.md)
+- [Create an app run](api-reference/apps/create-an-app-run.md)
+- [List apps](api-reference/apps/list-apps.md)
+
+### Datasourceviews
+
+- [Get a data source view](api-reference/datasourceviews/get-a-data-source-view.md)
+- [Delete a data source view](api-reference/datasourceviews/delete-a-data-source-view.md)
+- [Update a data source view](api-reference/datasourceviews/update-a-data-source-view.md)
+- [Search the data source view](api-reference/datasourceviews/search-the-data-source-view.md)
+- [List Data Source Views](api-reference/datasourceviews/list-data-source-views.md)
+
+### Datasources
+
+- [Check the upsert queue status for a data source](api-reference/datasources/check-the-upsert-queue-status-for-a-data-source.md)
+- [Retrieve a document from a data source](api-reference/datasources/retrieve-a-document-from-a-data-source.md)
+- [Upsert a document in a data source](api-reference/datasources/upsert-a-document-in-a-data-source.md)
+- [Delete a document from a data source](api-reference/datasources/delete-a-document-from-a-data-source.md)
+- [Update the parents of a document](api-reference/datasources/update-the-parents-of-a-document.md)
+- [Get documents](api-reference/datasources/get-documents.md)
+- [Search the data source](api-reference/datasources/search-the-data-source.md)
+- [Get a table](api-reference/datasources/get-a-table.md)
+- [Delete a table](api-reference/datasources/delete-a-table.md)
+- [Get a row](api-reference/datasources/get-a-row.md)
+- [Delete a row](api-reference/datasources/delete-a-row.md)
+- [List rows](api-reference/datasources/list-rows.md)
+- [Upsert rows](api-reference/datasources/upsert-rows.md)
+- [Get tables](api-reference/datasources/get-tables.md)
+- [Upsert a table](api-reference/datasources/upsert-a-table.md)
+- [Get data sources](api-reference/datasources/get-data-sources.md)
+
+### Tools
+
+- [List available MCP server views](api-reference/tools/list-available-mcp-server-views.md)
+
+### Spaces
+
+- [List available spaces](api-reference/spaces/list-available-spaces.md)
+
+### Triggers
+
+- [Get a trigger](api-reference/triggers/get-a-trigger.md)
+- [Receive external webhook to trigger flows](api-reference/triggers/receive-external-webhook-to-trigger-flows.md)
+- [List triggers](api-reference/triggers/list-triggers.md)
+
+### User session: Analytics
+
+- [List consumption analytics facets](api-reference/private-analytics/list-consumption-analytics-facets.md)
+- [List personal consumption analytics facets](api-reference/private-analytics/list-consumption-analytics-facets-1.md)
+- [List agent consumption analytics facets](api-reference/private-analytics/list-consumption-analytics-facets-2.md)
+
+### User session: Agents
+
+- [List agent configurations](api-reference/private-agents/list-agent-configurations.md)
+- [Create an agent configuration](api-reference/private-agents/create-an-agent-configuration.md)
+
+### User session: Conversations
+
+- [Cancel message generation](api-reference/private-conversations/cancel-message-generation.md)
+- [Compact a conversation](api-reference/private-conversations/compact-a-conversation.md)
+- [Get a conversation credit attribution](api-reference/private-conversations/get-a-conversation-credit-attribution.md)
+- [Create a content fragment](api-reference/private-conversations/create-a-content-fragment.md)
+- [Get conversation feedbacks](api-reference/private-conversations/get-conversation-feedbacks.md)
+- [Get a conversation](api-reference/private-conversations/get-a-conversation.md)
+- [Delete or leave a conversation](api-reference/private-conversations/delete-or-leave-a-conversation.md)
+- [Update a conversation](api-reference/private-conversations/update-a-conversation.md)
+- [Get conversation participants](api-reference/private-conversations/get-conversation-participants.md)
+- [Add a participant to a conversation](api-reference/private-conversations/add-a-participant-to-a-conversation.md)
+- [List selectable Spaces](api-reference/private-conversations/list-selectable-spaces.md)
+- [Select Spaces for a conversation](api-reference/private-conversations/select-spaces-for-a-conversation.md)
+- [Cancel a wake-up](api-reference/private-conversations/cancel-a-wake-up.md)
+- [List wake-ups for a conversation](api-reference/private-conversations/list-wake-ups-for-a-conversation.md)
+- [List conversations](api-reference/private-conversations/list-conversations.md)
+- [Create a conversation](api-reference/private-conversations/create-a-conversation.md)
+
+### User session: Events
+
+- [Stream conversation events](api-reference/private-events/stream-conversation-events.md)
+- [Stream message events](api-reference/private-events/stream-message-events.md)
+- [Stream sandbox function invocation events](api-reference/private-events/stream-sandbox-function-invocation-events.md)
+
+### User session: Messages
+
+- [Get a single action](api-reference/private-messages/get-a-single-action.md)
+- [Get an agent message credit attribution](api-reference/private-messages/get-an-agent-message-credit-attribution.md)
+- [Edit a message](api-reference/private-messages/edit-a-message.md)
+- [Submit message feedback](api-reference/private-messages/submit-message-feedback.md)
+- [Delete message feedback](api-reference/private-messages/delete-message-feedback.md)
+- [Get a message](api-reference/private-messages/get-a-message.md)
+- [Delete a message](api-reference/private-messages/delete-a-message.md)
+- [Retry an agent message](api-reference/private-messages/retry-an-agent-message.md)
+- [List messages in a conversation](api-reference/private-messages/list-messages-in-a-conversation.md)
+- [Post a message to a conversation](api-reference/private-messages/post-a-message-to-a-conversation.md)
+
+### User session: Assistant
+
+- [Resolve a conversation go template draft](api-reference/private-assistant/resolve-a-conversation-go-template-draft.md)
+
+### User session: Mentions
+
+- [Get mention suggestions](api-reference/private-mentions/get-mention-suggestions.md)
+
+### User session: Extension
+
+- [Get extension configuration](api-reference/private-extension/get-extension-configuration.md)
+
+### User session: Workspace
+
+- [Get workspace feature flags](api-reference/private-workspace/get-workspace-feature-flags.md)
+
+### User session: Files
+
+- [Get or download a file](api-reference/private-files/get-or-download-a-file.md)
+- [Upload file content](api-reference/private-files/upload-file-content.md)
+- [Delete a file](api-reference/private-files/delete-a-file.md)
+- [Create a file upload](api-reference/private-files/create-a-file-upload.md)
+
+### User session: Spaces
+
+- [Get a data source view](api-reference/private-spaces/get-a-data-source-view.md)
+- [Delete a data source view](api-reference/private-spaces/delete-a-data-source-view.md)
+- [Update a data source view](api-reference/private-spaces/update-a-data-source-view.md)
+- [List data source views](api-reference/private-spaces/list-data-source-views.md)
+- [Create a data source view](api-reference/private-spaces/create-a-data-source-view.md)
+- [Get a space](api-reference/private-spaces/get-a-space.md)
+- [Delete a space](api-reference/private-spaces/delete-a-space.md)
+- [Update a space](api-reference/private-spaces/update-a-space.md)
+- [Get project notification preference](api-reference/private-spaces/get-project-notification-preference.md)
+- [Set project notification preference](api-reference/private-spaces/set-project-notification-preference.md)
+- [List spaces](api-reference/private-spaces/list-spaces.md)
+- [Create a space](api-reference/private-spaces/create-a-space.md)
+
+### Authentication
+
+- [Initiate WorkOS login](api-reference/private-authentication/initiate-workos-login.md)
+- [Exchange code or refresh token](api-reference/private-authentication/exchange-code-or-refresh-token.md)
+- [Revoke a session](api-reference/private-authentication/revoke-a-session.md)

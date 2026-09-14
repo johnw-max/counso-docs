@@ -25,10 +25,19 @@ def digest(path):
 def branded_path(path):
     return re.sub(r'(?<![A-Za-z0-9])dust(?![A-Za-z0-9])', 'counso', path, flags=re.I)
 def check_title(file, entry):
+    if file.suffix == '.json':
+        payload = json.loads(file.read_text())
+        title = payload.get('info', {}).get('title') or payload.get('info', {}).get('name') or payload.get('name')
+        require(entry.get('title') == title, 'Download title differs from artifact: ' + str(file.relative_to(ROOT)))
+        return
     headings = re.findall(r'^# (.+)$', file.read_text(), re.M)
     require(len(headings) == 1 and entry.get('title') == headings[0], 'Display title differs from article: ' + str(file.relative_to(ROOT)))
 def strip_code(text):
     return re.sub(r'^\s*(```|~~~).*?^\s*\1\s*$', '', text, flags=re.M | re.S)
+def canonical_path(row):
+    if row['original_repository_path'].endswith('.json'):
+        return '/' + branded_path(row['original_repository_path'])
+    return branded_path(urllib.parse.urlparse(row['original_url']).path)
 def anchors(text):
     names = set(re.findall(r'<(?:a|span)\s+(?:id|name)=[\'"]([^\'"]+)', text))
     counts = Counter()
@@ -124,7 +133,7 @@ for row in rows:
         expected.add(t['file'])
         require(t['file'] == lang + '/' + branded_path(path), 'Unexpected translation path: ' + path)
         require(file.is_file(), 'Translation missing: ' + t['file'])
-        canonical = branded_path(urllib.parse.urlparse(row['original_url']).path)
+        canonical = canonical_path(row)
         require(t['route'] == (canonical if lang == 'en' else '/zh-cn' + canonical), 'Unexpected route: ' + t['route'])
         require(t['route'] not in routes, 'Duplicate published route: ' + t['route'])
         routes[t['route']] = t['file']
@@ -134,8 +143,23 @@ for row in rows:
                 t['sha256'] = digest(file)
             else:
                 require(digest(file) == t['sha256'], 'Translation hash stale: ' + t['file'])
-actual = {str(f.relative_to(ROOT)) for lang in ['en', 'zh-cn'] for f in (ROOT / lang).rglob('*.md') if f.name != 'SUMMARY.md'}
-require(actual == expected | notice_files, 'Unexpected or missing Markdown: ' + str(sorted(actual ^ (expected | notice_files))))
+artifact_files = set()
+for artifact in data.get('artifacts', []):
+    require(set(artifact['translations']) == {'en', 'zh-cn'}, 'Missing artifact language: ' + artifact['id'])
+    for lang, t in artifact['translations'].items():
+        file = ROOT / t['file']
+        artifact_files.add(t['file'])
+        require(file.is_file(), 'Missing download: ' + t['file'])
+        require(t['route'] not in routes, 'Duplicate download route: ' + t['route'])
+        routes[t['route']] = t['file']
+        if file.is_file():
+            check_title(file, t)
+            if args.update_hashes:
+                t['sha256'] = digest(file)
+            else:
+                require(t['sha256'] == digest(file), 'Download hash stale: ' + t['file'])
+actual = {str(f.relative_to(ROOT)) for lang in ['en', 'zh-cn'] for f in (ROOT / lang).rglob('*') if f.is_file() and f.suffix in {'.md', '.json'} and f.name != 'SUMMARY.md'}
+require(actual == expected | notice_files | artifact_files, 'Unexpected or missing content: ' + str(sorted(actual ^ (expected | notice_files | artifact_files))))
 actual_prepared = {str(f.relative_to(ROOT)) for f in (ROOT / 'prepared').rglob('*.md')}
 require(actual_prepared == prepared_files, 'Unexpected or missing prepared Markdown: ' + str(sorted(actual_prepared ^ prepared_files)))
 redirects = read_json('redirects.json')
@@ -150,7 +174,7 @@ for row in rows:
     if row['status'] not in {'publish', 'updating'}:
         continue
     entries = row['translations'] if row['status'] == 'publish' else row['notice']
-    original_path = urllib.parse.urlparse(row['original_url']).path
+    original_path = '/' + row['original_repository_path'] if row['original_repository_path'].endswith('.json') else urllib.parse.urlparse(row['original_url']).path
     for lang, entry in entries.items():
         old_route = original_path if lang == 'en' else '/zh-cn' + original_path
         if old_route != entry['route']:
@@ -158,7 +182,7 @@ for row in rows:
         require(entry['route'] == branded_path(entry['route']), 'Old brand in published route: ' + entry['route'])
 
 link_count = 0
-all_files = sorted(expected | notice_files | prepared_files | {'en/SUMMARY.md', 'zh-cn/SUMMARY.md', 'README.md', 'PUBLICATION-STATUS.md'})
+all_files = sorted({f for f in expected if f.endswith('.md')} | notice_files | prepared_files | {'en/SUMMARY.md', 'zh-cn/SUMMARY.md', 'README.md', 'PUBLICATION-STATUS.md'})
 for rel in all_files:
     file = ROOT / rel
     require(file.is_file(), 'Missing index: ' + rel)
@@ -168,7 +192,13 @@ for rel in all_files:
     require(len(re.findall(r'^# ', text, re.M)) == 1, 'Expected one main heading: ' + rel)
     if rel not in {'README.md', 'PUBLICATION-STATUS.md'}:
         visible = re.sub(r'\]\([^)]*\)', ']', text)
-        require(not re.search(r'\bdust\b|\baduster\b|未部署|飞书|Feishu|TODO|TBD|整改安排|需要适配|待适配|hold_integration|upstream implementation', visible, re.I), 'Brand or scaffolding in copy: ' + rel)
+        # Published package names and executable identifiers must stay executable.
+        if rel.endswith(('overview/javascript-sdk.md', 'counso-cli/counso-cli.md', 'developers/client-side-mcp-server.md')):
+            visible = visible.replace('@dust-tt/client', '@client/package').replace('@dust-tt/dust-cli', '@cli/package')
+            visible = re.sub(r'\bdust(?=\s+(?:login|logout|status|chat|skill:init|cache:clear|help|--help|--version)\b)', 'cli', visible)
+            visible = visible.replace('`dust`', '`cli`')
+        require(not re.search(r'\bdust\b|\baduster\b|未部署|飞书|Feishu|整改安排|需要适配|待适配|hold_integration|upstream implementation', visible, re.I), 'Brand or scaffolding in copy: ' + rel)
+        require(not re.search(r'\bTODO\b|\bTBD\b', strip_code(visible)), 'Unfinished copy: ' + rel)
         require(not re.search(r'https?://(?:[^/\s]+\.)?dust\.tt', text), 'Upstream product link in copy: ' + rel)
     for target in re.findall(r'(?<!!)\[[^\]\n]+\]\(([^\s)]+)(?:\s+"[^"]*")?\)', strip_code(text)):
         parsed = urllib.parse.urlparse(target.strip('<>'))
@@ -186,7 +216,81 @@ for rel in all_files:
 status_text = (ROOT / 'PUBLICATION-STATUS.md').read_text()
 listed_urls = re.findall(r'^\|[^\n]*\| \[(https?://[^\]]+)\]\(', status_text, re.M)
 require(Counter(listed_urls) == Counter(r['original_url'] for r in rows if r['status'] != 'publish'), 'Unpublished URL inventory differs from mapping')
-summary = {'source_files': len(rows), 'sitemap_urls': len(urls), 'published_pairs': len(expected) // 2, 'language_files': len(expected), 'published_routes': len(routes) - len(notice_routes), 'updating_pages': len(notice_routes) // 2, 'prepared_pairs': len(prepared_files) // 2, 'notice_routes': len(notice_routes), 'redirects': len(seen), 'relative_links_checked': link_count, 'errors': errors}
+api_operations = 0
+if data['publication'].get('api') == 'included':
+    api_dir = 'docs/developer-platform/counso-api-documentation/'
+    spec = read_json('en/' + api_dir + 'openapi.json')
+    methods = {'get', 'post', 'put', 'patch', 'delete', 'head', 'options'}
+    operations = {(path, method): op for path, item in spec['paths'].items() for method, op in item.items() if method in methods}
+    api_operations = len(operations)
+    api_rows = {(r['api']['path'], r['api']['method']): r for r in rows if 'api' in r}
+    require(set(api_rows) == set(operations), 'API article and specification coverage differ')
+    require(len(api_rows) == len([r for r in rows if 'api' in r]), 'Multiple articles claim one API operation')
+    def resolve_reference(ref):
+        require(ref.startswith('#/'), 'External schema reference: ' + ref)
+        if not ref.startswith('#/'):
+            return None
+        value = spec
+        try:
+            for part in ref[2:].split('/'):
+                value = value[part.replace('~1', '/').replace('~0', '~')]
+            return value
+        except (KeyError, TypeError):
+            require(False, 'Unresolved schema reference: ' + ref)
+            return None
+    def inspect_schema(value):
+        if isinstance(value, dict):
+            if '$ref' in value:
+                resolve_reference(value['$ref'])
+            for child in value.values():
+                inspect_schema(child)
+        elif isinstance(value, list):
+            for child in value:
+                inspect_schema(child)
+    inspect_schema(spec)
+    require(spec['servers'] == [{'url': 'https://app.counso.ai', 'description': 'Counso'}], 'Unexpected API server')
+    for (path, method), op in operations.items():
+        parameters = spec['paths'][path].get('parameters', []) + op.get('parameters', [])
+        path_parameters = {p['name'] for p in parameters if p.get('in') == 'path' and p.get('required')}
+        require(set(re.findall(r'\{([^}]+)\}', path)) == path_parameters, 'Path parameter mismatch: ' + method + ' ' + path)
+        for lang in ['en', 'zh-cn']:
+            article = ROOT / api_rows[(path, method)]['translations'][lang]['file']
+            require(method.upper() + ' ' + path in article.read_text(), 'Article endpoint mismatch: ' + str(article))
+    for lang in ['en', 'zh-cn']:
+        for name in ['openapi.json', 'swagger.json']:
+            require(read_json(lang + '/' + api_dir + name) == spec, 'API schemas differ: ' + lang + '/' + name)
+        collection = read_json(lang + '/' + api_dir + 'postman.collection.json')
+        environment = read_json(lang + '/' + api_dir + 'postman.environment.json')
+        for var in environment['values']:
+            if var['key'] != 'baseUrl':
+                require(var['value'] == '', 'Shared environment contains a value: ' + var['key'])
+        requests = [entry['request'] for group in collection['item'] for entry in group['item']]
+        request_pairs = []
+        for request in requests:
+            path = '/' + '/'.join(request['url']['path'])
+            path = re.sub(r':([^/]+)', r'{\1}', path)
+            pair = (path, request['method'].lower())
+            request_pairs.append(pair)
+            require(pair in operations, 'Postman request has no matching operation: ' + str(pair))
+            if pair not in operations:
+                continue
+            mode = operations[pair]['x-counso-auth']
+            if mode in {'login', 'webhook'}:
+                require(request['auth']['type'] == 'noauth', 'Unexpected Bearer auth: ' + path)
+            else:
+                token = '{{apiKey}}' if mode == 'workspace' else '{{userAccessToken}}'
+                require(request['auth'] == {'type': 'bearer', 'bearer': [{'key': 'token', 'value': token, 'type': 'string'}]}, 'Wrong Postman credential type: ' + path)
+            require(request['url']['host'] == ['{{baseUrl}}'], 'Hard-coded Postman host: ' + path)
+            if request.get('body', {}).get('mode') == 'raw':
+                try:
+                    json.loads(request['body']['raw'])
+                except json.JSONDecodeError:
+                    require(False, 'Invalid Postman JSON request body: ' + path)
+        require(Counter(request_pairs) == Counter(operations.keys()), 'Postman operation coverage differs: ' + lang)
+        raw = json.dumps(collection) + json.dumps(environment) + json.dumps(spec)
+        require(not re.search(r'https?://(?:[^/\s"\\]+\.)?dust\.tt|34241185-c7e0fdbe-b2c5-47d5-a923-8244d45cd95e', raw, re.I), 'Upstream API host or Postman collection remains')
+summary = {'source_files': len(rows), 'sitemap_urls': len(urls), 'published_pairs': len(expected) // 2, 'article_pairs': len([f for f in expected if f.endswith('.md')]) // 2, 'language_files': len(expected), 'supplementary_downloads': len(artifact_files), 'published_routes': len(routes) - len(notice_routes), 'updating_pages': len(notice_routes) // 2, 'prepared_pairs': len(prepared_files) // 2, 'notice_routes': len(notice_routes), 'redirects': len(seen), 'relative_links_checked': link_count, 'errors': errors}
+summary['api_operations'] = api_operations
 if args.update_hashes and not errors:
     temporary = ROOT / '.translations.json.tmp'
     temporary.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')

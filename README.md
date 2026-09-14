@@ -14,7 +14,7 @@ Counso 的英文和中文文档，逐篇关联原文章和原始 URL。文章范
 | `source/` | 原始 Markdown、sitemap 和 URL 索引，保持来源版本不变。 |
 | `en/` | 英文改写；文件和目录名称中的旧品牌已改为 Counso。 |
 | `zh-cn/` | 中文改写，与英文正文逐篇对应。 |
-| `prepared/` | 暂未进入站点的双语集成稿，保留品牌化正文，供对应集成交付时使用。 |
+| `prepared/` | 暂未进入站点的双语集成与 CLI 稿，保留品牌化正文，供对应集成交付时使用。 |
 | `translations.json` | 每个原 URL、原文标题与文件、双语展示标题、文件、发布路径和校验值。 |
 | `redirects.json` | 旧品牌路径、现有短链接及已知拼写错误的跳转目标。 |
 | `en/UPDATING.md`、`zh-cn/UPDATING.md` | 暂缺教程共用的“更新中”提示。 |
@@ -39,7 +39,9 @@ https://docs.dust.tt/docs/user-documentation/getting-started/dust-rollout-guide/
 | --- | --- |
 | `publish` | 使用 `translations` 中相应语言的 `title`、`file` 和 `route`。 |
 | `updating` | 使用 `notice` 中相应语言的 `title`、`file` 和 `route`，只显示文档更新提示；不加入正常导航、搜索索引或推荐入口。 |
-| `exclude_api`、`exclude_upstream` | 不发布对应原文，也不加入用户文档导航。 |
+| `exclude_upstream` | 不发布对应原文，也不加入用户文档导航。 |
+
+`translations` 中 `format: "openapi"` 的条目是 JSON 下载文件，按 `route` 原样提供，并返回 JSON 内容；不要渲染成 Markdown 页面。`artifacts` 字段另列 Postman 集合与环境文件，也带有各语言的路径、下载地址和校验值。它们由原始接口规范派生，不增加虚构的原文章记录。文档中的下载链接必须与这些文件一起部署。
 
 页面标题、浏览器标题、侧栏名称和面包屑使用相应语言的 `title`，与 Markdown 的一级标题一致。文档目录见 `en/SUMMARY.md` 和 `zh-cn/SUMMARY.md`。不要使用 `original_title`、`source/manifest.json` 的标题或旧文件名生成用户可见名称；它们属于原文资料。
 
@@ -68,9 +70,9 @@ https://docs.dust.tt/docs/user-documentation/getting-started/dust-rollout-guide/
 
 ## 发布范围
 
-原文索引中的 356 个页面和 2 份接口规范均有记录，其中 193 页提供双语正文。通用远程 MCP 接入、管理员可配置的第三方工具、数据连接及相关使用说明在发布范围内。配置教程不因某个工作区尚未完成授权而隐藏；正文会写清管理员需要完成的配置。
+原文索引中的 356 个页面和 2 份接口规范均有记录，其中 327 页提供双语正文，2 份接口规范提供 Counso 版本。通用远程 MCP 接入、管理员可配置的第三方工具、数据连接及相关使用说明在发布范围内。配置教程不因某个工作区尚未完成授权而隐藏；正文会写清管理员需要完成的配置。
 
-另外 19 篇集成教程已准备中英文稿件，当前 URL 显示“文档更新中”。这些主题仍适用于 Counso，但发布可执行教程前还需提供专用应用、分发包、导入脚本或服务配置。具体缺项与稿件链接见[文档发布范围与准备稿](PUBLICATION-STATUS.md)。137 份公开 API 及配套开发资料本版不提供；9 份原产品更新历史、实验仓库说明和已弃用框架资料不纳入 Counso 文档。
+另外 20 篇集成与 CLI 教程已准备中英文稿件，当前 URL 显示“文档更新中”。这些主题仍适用于 Counso，但发布可执行教程前还需提供专用应用、分发包、导入脚本或服务配置。具体缺项与稿件链接见[文档发布范围与准备稿](PUBLICATION-STATUS.md)。API 文档、JavaScript SDK、客户端 MCP 和 Postman 文件已纳入；9 份原产品更新历史、实验仓库说明和已弃用框架资料不纳入 Counso 文档。
 
 原文和原始 URL 均保留。用户页面只展示正文或简短的文档更新提示，不展示内部交付说明。
 
@@ -84,4 +86,4 @@ https://docs.dust.tt/docs/user-documentation/getting-started/dust-rollout-guide/
 python3 scripts/check.py
 ```
 
-检查覆盖全部原文索引、双语配对、文件校验值、页面路径、跳转目标及 Markdown 内链。修改正文后，运行 `python3 scripts/check.py --update-hashes`，通过检查后会同步更新正文校验值。
+检查覆盖全部原文索引、双语配对、文件校验值、页面路径、跳转目标、Markdown 内链，以及 API 参考、接口规范与 Postman 请求之间的对应。修改正文后，运行 `python3 scripts/check.py --update-hashes`，通过检查后会同步更新正文校验值。

@@ -16,6 +16,11 @@
       "original_url": "https://docs.dust.tt/docs/user-documentation/admins/connections-management/bigquery"
     },
     {
+      "from": "/docs/client-side-mcp-server",
+      "to": "/docs/user-documentation/developers/client-side-mcp-server",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/developers/client-side-mcp-server"
+    },
+    {
       "from": "/docs/confluence-connection",
       "to": "/docs/user-documentation/admins/connections-management/confluence",
       "original_url": "https://docs.dust.tt/docs/user-documentation/admins/connections-management/confluence"
@@ -49,6 +54,26 @@
       "from": "/docs/databricks",
       "to": "/docs/user-documentation/agents/tools/databricks",
       "original_url": "https://docs.dust.tt/docs/user-documentation/agents/tools/databricks"
+    },
+    {
+      "from": "/docs/developer-platform/dust-api-documentation/openapi-and-postman",
+      "to": "/docs/developer-platform/counso-api-documentation/openapi-and-postman",
+      "original_url": "https://docs.dust.tt/docs/developer-platform/dust-api-documentation/openapi-and-postman"
+    },
+    {
+      "from": "/docs/developer-platform/dust-api-documentation/openapi.json",
+      "to": "/docs/developer-platform/counso-api-documentation/openapi.json",
+      "original_url": "https://docs.dust.tt/docs/developer-platform/dust-api-documentation/openapi.json"
+    },
+    {
+      "from": "/docs/developer-platform/dust-api-documentation/swagger.json",
+      "to": "/docs/developer-platform/counso-api-documentation/swagger.json",
+      "original_url": "https://raw.githubusercontent.com/dust-tt/dust/refs/heads/main/front-api/public/swagger.json"
+    },
+    {
+      "from": "/docs/developer-platform/dust-cli/dust-cli",
+      "to": "/docs/developer-platform/counso-cli/counso-cli",
+      "original_url": "https://docs.dust.tt/docs/developer-platform/dust-cli/dust-cli"
     },
     {
       "from": "/docs/dust-in-teams",
@@ -416,6 +441,11 @@
       "original_url": "https://docs.dust.tt/docs/user-documentation/getting-started/faq/managing-agents/does-the-dust-agent-give-accurate-and-safe-responses"
     },
     {
+      "from": "/docs/user-documentation/getting-started/faq/managing-agents/is-there-a-dust-conversation-api",
+      "to": "/docs/user-documentation/getting-started/faq/managing-agents/is-there-a-counso-conversation-api",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/getting-started/faq/managing-agents/is-there-a-dust-conversation-api"
+    },
+    {
       "from": "/docs/user-documentation/getting-started/faq/troubleshooting-and-limitations/can-dust-remember-and-incorporate-my-feedback-in-the-future",
       "to": "/docs/user-documentation/getting-started/faq/troubleshooting-and-limitations/can-counso-remember-and-incorporate-my-feedback-in-the-future",
       "original_url": "https://docs.dust.tt/docs/user-documentation/getting-started/faq/troubleshooting-and-limitations/can-dust-remember-and-incorporate-my-feedback-in-the-future"
@@ -454,6 +484,51 @@
       "from": "/docs/zendesk-connection",
       "to": "/docs/user-documentation/admins/connections-management/zendesk",
       "original_url": "https://docs.dust.tt/docs/user-documentation/admins/connections-management/zendesk"
+    },
+    {
+      "from": "/reference",
+      "to": "/docs/developer-platform/overview/developer-platform",
+      "original_url": "https://docs.dust.tt/docs/developer-platform/overview/developer-platform"
+    },
+    {
+      "from": "/reference/",
+      "to": "/docs/developer-platform/overview/developer-platform",
+      "original_url": "https://docs.dust.tt/docs/developer-platform/overview/developer-platform"
+    },
+    {
+      "from": "/reference/developer-platform-overview",
+      "to": "/docs/developer-platform/overview/developer-platform",
+      "original_url": "https://docs.dust.tt/docs/developer-platform/overview/developer-platform"
+    },
+    {
+      "from": "/reference/post_api-v1-w-wid-vaults-vid-apps-aid-runs",
+      "to": "/api-reference/apps/create-an-app-run",
+      "original_url": "https://docs.dust.tt/api-reference/apps/create-an-app-run"
+    },
+    {
+      "from": "/zh-cn/docs/client-side-mcp-server",
+      "to": "/zh-cn/docs/user-documentation/developers/client-side-mcp-server",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/developers/client-side-mcp-server"
+    },
+    {
+      "from": "/zh-cn/docs/developer-platform/dust-api-documentation/openapi-and-postman",
+      "to": "/zh-cn/docs/developer-platform/counso-api-documentation/openapi-and-postman",
+      "original_url": "https://docs.dust.tt/docs/developer-platform/dust-api-documentation/openapi-and-postman"
+    },
+    {
+      "from": "/zh-cn/docs/developer-platform/dust-api-documentation/openapi.json",
+      "to": "/zh-cn/docs/developer-platform/counso-api-documentation/openapi.json",
+      "original_url": "https://docs.dust.tt/docs/developer-platform/dust-api-documentation/openapi.json"
+    },
+    {
+      "from": "/zh-cn/docs/developer-platform/dust-api-documentation/swagger.json",
+      "to": "/zh-cn/docs/developer-platform/counso-api-documentation/swagger.json",
+      "original_url": "https://raw.githubusercontent.com/dust-tt/dust/refs/heads/main/front-api/public/swagger.json"
+    },
+    {
+      "from": "/zh-cn/docs/developer-platform/dust-cli/dust-cli",
+      "to": "/zh-cn/docs/developer-platform/counso-cli/counso-cli",
+      "original_url": "https://docs.dust.tt/docs/developer-platform/dust-cli/dust-cli"
     },
     {
       "from": "/zh-cn/docs/user-documentation/agents/dust-support",
@@ -576,6 +651,11 @@
       "original_url": "https://docs.dust.tt/docs/user-documentation/getting-started/faq/managing-agents/does-the-dust-agent-give-accurate-and-safe-responses"
     },
     {
+      "from": "/zh-cn/docs/user-documentation/getting-started/faq/managing-agents/is-there-a-dust-conversation-api",
+      "to": "/zh-cn/docs/user-documentation/getting-started/faq/managing-agents/is-there-a-counso-conversation-api",
+      "original_url": "https://docs.dust.tt/docs/user-documentation/getting-started/faq/managing-agents/is-there-a-dust-conversation-api"
+    },
+    {
       "from": "/zh-cn/docs/user-documentation/getting-started/faq/troubleshooting-and-limitations/can-dust-remember-and-incorporate-my-feedback-in-the-future",
       "to": "/zh-cn/docs/user-documentation/getting-started/faq/troubleshooting-and-limitations/can-counso-remember-and-incorporate-my-feedback-in-the-future",
       "original_url": "https://docs.dust.tt/docs/user-documentation/getting-started/faq/troubleshooting-and-limitations/can-dust-remember-and-incorporate-my-feedback-in-the-future"
@@ -594,38 +674,33 @@
       "from": "/zh-cn/docs/user-documentation/getting-started/intro-to-dust",
       "to": "/zh-cn/docs/user-documentation/getting-started/intro-to-counso",
       "original_url": "https://docs.dust.tt/docs/user-documentation/getting-started/intro-to-dust"
+    },
+    {
+      "from": "/zh-cn/reference",
+      "to": "/zh-cn/docs/developer-platform/overview/developer-platform",
+      "original_url": "https://docs.dust.tt/docs/developer-platform/overview/developer-platform"
+    },
+    {
+      "from": "/zh-cn/reference/",
+      "to": "/zh-cn/docs/developer-platform/overview/developer-platform",
+      "original_url": "https://docs.dust.tt/docs/developer-platform/overview/developer-platform"
+    },
+    {
+      "from": "/zh-cn/reference/developer-platform-overview",
+      "to": "/zh-cn/docs/developer-platform/overview/developer-platform",
+      "original_url": "https://docs.dust.tt/docs/developer-platform/overview/developer-platform"
+    },
+    {
+      "from": "/zh-cn/reference/post_api-v1-w-wid-vaults-vid-apps-aid-runs",
+      "to": "/zh-cn/api-reference/apps/create-an-app-run",
+      "original_url": "https://docs.dust.tt/api-reference/apps/create-an-app-run"
     }
   ],
   "excluded": [
     {
-      "path": "/docs/client-side-mcp-server",
-      "status": "exclude_api",
-      "original_url": "https://docs.dust.tt/docs/user-documentation/developers/client-side-mcp-server"
-    },
-    {
-      "path": "/reference",
-      "status": "exclude_api",
-      "original_url": "https://docs.dust.tt/api-reference/private-user/get-current-user"
-    },
-    {
-      "path": "/reference/",
-      "status": "exclude_api",
-      "original_url": "https://docs.dust.tt/api-reference/private-user/get-current-user"
-    },
-    {
-      "path": "/reference/developer-platform-overview",
-      "status": "exclude_api",
-      "original_url": "https://docs.dust.tt/docs/developer-platform/overview/developer-platform"
-    },
-    {
       "path": "/reference/introduction-to-dust-apps",
-      "status": "exclude_api",
-      "original_url": "https://docs.dust.tt/api-reference/private-user/get-current-user"
-    },
-    {
-      "path": "/reference/post_api-v1-w-wid-vaults-vid-apps-aid-runs",
-      "status": "exclude_api",
-      "original_url": "https://docs.dust.tt/api-reference/private-user/get-current-user"
+      "status": "exclude_upstream",
+      "original_url": "https://docs.dust.tt/docs/developer-platform/legacy-dust-apps/what-is-a-dust-app"
     }
   ]
 }

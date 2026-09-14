@@ -214,3 +214,225 @@
 - [在 Slack Workflow 中使用智能体](docs/user-documentation/agents/integrations/counso-in-slack/slack-workflows.md)
 - [自动加入新的 Slack 频道](docs/user-documentation/agents/integrations/counso-in-slack/slack-auto-join.md)
 - [使用会议转录](docs/user-documentation/agents/integrations/meeting-transcripts.md)
+
+## 开发者文档
+
+
+- [Counso 提供 Conversations API 吗？](docs/user-documentation/getting-started/faq/managing-agents/is-there-a-counso-conversation-api.md)
+- [客户端 MCP Server](docs/user-documentation/developers/client-side-mcp-server.md)
+- [Counso 开发者平台](docs/developer-platform/overview/developer-platform.md)
+- [JavaScript SDK](docs/developer-platform/overview/javascript-sdk.md)
+- [数据源](docs/developer-platform/core-concepts/datasources.md)
+- [文本块与文档](docs/developer-platform/core-concepts/chunks-and-documents.md)
+- [API 速率限制](docs/developer-platform/core-concepts/rate-limits.md)
+- [API 规范与 Postman](docs/developer-platform/counso-api-documentation/openapi-and-postman.md)
+
+## API 参考
+
+
+### 用户会话：用户
+
+- [获取当前用户](api-reference/private-user/get-current-user.md)
+- [更新当前用户资料](api-reference/private-user/update-current-user.md)
+
+### 分析
+
+- [导出工作区分析数据](api-reference/analytics/export-workspace-analytics.md)
+
+### 智能体
+
+- [列出智能体配置](api-reference/agents/list-agents.md)
+- [以 YAML 导出智能体配置](api-reference/agents/export-agent-configuration-as-yaml.md)
+- [获取智能体配置](api-reference/agents/get-agent-configuration.md)
+- [归档智能体配置](api-reference/agents/archive-agent-configuration.md)
+- [更新智能体配置](api-reference/agents/update-agent-configuration.md)
+- [导入智能体配置](api-reference/agents/import-agent-configuration.md)
+- [按名称搜索智能体](api-reference/agents/search-agents-by-name.md)
+
+### 会话
+
+- [取消对话中的消息生成](api-reference/conversations/cancel-message-generation-in-a-conversation.md)
+- [创建内容片段](api-reference/conversations/create-a-content-fragment.md)
+- [获取对话事件](api-reference/conversations/get-the-events-for-a-conversation.md)
+- [按路径下载对话文件](api-reference/conversations/download-a-conversation-scoped-file-by-path.md)
+- [获取对话](api-reference/conversations/get-a-conversation.md)
+- [更新对话](api-reference/conversations/update-a-conversation.md)
+- [回答对话消息中的用户问题](api-reference/conversations/answer-a-user-question-in-a-conversation-message.md)
+- [编辑对话中的现有消息](api-reference/conversations/edit-an-existing-message-in-a-conversation.md)
+- [获取消息事件](api-reference/conversations/get-events-for-a-message.md)
+- [审核对话消息中的操作](api-reference/conversations/validate-an-action-in-a-conversation-message.md)
+- [创建对话消息](api-reference/conversations/create-a-message.md)
+- [创建新对话](api-reference/conversations/create-a-new-conversation.md)
+- [创建文件上传地址](api-reference/conversations/create-a-file-upload-url.md)
+
+### 反馈
+
+- [获取对话反馈](api-reference/feedbacks/get-feedbacks-for-a-conversation.md)
+- [提交消息反馈](api-reference/feedbacks/submit-feedback-for-a-specific-message-in-a-conversation.md)
+- [删除消息反馈](api-reference/feedbacks/delete-feedback-for-a-specific-message.md)
+
+### 提及
+
+- [获取对话中的提及建议](api-reference/mentions/get-mention-suggestions-for-a-conversation.md)
+- [解析 Markdown 中的提及](api-reference/mentions/parse-mentions-in-markdown-text.md)
+- [获取提及建议](api-reference/mentions/get-mention-suggestions.md)
+
+### 客户端 MCP
+
+- [注销客户端 MCP 服务器](api-reference/mcp/deregister-a-client-side-mcp-server.md)
+- [更新客户端 MCP 服务器心跳](api-reference/mcp/update-heartbeat-for-a-client-side-mcp-server.md)
+- [注册客户端 MCP 服务器](api-reference/mcp/register-a-client-side-mcp-server.md)
+- [接收工作区 MCP 工具请求流](api-reference/mcp/stream-mcp-tool-requests-for-a-workspace.md)
+- [提交 MCP 工具执行结果](api-reference/mcp/submit-mcp-tool-execution-results.md)
+
+### 搜索
+
+- [流式搜索工作区节点](api-reference/search/search-for-nodes-in-the-workspace-streaming.md)
+- [搜索工作区节点](api-reference/search/search-for-nodes-in-the-workspace.md)
+- [上传工具文件](api-reference/search/upload-a-tool-file.md)
+
+### Skills
+
+- [归档 Skill](api-reference/skills/archive-a-skill.md)
+- [列出 Skills](api-reference/skills/list-skills.md)
+- [从上传文件导入 Skills](api-reference/skills/import-skills-from-uploaded-files.md)
+
+### 应用
+
+- [获取应用运行记录](api-reference/apps/get-an-app-run.md)
+- [创建并运行应用](api-reference/apps/create-an-app-run.md)
+- [列出 Space 中的应用](api-reference/apps/list-apps.md)
+
+### 数据源视图
+
+- [获取数据源视图](api-reference/datasourceviews/get-a-data-source-view.md)
+- [删除数据源视图](api-reference/datasourceviews/delete-a-data-source-view.md)
+- [更新数据源视图](api-reference/datasourceviews/update-a-data-source-view.md)
+- [搜索数据源视图](api-reference/datasourceviews/search-the-data-source-view.md)
+- [列出数据源视图](api-reference/datasourceviews/list-data-source-views.md)
+
+### 数据源
+
+- [检查数据源的写入队列状态](api-reference/datasources/check-the-upsert-queue-status-for-a-data-source.md)
+- [从数据源读取文档](api-reference/datasources/retrieve-a-document-from-a-data-source.md)
+- [写入或更新数据源文档](api-reference/datasources/upsert-a-document-in-a-data-source.md)
+- [从数据源删除文档](api-reference/datasources/delete-a-document-from-a-data-source.md)
+- [更新文档的父级关系](api-reference/datasources/update-the-parents-of-a-document.md)
+- [列出数据源文档](api-reference/datasources/get-documents.md)
+- [搜索数据源](api-reference/datasources/search-the-data-source.md)
+- [获取数据表](api-reference/datasources/get-a-table.md)
+- [删除数据表](api-reference/datasources/delete-a-table.md)
+- [获取表格行](api-reference/datasources/get-a-row.md)
+- [删除表格行](api-reference/datasources/delete-a-row.md)
+- [列出表格行](api-reference/datasources/list-rows.md)
+- [批量写入或更新表格行](api-reference/datasources/upsert-rows.md)
+- [列出数据源表格](api-reference/datasources/get-tables.md)
+- [写入或更新数据表](api-reference/datasources/upsert-a-table.md)
+- [列出工作区数据源](api-reference/datasources/get-data-sources.md)
+
+### 工具
+
+- [列出可用 MCP 服务器视图](api-reference/tools/list-available-mcp-server-views.md)
+
+### 空间
+
+- [列出可访问的 Space](api-reference/spaces/list-available-spaces.md)
+
+### 触发器
+
+- [获取触发器](api-reference/triggers/get-a-trigger.md)
+- [接收用于触发流程的外部 Webhook](api-reference/triggers/receive-external-webhook-to-trigger-flows.md)
+- [列出触发器](api-reference/triggers/list-triggers.md)
+
+### 用户会话：分析
+
+- [列出用量分析筛选值](api-reference/private-analytics/list-consumption-analytics-facets.md)
+- [列出个人用量筛选项](api-reference/private-analytics/list-consumption-analytics-facets-1.md)
+- [列出智能体用量筛选项](api-reference/private-analytics/list-consumption-analytics-facets-2.md)
+
+### 用户会话：智能体
+
+- [列出智能体配置](api-reference/private-agents/list-agent-configurations.md)
+- [创建智能体配置](api-reference/private-agents/create-an-agent-configuration.md)
+
+### 用户会话：会话
+
+- [取消消息生成](api-reference/private-conversations/cancel-message-generation.md)
+- [压缩对话上下文](api-reference/private-conversations/compact-a-conversation.md)
+- [获取对话的 credits 归因](api-reference/private-conversations/get-a-conversation-credit-attribution.md)
+- [创建对话内容片段](api-reference/private-conversations/create-a-content-fragment.md)
+- [获取当前用户提交的对话反馈](api-reference/private-conversations/get-conversation-feedbacks.md)
+- [获取对话详情](api-reference/private-conversations/get-a-conversation.md)
+- [删除或退出对话](api-reference/private-conversations/delete-or-leave-a-conversation.md)
+- [更新对话](api-reference/private-conversations/update-a-conversation.md)
+- [获取对话参与者](api-reference/private-conversations/get-conversation-participants.md)
+- [添加对话参与者](api-reference/private-conversations/add-a-participant-to-a-conversation.md)
+- [列出可选 Space](api-reference/private-conversations/list-selectable-spaces.md)
+- [为对话选择 Space](api-reference/private-conversations/select-spaces-for-a-conversation.md)
+- [取消定时唤醒](api-reference/private-conversations/cancel-a-wake-up.md)
+- [列出对话的定时唤醒](api-reference/private-conversations/list-wake-ups-for-a-conversation.md)
+- [列出当前用户的对话](api-reference/private-conversations/list-conversations.md)
+- [创建对话](api-reference/private-conversations/create-a-conversation.md)
+
+### 用户会话：events
+
+- [实时接收对话事件](api-reference/private-events/stream-conversation-events.md)
+- [实时接收消息事件](api-reference/private-events/stream-message-events.md)
+- [实时接收 Pod 函数调用事件](api-reference/private-events/stream-sandbox-function-invocation-events.md)
+
+### 用户会话：messages
+
+- [获取单项操作](api-reference/private-messages/get-a-single-action.md)
+- [获取智能体消息的 credits 归因](api-reference/private-messages/get-an-agent-message-credit-attribution.md)
+- [编辑消息](api-reference/private-messages/edit-a-message.md)
+- [提交消息反馈](api-reference/private-messages/submit-message-feedback.md)
+- [删除消息反馈](api-reference/private-messages/delete-message-feedback.md)
+- [获取消息](api-reference/private-messages/get-a-message.md)
+- [删除消息](api-reference/private-messages/delete-a-message.md)
+- [重试智能体消息](api-reference/private-messages/retry-an-agent-message.md)
+- [列出对话消息](api-reference/private-messages/list-messages-in-a-conversation.md)
+- [向对话发送消息](api-reference/private-messages/post-a-message-to-a-conversation.md)
+
+### 用户会话：assistant
+
+- [生成对话模板草稿](api-reference/private-assistant/resolve-a-conversation-go-template-draft.md)
+
+### 用户会话：提及
+
+- [获取工作区提及建议](api-reference/private-mentions/get-mention-suggestions.md)
+
+### 用户会话：扩展
+
+- [获取扩展配置](api-reference/private-extension/get-extension-configuration.md)
+
+### 用户会话：workspace
+
+- [获取工作区功能开关](api-reference/private-workspace/get-workspace-feature-flags.md)
+
+### 用户会话：文件
+
+- [查看或下载文件](api-reference/private-files/get-or-download-a-file.md)
+- [上传文件内容](api-reference/private-files/upload-file-content.md)
+- [删除文件](api-reference/private-files/delete-a-file.md)
+- [创建文件上传记录](api-reference/private-files/create-a-file-upload.md)
+
+### 用户会话：空间
+
+- [获取数据源视图](api-reference/private-spaces/get-a-data-source-view.md)
+- [删除数据源视图](api-reference/private-spaces/delete-a-data-source-view.md)
+- [更新数据源视图](api-reference/private-spaces/update-a-data-source-view.md)
+- [列出数据源视图](api-reference/private-spaces/list-data-source-views.md)
+- [创建数据源视图](api-reference/private-spaces/create-a-data-source-view.md)
+- [获取 Space 详情](api-reference/private-spaces/get-a-space.md)
+- [删除 Space](api-reference/private-spaces/delete-a-space.md)
+- [更新 Space](api-reference/private-spaces/update-a-space.md)
+- [获取项目 Space 通知偏好](api-reference/private-spaces/get-project-notification-preference.md)
+- [设置项目 Space 通知偏好](api-reference/private-spaces/set-project-notification-preference.md)
+- [列出工作区 Space](api-reference/private-spaces/list-spaces.md)
+- [创建 Space](api-reference/private-spaces/create-a-space.md)
+
+### 登录认证
+
+- [发起 WorkOS 登录](api-reference/private-authentication/initiate-workos-login.md)
+- [兑换授权码或刷新令牌](api-reference/private-authentication/exchange-code-or-refresh-token.md)
+- [撤销登录会话](api-reference/private-authentication/revoke-a-session.md)

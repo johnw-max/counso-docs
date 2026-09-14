@@ -1,6 +1,6 @@
 # 文档发布范围与准备稿
 
-当前提供 193 篇中英文正文，另有 19 篇中英文准备稿。是否进入用户目录，按教程依赖的内容判断；工作区尚未完成配置，本身不是隐藏配置教程的理由。
+当前提供 327 篇中英文正文、2 份接口规范和 Postman 导入文件，另有 20 篇中英文准备稿。是否进入用户目录，按教程依赖的内容判断；工作区尚未完成配置，本身不是隐藏配置教程的理由。
 
 ## 配置与使用说明
 
@@ -8,14 +8,14 @@
 
 | 主题 | 类型 | 部署前提 | 文章 |
 | --- | --- | --- | --- |
-| GitHub 工具 | 应用配置 | 注册并配置相应用途的 GitHub App、凭据与回调，再授权仓库；上游已有对应工具或同步实现。 | [EN](en/docs/user-documentation/agents/tools/github.md) · [中文](zh-cn/docs/user-documentation/agents/tools/github.md) |
+| GitHub 工具 | 应用配置 | 注册并配置相应用途的 GitHub App、凭据与回调，再授权仓库。 | [EN](en/docs/user-documentation/agents/tools/github.md) · [中文](zh-cn/docs/user-documentation/agents/tools/github.md) |
 | Monday 工具 | OAuth 配置 | 注册自己的 Monday OAuth 应用，填写部署回调和凭据；从 Counso 发起授权，不沿用原教程的固定应用 ID。 | [EN](en/docs/user-documentation/agents/tools/monday-com.md) · [中文](zh-cn/docs/user-documentation/agents/tools/monday-com.md) |
-| 外部客户端连接 Counso MCP | 服务与 OAuth 配置 | 部署 MCP 服务及其 OAuth 授权后提供实际端点；这篇是客户端使用说明，不开放 API/SDK 文档。 | [EN](en/docs/user-documentation/agents/integrations/counso-mcp-server.md) · [中文](zh-cn/docs/user-documentation/agents/integrations/counso-mcp-server.md) |
+| 外部客户端连接 Counso MCP | 服务与 OAuth 配置 | 配置 MCP 服务与 OAuth 授权，客户端按文档连接实际端点。 | [EN](en/docs/user-documentation/agents/integrations/counso-mcp-server.md) · [中文](zh-cn/docs/user-documentation/agents/integrations/counso-mcp-server.md) |
 | Slack 自动回复 | 配置与部署 | 配置独立 Slack Bot 应用及消息接收服务，再选择频道和智能体；与数据同步连接分开。 | [EN](en/docs/user-documentation/agents/integrations/counso-in-slack/slack-auto-reply.md) · [中文](zh-cn/docs/user-documentation/agents/integrations/counso-in-slack/slack-auto-reply.md) |
 | Slack Workflow | 管理员授权 | 配置 Slack Bot，并由部署管理员登记 Workflow 名称及允许访问的受限 Space。 | [EN](en/docs/user-documentation/agents/integrations/counso-in-slack/slack-workflows.md) · [中文](zh-cn/docs/user-documentation/agents/integrations/counso-in-slack/slack-workflows.md) |
 | Slack 自动加入频道 | 配置与开关 | 先配置 Slack 数据连接和事件接收，再启用自动加入并设置匹配规则。 | [EN](en/docs/user-documentation/agents/integrations/counso-in-slack/slack-auto-join.md) · [中文](zh-cn/docs/user-documentation/agents/integrations/counso-in-slack/slack-auto-join.md) |
 | 会议转录 | 使用与自动化配置 | 普通使用说明保留；自动处理另外要求转录来源、后台处理服务和工作区设置。 | [EN](en/docs/user-documentation/agents/integrations/meeting-transcripts.md) · [中文](zh-cn/docs/user-documentation/agents/integrations/meeting-transcripts.md) |
-| GitHub 数据同步 | 应用配置 | 注册并配置相应用途的 GitHub App、凭据与回调，再授权仓库；上游已有对应工具或同步实现。 | [EN](en/docs/user-documentation/admins/connections-management/github.md) · [中文](zh-cn/docs/user-documentation/admins/connections-management/github.md) |
+| GitHub 数据同步 | 应用配置 | 注册并配置相应用途的 GitHub App、凭据与回调，再授权仓库。 | [EN](en/docs/user-documentation/admins/connections-management/github.md) · [中文](zh-cn/docs/user-documentation/admins/connections-management/github.md) |
 | Slack 数据同步 | 配置与部署 | 自建 Slack App 的凭据、当前部署的 OAuth 回调和事件接收地址；运行已有同步服务并开启相应设置。 | [EN](en/docs/user-documentation/admins/connections-management/slack.md) · [中文](zh-cn/docs/user-documentation/admins/connections-management/slack.md) |
 | Slack 排障 | 使用说明 | 分别排查数据同步、对话机器人、个人工具，不把一类连接的权限套用到另一类。 | [EN](en/docs/user-documentation/admins/admin-troubleshooting/slack-troubleshooting.md) · [中文](zh-cn/docs/user-documentation/admins/admin-troubleshooting/slack-troubleshooting.md) |
 
@@ -48,152 +48,34 @@ Slack、GitHub 和 Monday 的源码提供配置自有应用的入口。原教程
 | 将 Linear Issue 导入 Counso | 导入脚本 | [https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/beta-import-linear-issues](https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/beta-import-linear-issues) | 提供面向 Counso 的脚本与运行配置，确认目标地址、授权、来源范围及更新处理方式；数据源本身可以使用。 | [EN](prepared/en/docs/user-documentation/data-sources/custom-connections/beta-import-linear-issues.md) · [中文](prepared/zh-cn/docs/user-documentation/data-sources/custom-connections/beta-import-linear-issues.md) |
 | 将 Salesforce 客户摘要导入 Counso | 导入脚本 | [https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/beta-import-salesforce-data](https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/beta-import-salesforce-data) | 提供面向 Counso 的脚本与运行配置，确认目标地址、授权、来源范围及更新处理方式；数据源本身可以使用。 | [EN](prepared/en/docs/user-documentation/data-sources/custom-connections/beta-import-salesforce-data.md) · [中文](prepared/zh-cn/docs/user-documentation/data-sources/custom-connections/beta-import-salesforce-data.md) |
 | 通过 Zapier 上传文档 | 专用应用 | [https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/zapier-automatically-add-datasource](https://docs.dust.tt/docs/user-documentation/data-sources/custom-connections/zapier-automatically-add-datasource) | 提供 Counso Zapier 上传动作、凭据和目标资料库配置。 | [EN](prepared/en/docs/user-documentation/data-sources/custom-connections/zapier-automatically-add-datasource.md) · [中文](prepared/zh-cn/docs/user-documentation/data-sources/custom-connections/zapier-automatically-add-datasource.md) |
+| Counso CLI | 命令行客户端 | [https://docs.dust.tt/docs/developer-platform/dust-cli/dust-cli](https://docs.dust.tt/docs/developer-platform/dust-cli/dust-cli) | 提供按 Counso 服务地址和登录配置构建的 CLI。已检查的 `@dust-tt/dust-cli@0.4.6` 把默认服务配置编译进包内，不能仅用运行时环境变量切换。 | [EN](prepared/en/docs/developer-platform/counso-cli/counso-cli.md) · [中文](prepared/zh-cn/docs/developer-platform/counso-cli/counso-cli.md) |
 
-导入概念、资料整理和核对方法可以介绍；当前保留为准备稿的是具体脚本教程。仅将源平台凭据填入原脚本，不会自动把原站上传目标改成 Counso。公开 API 文档暂缓也不等于这些数据源不能连接。
+导入概念、资料整理和核对方法可以介绍；当前保留为准备稿的是具体脚本教程。仅将源平台凭据填入原脚本，不会自动把原站上传目标改成 Counso。数据导入可使用已提供的 API 说明；这里列的是具体导入脚本及其使用稿。
 
-## 本版不提供的开发资料（137 项）
+## API 与开发资料
 
-公开 API、SDK、CLI、客户端开发接口及配套参考资料本版不对外提供，也不作为“更新中”页面展示。以下保留全部原始条目供查阅，其中 135 项来自站点地图，另有两份接口规范。
+126 篇接口参考、8 篇开发指南和 2 份接口规范已纳入中英文文档。原始 URL、原文文件与改写正文仍逐篇对应；CLI 使用稿另列在准备稿中。普通配置尚未完成，不再作为排除 API 或连接器说明的理由。
 
-| 原文标题 | 原始 URL |
+| 材料 | 内容 |
 | --- | --- |
-| Is there a Dust conversation API? | [https://docs.dust.tt/docs/user-documentation/getting-started/faq/managing-agents/is-there-a-dust-conversation-api](https://docs.dust.tt/docs/user-documentation/getting-started/faq/managing-agents/is-there-a-dust-conversation-api) |
-| Client Side MCP Server (Preview) | [https://docs.dust.tt/docs/user-documentation/developers/client-side-mcp-server](https://docs.dust.tt/docs/user-documentation/developers/client-side-mcp-server) |
-| Developer platform | [https://docs.dust.tt/docs/developer-platform/overview/developer-platform](https://docs.dust.tt/docs/developer-platform/overview/developer-platform) |
-| JavaScript SDK | [https://docs.dust.tt/docs/developer-platform/overview/javascript-sdk](https://docs.dust.tt/docs/developer-platform/overview/javascript-sdk) |
-| Datasources | [https://docs.dust.tt/docs/developer-platform/core-concepts/datasources](https://docs.dust.tt/docs/developer-platform/core-concepts/datasources) |
-| Chunks and Documents | [https://docs.dust.tt/docs/developer-platform/core-concepts/chunks-and-documents](https://docs.dust.tt/docs/developer-platform/core-concepts/chunks-and-documents) |
-| Rate Limits | [https://docs.dust.tt/docs/developer-platform/core-concepts/rate-limits](https://docs.dust.tt/docs/developer-platform/core-concepts/rate-limits) |
-| OpenAPI & Postman | [https://docs.dust.tt/docs/developer-platform/dust-api-documentation/openapi-and-postman](https://docs.dust.tt/docs/developer-platform/dust-api-documentation/openapi-and-postman) |
-| Get current user | [https://docs.dust.tt/api-reference/private-user/get-current-user](https://docs.dust.tt/api-reference/private-user/get-current-user) |
-| Update current user | [https://docs.dust.tt/api-reference/private-user/update-current-user](https://docs.dust.tt/api-reference/private-user/update-current-user) |
-| Export workspace analytics | [https://docs.dust.tt/api-reference/analytics/export-workspace-analytics](https://docs.dust.tt/api-reference/analytics/export-workspace-analytics) |
-| List agents | [https://docs.dust.tt/api-reference/agents/list-agents](https://docs.dust.tt/api-reference/agents/list-agents) |
-| Export agent configuration as YAML | [https://docs.dust.tt/api-reference/agents/export-agent-configuration-as-yaml](https://docs.dust.tt/api-reference/agents/export-agent-configuration-as-yaml) |
-| Get agent configuration | [https://docs.dust.tt/api-reference/agents/get-agent-configuration](https://docs.dust.tt/api-reference/agents/get-agent-configuration) |
-| Archive agent configuration | [https://docs.dust.tt/api-reference/agents/archive-agent-configuration](https://docs.dust.tt/api-reference/agents/archive-agent-configuration) |
-| Update agent configuration | [https://docs.dust.tt/api-reference/agents/update-agent-configuration](https://docs.dust.tt/api-reference/agents/update-agent-configuration) |
-| Import agent configuration | [https://docs.dust.tt/api-reference/agents/import-agent-configuration](https://docs.dust.tt/api-reference/agents/import-agent-configuration) |
-| Search agents by name | [https://docs.dust.tt/api-reference/agents/search-agents-by-name](https://docs.dust.tt/api-reference/agents/search-agents-by-name) |
-| Cancel message generation in a conversation | [https://docs.dust.tt/api-reference/conversations/cancel-message-generation-in-a-conversation](https://docs.dust.tt/api-reference/conversations/cancel-message-generation-in-a-conversation) |
-| Create a content fragment | [https://docs.dust.tt/api-reference/conversations/create-a-content-fragment](https://docs.dust.tt/api-reference/conversations/create-a-content-fragment) |
-| Get the events for a conversation | [https://docs.dust.tt/api-reference/conversations/get-the-events-for-a-conversation](https://docs.dust.tt/api-reference/conversations/get-the-events-for-a-conversation) |
-| Download a conversation-scoped file by path | [https://docs.dust.tt/api-reference/conversations/download-a-conversation-scoped-file-by-path](https://docs.dust.tt/api-reference/conversations/download-a-conversation-scoped-file-by-path) |
-| Get a conversation | [https://docs.dust.tt/api-reference/conversations/get-a-conversation](https://docs.dust.tt/api-reference/conversations/get-a-conversation) |
-| Update a conversation | [https://docs.dust.tt/api-reference/conversations/update-a-conversation](https://docs.dust.tt/api-reference/conversations/update-a-conversation) |
-| Answer a user question in a conversation message | [https://docs.dust.tt/api-reference/conversations/answer-a-user-question-in-a-conversation-message](https://docs.dust.tt/api-reference/conversations/answer-a-user-question-in-a-conversation-message) |
-| Edit an existing message in a conversation | [https://docs.dust.tt/api-reference/conversations/edit-an-existing-message-in-a-conversation](https://docs.dust.tt/api-reference/conversations/edit-an-existing-message-in-a-conversation) |
-| Get events for a message | [https://docs.dust.tt/api-reference/conversations/get-events-for-a-message](https://docs.dust.tt/api-reference/conversations/get-events-for-a-message) |
-| Validate an action in a conversation message | [https://docs.dust.tt/api-reference/conversations/validate-an-action-in-a-conversation-message](https://docs.dust.tt/api-reference/conversations/validate-an-action-in-a-conversation-message) |
-| Create a message | [https://docs.dust.tt/api-reference/conversations/create-a-message](https://docs.dust.tt/api-reference/conversations/create-a-message) |
-| Create a new conversation | [https://docs.dust.tt/api-reference/conversations/create-a-new-conversation](https://docs.dust.tt/api-reference/conversations/create-a-new-conversation) |
-| Create a file upload URL | [https://docs.dust.tt/api-reference/conversations/create-a-file-upload-url](https://docs.dust.tt/api-reference/conversations/create-a-file-upload-url) |
-| Get feedbacks for a conversation | [https://docs.dust.tt/api-reference/feedbacks/get-feedbacks-for-a-conversation](https://docs.dust.tt/api-reference/feedbacks/get-feedbacks-for-a-conversation) |
-| Submit feedback for a specific message in a conversation | [https://docs.dust.tt/api-reference/feedbacks/submit-feedback-for-a-specific-message-in-a-conversation](https://docs.dust.tt/api-reference/feedbacks/submit-feedback-for-a-specific-message-in-a-conversation) |
-| Delete feedback for a specific message | [https://docs.dust.tt/api-reference/feedbacks/delete-feedback-for-a-specific-message](https://docs.dust.tt/api-reference/feedbacks/delete-feedback-for-a-specific-message) |
-| Get mention suggestions for a conversation | [https://docs.dust.tt/api-reference/mentions/get-mention-suggestions-for-a-conversation](https://docs.dust.tt/api-reference/mentions/get-mention-suggestions-for-a-conversation) |
-| Parse mentions in markdown text | [https://docs.dust.tt/api-reference/mentions/parse-mentions-in-markdown-text](https://docs.dust.tt/api-reference/mentions/parse-mentions-in-markdown-text) |
-| Get mention suggestions | [https://docs.dust.tt/api-reference/mentions/get-mention-suggestions](https://docs.dust.tt/api-reference/mentions/get-mention-suggestions) |
-| Deregister a client-side MCP server | [https://docs.dust.tt/api-reference/mcp/deregister-a-client-side-mcp-server](https://docs.dust.tt/api-reference/mcp/deregister-a-client-side-mcp-server) |
-| Update heartbeat for a client-side MCP server | [https://docs.dust.tt/api-reference/mcp/update-heartbeat-for-a-client-side-mcp-server](https://docs.dust.tt/api-reference/mcp/update-heartbeat-for-a-client-side-mcp-server) |
-| Register a client-side MCP server | [https://docs.dust.tt/api-reference/mcp/register-a-client-side-mcp-server](https://docs.dust.tt/api-reference/mcp/register-a-client-side-mcp-server) |
-| Stream MCP tool requests for a workspace | [https://docs.dust.tt/api-reference/mcp/stream-mcp-tool-requests-for-a-workspace](https://docs.dust.tt/api-reference/mcp/stream-mcp-tool-requests-for-a-workspace) |
-| Submit MCP tool execution results | [https://docs.dust.tt/api-reference/mcp/submit-mcp-tool-execution-results](https://docs.dust.tt/api-reference/mcp/submit-mcp-tool-execution-results) |
-| Search for nodes in the workspace (streaming) | [https://docs.dust.tt/api-reference/search/search-for-nodes-in-the-workspace-streaming](https://docs.dust.tt/api-reference/search/search-for-nodes-in-the-workspace-streaming) |
-| Search for nodes in the workspace | [https://docs.dust.tt/api-reference/search/search-for-nodes-in-the-workspace](https://docs.dust.tt/api-reference/search/search-for-nodes-in-the-workspace) |
-| Upload a tool file | [https://docs.dust.tt/api-reference/search/upload-a-tool-file](https://docs.dust.tt/api-reference/search/upload-a-tool-file) |
-| Archive a skill | [https://docs.dust.tt/api-reference/skills/archive-a-skill](https://docs.dust.tt/api-reference/skills/archive-a-skill) |
-| List skills | [https://docs.dust.tt/api-reference/skills/list-skills](https://docs.dust.tt/api-reference/skills/list-skills) |
-| Import skills from uploaded files | [https://docs.dust.tt/api-reference/skills/import-skills-from-uploaded-files](https://docs.dust.tt/api-reference/skills/import-skills-from-uploaded-files) |
-| Get an app run | [https://docs.dust.tt/api-reference/apps/get-an-app-run](https://docs.dust.tt/api-reference/apps/get-an-app-run) |
-| Create an app run | [https://docs.dust.tt/api-reference/apps/create-an-app-run](https://docs.dust.tt/api-reference/apps/create-an-app-run) |
-| List apps | [https://docs.dust.tt/api-reference/apps/list-apps](https://docs.dust.tt/api-reference/apps/list-apps) |
-| Get a data source view | [https://docs.dust.tt/api-reference/datasourceviews/get-a-data-source-view](https://docs.dust.tt/api-reference/datasourceviews/get-a-data-source-view) |
-| Delete a data source view | [https://docs.dust.tt/api-reference/datasourceviews/delete-a-data-source-view](https://docs.dust.tt/api-reference/datasourceviews/delete-a-data-source-view) |
-| Update a data source view | [https://docs.dust.tt/api-reference/datasourceviews/update-a-data-source-view](https://docs.dust.tt/api-reference/datasourceviews/update-a-data-source-view) |
-| Search the data source view | [https://docs.dust.tt/api-reference/datasourceviews/search-the-data-source-view](https://docs.dust.tt/api-reference/datasourceviews/search-the-data-source-view) |
-| List Data Source Views | [https://docs.dust.tt/api-reference/datasourceviews/list-data-source-views](https://docs.dust.tt/api-reference/datasourceviews/list-data-source-views) |
-| Check the upsert queue status for a data source | [https://docs.dust.tt/api-reference/datasources/check-the-upsert-queue-status-for-a-data-source](https://docs.dust.tt/api-reference/datasources/check-the-upsert-queue-status-for-a-data-source) |
-| Retrieve a document from a data source | [https://docs.dust.tt/api-reference/datasources/retrieve-a-document-from-a-data-source](https://docs.dust.tt/api-reference/datasources/retrieve-a-document-from-a-data-source) |
-| Upsert a document in a data source | [https://docs.dust.tt/api-reference/datasources/upsert-a-document-in-a-data-source](https://docs.dust.tt/api-reference/datasources/upsert-a-document-in-a-data-source) |
-| Delete a document from a data source | [https://docs.dust.tt/api-reference/datasources/delete-a-document-from-a-data-source](https://docs.dust.tt/api-reference/datasources/delete-a-document-from-a-data-source) |
-| Update the parents of a document | [https://docs.dust.tt/api-reference/datasources/update-the-parents-of-a-document](https://docs.dust.tt/api-reference/datasources/update-the-parents-of-a-document) |
-| Get documents | [https://docs.dust.tt/api-reference/datasources/get-documents](https://docs.dust.tt/api-reference/datasources/get-documents) |
-| Search the data source | [https://docs.dust.tt/api-reference/datasources/search-the-data-source](https://docs.dust.tt/api-reference/datasources/search-the-data-source) |
-| Get a table | [https://docs.dust.tt/api-reference/datasources/get-a-table](https://docs.dust.tt/api-reference/datasources/get-a-table) |
-| Delete a table | [https://docs.dust.tt/api-reference/datasources/delete-a-table](https://docs.dust.tt/api-reference/datasources/delete-a-table) |
-| Get a row | [https://docs.dust.tt/api-reference/datasources/get-a-row](https://docs.dust.tt/api-reference/datasources/get-a-row) |
-| Delete a row | [https://docs.dust.tt/api-reference/datasources/delete-a-row](https://docs.dust.tt/api-reference/datasources/delete-a-row) |
-| List rows | [https://docs.dust.tt/api-reference/datasources/list-rows](https://docs.dust.tt/api-reference/datasources/list-rows) |
-| Upsert rows | [https://docs.dust.tt/api-reference/datasources/upsert-rows](https://docs.dust.tt/api-reference/datasources/upsert-rows) |
-| Get tables | [https://docs.dust.tt/api-reference/datasources/get-tables](https://docs.dust.tt/api-reference/datasources/get-tables) |
-| Upsert a table | [https://docs.dust.tt/api-reference/datasources/upsert-a-table](https://docs.dust.tt/api-reference/datasources/upsert-a-table) |
-| Get data sources | [https://docs.dust.tt/api-reference/datasources/get-data-sources](https://docs.dust.tt/api-reference/datasources/get-data-sources) |
-| List available MCP server views. | [https://docs.dust.tt/api-reference/tools/list-available-mcp-server-views](https://docs.dust.tt/api-reference/tools/list-available-mcp-server-views) |
-| List available spaces. | [https://docs.dust.tt/api-reference/spaces/list-available-spaces](https://docs.dust.tt/api-reference/spaces/list-available-spaces) |
-| Get a trigger | [https://docs.dust.tt/api-reference/triggers/get-a-trigger](https://docs.dust.tt/api-reference/triggers/get-a-trigger) |
-| Receive external webhook to trigger flows | [https://docs.dust.tt/api-reference/triggers/receive-external-webhook-to-trigger-flows](https://docs.dust.tt/api-reference/triggers/receive-external-webhook-to-trigger-flows) |
-| List triggers | [https://docs.dust.tt/api-reference/triggers/list-triggers](https://docs.dust.tt/api-reference/triggers/list-triggers) |
-| List consumption analytics facets | [https://docs.dust.tt/api-reference/private-analytics/list-consumption-analytics-facets](https://docs.dust.tt/api-reference/private-analytics/list-consumption-analytics-facets) |
-| List consumption analytics facets | [https://docs.dust.tt/api-reference/private-analytics/list-consumption-analytics-facets-1](https://docs.dust.tt/api-reference/private-analytics/list-consumption-analytics-facets-1) |
-| List consumption analytics facets | [https://docs.dust.tt/api-reference/private-analytics/list-consumption-analytics-facets-2](https://docs.dust.tt/api-reference/private-analytics/list-consumption-analytics-facets-2) |
-| List agent configurations | [https://docs.dust.tt/api-reference/private-agents/list-agent-configurations](https://docs.dust.tt/api-reference/private-agents/list-agent-configurations) |
-| Create an agent configuration | [https://docs.dust.tt/api-reference/private-agents/create-an-agent-configuration](https://docs.dust.tt/api-reference/private-agents/create-an-agent-configuration) |
-| Cancel message generation | [https://docs.dust.tt/api-reference/private-conversations/cancel-message-generation](https://docs.dust.tt/api-reference/private-conversations/cancel-message-generation) |
-| Compact a conversation | [https://docs.dust.tt/api-reference/private-conversations/compact-a-conversation](https://docs.dust.tt/api-reference/private-conversations/compact-a-conversation) |
-| Get a conversation credit attribution | [https://docs.dust.tt/api-reference/private-conversations/get-a-conversation-credit-attribution](https://docs.dust.tt/api-reference/private-conversations/get-a-conversation-credit-attribution) |
-| Create a content fragment | [https://docs.dust.tt/api-reference/private-conversations/create-a-content-fragment](https://docs.dust.tt/api-reference/private-conversations/create-a-content-fragment) |
-| Get conversation feedbacks | [https://docs.dust.tt/api-reference/private-conversations/get-conversation-feedbacks](https://docs.dust.tt/api-reference/private-conversations/get-conversation-feedbacks) |
-| Get a conversation | [https://docs.dust.tt/api-reference/private-conversations/get-a-conversation](https://docs.dust.tt/api-reference/private-conversations/get-a-conversation) |
-| Delete or leave a conversation | [https://docs.dust.tt/api-reference/private-conversations/delete-or-leave-a-conversation](https://docs.dust.tt/api-reference/private-conversations/delete-or-leave-a-conversation) |
-| Update a conversation | [https://docs.dust.tt/api-reference/private-conversations/update-a-conversation](https://docs.dust.tt/api-reference/private-conversations/update-a-conversation) |
-| Get conversation participants | [https://docs.dust.tt/api-reference/private-conversations/get-conversation-participants](https://docs.dust.tt/api-reference/private-conversations/get-conversation-participants) |
-| Add a participant to a conversation | [https://docs.dust.tt/api-reference/private-conversations/add-a-participant-to-a-conversation](https://docs.dust.tt/api-reference/private-conversations/add-a-participant-to-a-conversation) |
-| List selectable Spaces | [https://docs.dust.tt/api-reference/private-conversations/list-selectable-spaces](https://docs.dust.tt/api-reference/private-conversations/list-selectable-spaces) |
-| Select Spaces for a conversation | [https://docs.dust.tt/api-reference/private-conversations/select-spaces-for-a-conversation](https://docs.dust.tt/api-reference/private-conversations/select-spaces-for-a-conversation) |
-| Cancel a wake-up | [https://docs.dust.tt/api-reference/private-conversations/cancel-a-wake-up](https://docs.dust.tt/api-reference/private-conversations/cancel-a-wake-up) |
-| List wake-ups for a conversation | [https://docs.dust.tt/api-reference/private-conversations/list-wake-ups-for-a-conversation](https://docs.dust.tt/api-reference/private-conversations/list-wake-ups-for-a-conversation) |
-| List conversations | [https://docs.dust.tt/api-reference/private-conversations/list-conversations](https://docs.dust.tt/api-reference/private-conversations/list-conversations) |
-| Create a conversation | [https://docs.dust.tt/api-reference/private-conversations/create-a-conversation](https://docs.dust.tt/api-reference/private-conversations/create-a-conversation) |
-| Stream conversation events | [https://docs.dust.tt/api-reference/private-events/stream-conversation-events](https://docs.dust.tt/api-reference/private-events/stream-conversation-events) |
-| Stream message events | [https://docs.dust.tt/api-reference/private-events/stream-message-events](https://docs.dust.tt/api-reference/private-events/stream-message-events) |
-| Stream sandbox function invocation events | [https://docs.dust.tt/api-reference/private-events/stream-sandbox-function-invocation-events](https://docs.dust.tt/api-reference/private-events/stream-sandbox-function-invocation-events) |
-| Get a single action | [https://docs.dust.tt/api-reference/private-messages/get-a-single-action](https://docs.dust.tt/api-reference/private-messages/get-a-single-action) |
-| Get an agent message credit attribution | [https://docs.dust.tt/api-reference/private-messages/get-an-agent-message-credit-attribution](https://docs.dust.tt/api-reference/private-messages/get-an-agent-message-credit-attribution) |
-| Edit a message | [https://docs.dust.tt/api-reference/private-messages/edit-a-message](https://docs.dust.tt/api-reference/private-messages/edit-a-message) |
-| Submit message feedback | [https://docs.dust.tt/api-reference/private-messages/submit-message-feedback](https://docs.dust.tt/api-reference/private-messages/submit-message-feedback) |
-| Delete message feedback | [https://docs.dust.tt/api-reference/private-messages/delete-message-feedback](https://docs.dust.tt/api-reference/private-messages/delete-message-feedback) |
-| Get a message | [https://docs.dust.tt/api-reference/private-messages/get-a-message](https://docs.dust.tt/api-reference/private-messages/get-a-message) |
-| Delete a message | [https://docs.dust.tt/api-reference/private-messages/delete-a-message](https://docs.dust.tt/api-reference/private-messages/delete-a-message) |
-| Retry an agent message | [https://docs.dust.tt/api-reference/private-messages/retry-an-agent-message](https://docs.dust.tt/api-reference/private-messages/retry-an-agent-message) |
-| List messages in a conversation | [https://docs.dust.tt/api-reference/private-messages/list-messages-in-a-conversation](https://docs.dust.tt/api-reference/private-messages/list-messages-in-a-conversation) |
-| Post a message to a conversation | [https://docs.dust.tt/api-reference/private-messages/post-a-message-to-a-conversation](https://docs.dust.tt/api-reference/private-messages/post-a-message-to-a-conversation) |
-| Resolve a conversation go template draft | [https://docs.dust.tt/api-reference/private-assistant/resolve-a-conversation-go-template-draft](https://docs.dust.tt/api-reference/private-assistant/resolve-a-conversation-go-template-draft) |
-| Get mention suggestions | [https://docs.dust.tt/api-reference/private-mentions/get-mention-suggestions](https://docs.dust.tt/api-reference/private-mentions/get-mention-suggestions) |
-| Get extension configuration | [https://docs.dust.tt/api-reference/private-extension/get-extension-configuration](https://docs.dust.tt/api-reference/private-extension/get-extension-configuration) |
-| Get workspace feature flags | [https://docs.dust.tt/api-reference/private-workspace/get-workspace-feature-flags](https://docs.dust.tt/api-reference/private-workspace/get-workspace-feature-flags) |
-| Get or download a file | [https://docs.dust.tt/api-reference/private-files/get-or-download-a-file](https://docs.dust.tt/api-reference/private-files/get-or-download-a-file) |
-| Upload file content | [https://docs.dust.tt/api-reference/private-files/upload-file-content](https://docs.dust.tt/api-reference/private-files/upload-file-content) |
-| Delete a file | [https://docs.dust.tt/api-reference/private-files/delete-a-file](https://docs.dust.tt/api-reference/private-files/delete-a-file) |
-| Create a file upload | [https://docs.dust.tt/api-reference/private-files/create-a-file-upload](https://docs.dust.tt/api-reference/private-files/create-a-file-upload) |
-| Get a data source view | [https://docs.dust.tt/api-reference/private-spaces/get-a-data-source-view](https://docs.dust.tt/api-reference/private-spaces/get-a-data-source-view) |
-| Delete a data source view | [https://docs.dust.tt/api-reference/private-spaces/delete-a-data-source-view](https://docs.dust.tt/api-reference/private-spaces/delete-a-data-source-view) |
-| Update a data source view | [https://docs.dust.tt/api-reference/private-spaces/update-a-data-source-view](https://docs.dust.tt/api-reference/private-spaces/update-a-data-source-view) |
-| List data source views | [https://docs.dust.tt/api-reference/private-spaces/list-data-source-views](https://docs.dust.tt/api-reference/private-spaces/list-data-source-views) |
-| Create a data source view | [https://docs.dust.tt/api-reference/private-spaces/create-a-data-source-view](https://docs.dust.tt/api-reference/private-spaces/create-a-data-source-view) |
-| Get a space | [https://docs.dust.tt/api-reference/private-spaces/get-a-space](https://docs.dust.tt/api-reference/private-spaces/get-a-space) |
-| Delete a space | [https://docs.dust.tt/api-reference/private-spaces/delete-a-space](https://docs.dust.tt/api-reference/private-spaces/delete-a-space) |
-| Update a space | [https://docs.dust.tt/api-reference/private-spaces/update-a-space](https://docs.dust.tt/api-reference/private-spaces/update-a-space) |
-| Get project notification preference | [https://docs.dust.tt/api-reference/private-spaces/get-project-notification-preference](https://docs.dust.tt/api-reference/private-spaces/get-project-notification-preference) |
-| Set project notification preference | [https://docs.dust.tt/api-reference/private-spaces/set-project-notification-preference](https://docs.dust.tt/api-reference/private-spaces/set-project-notification-preference) |
-| List spaces | [https://docs.dust.tt/api-reference/private-spaces/list-spaces](https://docs.dust.tt/api-reference/private-spaces/list-spaces) |
-| Create a space | [https://docs.dust.tt/api-reference/private-spaces/create-a-space](https://docs.dust.tt/api-reference/private-spaces/create-a-space) |
-| Initiate WorkOS login | [https://docs.dust.tt/api-reference/private-authentication/initiate-workos-login](https://docs.dust.tt/api-reference/private-authentication/initiate-workos-login) |
-| Exchange code or refresh token | [https://docs.dust.tt/api-reference/private-authentication/exchange-code-or-refresh-token](https://docs.dust.tt/api-reference/private-authentication/exchange-code-or-refresh-token) |
-| Revoke a session | [https://docs.dust.tt/api-reference/private-authentication/revoke-a-session](https://docs.dust.tt/api-reference/private-authentication/revoke-a-session) |
-| Dust CLI | [https://docs.dust.tt/docs/developer-platform/dust-cli/dust-cli](https://docs.dust.tt/docs/developer-platform/dust-cli/dust-cli) |
-| openapi | [https://docs.dust.tt/docs/developer-platform/dust-api-documentation/openapi.json](https://docs.dust.tt/docs/developer-platform/dust-api-documentation/openapi.json) |
-| swagger | [https://raw.githubusercontent.com/dust-tt/dust/refs/heads/main/front-api/public/swagger.json](https://raw.githubusercontent.com/dust-tt/dust/refs/heads/main/front-api/public/swagger.json) |
+| API 参考 | 工作区 API、用户会话接口、客户端 MCP、登录流程与 Webhook；按各接口的认证方式使用。 |
+| OpenAPI / Swagger | 两个文件均为 OpenAPI 3.0 格式，统一包含 126 个操作，默认服务地址为 `https://app.counso.ai`。 |
+| Postman | 集合与环境文件包含完整请求，分别使用工作区 API key、用户 token 或接口自身的认证参数；凭据值留空。 |
+| JavaScript SDK | 使用已发布的客户端包，并在初始化时明确指定 Counso 地址。包名、类名和 API 字段保留可执行的技术标识。 |
+
+[英文 API 入口](en/docs/developer-platform/counso-api-documentation/openapi-and-postman.md) · [中文 API 入口](zh-cn/docs/developer-platform/counso-api-documentation/openapi-and-postman.md)
+
+接口规范中有三处原始资料差异一并修正：
+
+- `openapi.json` 原先少了列出触发器、获取触发器两个操作，已按同一来源的 `swagger.json` 补齐。
+- 两个用量筛选接口使用 Path Item 引用，原文章未展开请求定义。现已展开个人与智能体两个路径，并为智能体路径补上必填的 `aId` 参数，原文章 URL 不变。
+- Webhook 接收接口按实现保留生成 URL 的密钥路径，不再写成普通 Bearer 认证；配置签名校验时还需提交对应签名。会话 API 的用户身份与工作区 API key 也分别说明。
+
+认证和 Webhook 修正参考[认证中间件](https://github.com/dust-tt/dust/tree/c0dd3d7/front-api/middlewares)及[Webhook 路由](https://github.com/dust-tt/dust/tree/c0dd3d7/front-api/routes/v1/w/%5BwId%5D/triggers/hooks)。部署时，API 服务和身份服务须使用同一 Counso 环境的配置；这里的文档与格式校验不代表生产接口已逐项调用验收。
+
+资料源视图的父节点更新存在一处源契约歧义：`parentsIn` 的 OpenAPI `oneOf` 分支与实现中的联合校验不完全一致。本版保留原字段定义，Postman 使用 `parentsToAdd` / `parentsToRemove` 请求；不把文档改写当成服务端问题已修复。
+
+Postman 页面提供文件和 URL 导入方式，不再引用原产品的公共集合 ID。若需要一键 Fork 的 Run in Postman 按钮，应从 Counso 管理的公开 Postman 集合生成真实链接；现有集合文件可直接导入使用。
 
 ## 不纳入 Counso 的历史内容（9 项）
 
